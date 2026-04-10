@@ -1,0 +1,27 @@
+#subfeature-detail {
+  background: #ffffff;
+  border-top: 1px solid #e8dfcf;
+}
+
+.subfeature-wrap {
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subfeature-wrap .section-subtitle {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.subfeature-meta {
+  margin-top: 26px;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #faf5ea;
+  border: 1px solid #eadfc9;
+  color: #7b5922;
+  font-size: 0.92rem;
+  font-weight: 600;
+}

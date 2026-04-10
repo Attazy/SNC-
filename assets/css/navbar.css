@@ -1,0 +1,145 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar.solid {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  text-decoration: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.logo img {
+  display: block;
+  height: 54px;
+  width: auto;
+  background: transparent;
+}
+
+.navbar.solid .logo {
+  box-shadow: none;
+}
+
+.menu-toggle {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 1.35rem;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar.solid .menu-toggle {
+  color: #1f2933;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+}
+
+.nav-links > li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.25s ease;
+}
+
+.navbar.solid .nav-links a {
+  color: #243038;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.has-sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.submenu-toggle {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 0;
+  line-height: 1;
+}
+
+.navbar.solid .submenu-toggle {
+  color: #243038;
+}
+
+.submenu {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 0;
+  min-width: 260px;
+  list-style: none;
+  background: linear-gradient(160deg, #253457, #161f35);
+  border-radius: 0;
+  box-shadow: 0 18px 34px rgba(8, 14, 18, 0.25);
+  padding: 16px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 1200;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px 22px;
+  color: #ffffff;
+  font-size: 0.87rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.navbar.solid .submenu a {
+  color: #ffffff;
+}
+
+.submenu a:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.has-sub:hover .submenu,
+.has-sub.open .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

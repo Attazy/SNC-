@@ -1,0 +1,132 @@
+@media (max-width: 980px) {
+  :root {
+    --section-space: 80px;
+  }
+
+  .about-grid,
+  .solutions-grid,
+  .services-grid,
+  .contact-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .partner-item {
+    flex-basis: calc(33.333% - 10px);
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --section-space: 68px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    right: 4%;
+    width: 260px;
+    padding: 16px;
+    border-radius: 12px;
+    background: rgba(14, 26, 33, 0.96);
+    flex-direction: column;
+    gap: 12px;
+    transform: scale(0.95);
+    transform-origin: top right;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .navbar.solid .nav-links {
+    background: #ffffff;
+    border: 1px solid #e3ece7;
+  }
+
+  .navbar.solid .nav-links a {
+    color: #2cb557;
+  }
+
+  .navbar.solid .submenu a {
+    color: #ffffff;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+  }
+
+  .has-sub {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .submenu-toggle {
+    margin-left: auto;
+  }
+
+  .submenu {
+    position: static;
+    min-width: 100%;
+    width: 100%;
+    max-height: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+    transform: none;
+    margin-top: 6px;
+    padding: 0;
+    border-radius: 0;
+    transition: max-height 0.22s ease, padding 0.22s ease;
+  }
+
+  .has-sub.open .submenu {
+    max-height: 360px;
+    padding: 10px 0;
+  }
+
+  .logo {
+    padding: 3px 6px;
+  }
+
+  .logo img {
+    height: 38px;
+  }
+
+  .about-grid,
+  .about-content,
+  .solutions-grid,
+  .services-grid,
+  .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  .about-objectives {
+    grid-column: auto;
+  }
+
+  .partners-slider {
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+  }
+
+  .partners-control {
+    display: grid;
+  }
+
+  .partner-item {
+    flex-basis: calc(50% - 8px);
+  }
+
+  .hero h1 {
+    letter-spacing: 0.04em;
+  }
+}

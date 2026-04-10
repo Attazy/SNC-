@@ -1,0 +1,64 @@
+.about-content {
+  max-width: 980px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.about-intro {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.about-company-title {
+  margin: 0 0 10px;
+  font-size: clamp(1.15rem, 1.2vw, 1.35rem);
+  letter-spacing: 0.02em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-content p {
+  font-size: clamp(0.98rem, 1.15vw, 1.2rem);
+  line-height: 1.55;
+  color: #5f6873;
+  margin-bottom: 12px;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.about-box {
+  background: #ffffff;
+  border: 1px solid #e8dfcf;
+  border-radius: 10px;
+  padding: 16px 18px;
+  box-shadow: 0 8px 18px rgba(138, 100, 32, 0.08);
+  text-align: left;
+}
+
+.about-objectives {
+  grid-column: 1 / -1;
+}
+
+.about-box h3 {
+  margin: 0 0 10px;
+  font-size: clamp(1.15rem, 1.2vw, 1.35rem);
+  color: #000000;
+  letter-spacing: 0.02em;
+}
+
+.about-box ul {
+  padding-left: 32px;
+  margin-bottom: 0;
+}
+
+.about-box li {
+  font-size: clamp(0.98rem, 1.1vw, 1.18rem);
+  color: #5f6873;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
