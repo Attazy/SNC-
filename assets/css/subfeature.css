@@ -25,3 +25,63 @@
   font-size: 0.92rem;
   font-weight: 600;
 }
+
+.subfeature-content {
+  margin-top: 30px;
+  text-align: left;
+  display: grid;
+  gap: 18px;
+}
+
+.subfeature-block {
+  padding: 22px;
+  border: 1px solid #eadfc9;
+  border-radius: 14px;
+  background: #fffdf8;
+}
+
+.subfeature-block h3 {
+  margin-bottom: 10px;
+  color: #1f2e57;
+  font-size: 1.15rem;
+}
+
+.subfeature-block p {
+  margin: 0;
+  color: #4f5c78;
+  line-height: 1.75;
+}
+
+.subfeature-block ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #4f5c78;
+  line-height: 1.75;
+}
+
+.subfeature-cta {
+  margin-top: 4px;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  border: 1px solid #d8c7a3;
+  background: #faf3e3;
+  color: #7b5922;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.subfeature-cta:hover {
+  transform: translateY(-1px);
+  background: #f5e8ce;
+}
+
+@media (max-width: 768px) {
+  .subfeature-block {
+    padding: 18px;
+  }
+}

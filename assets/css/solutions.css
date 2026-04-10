@@ -33,8 +33,24 @@
   display: grid;
   place-items: center;
   margin-bottom: 24px;
-  color: #8a6420;
+  color: #111111;
   font-size: clamp(1.8rem, 2vw, 2.4rem);
+}
+
+.solution-icon i {
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 2.2rem;
+  color: #111111;
+}
+
+.solution-icon .power-icon {
+  width: 48px;
+  height: 48px;
+  font-size: 2.5rem;
+  color: #111111;
 }
 
 .solution-icon img {
