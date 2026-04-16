@@ -15,6 +15,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
 }
 
 html {
@@ -22,10 +24,10 @@ html {
 }
 
 body {
-  font-family: "Manrope", "Segoe UI", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: var(--text-main);
   background-color: var(--surface);
-  line-height: 1.7;
+  line-height: 1.2;
 }
 
 img {
@@ -34,7 +36,7 @@ img {
 }
 
 .container {
-  width: min(1120px, 92%);
+  width: min(1260px, 94%);
   margin-inline: auto;
 }
 
@@ -56,10 +58,10 @@ section {
 
 .section-subtitle {
   color: var(--text-muted);
-  max-width: 1120px;
+  max-width: 1240px;
   margin: 10px auto 0;
   font-size: clamp(0.98rem, 1.3vw, 1.25rem);
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .section-divider {
