@@ -80,9 +80,9 @@
   display: grid;
   place-items: center;
   color: #fff;
-  background: #25d366;
+  background: #2563eb;
   font-size: 1.6rem;
-  box-shadow: 0 12px 22px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 12px 22px rgba(37, 99, 235, 0.4);
   z-index: 1000;
   text-decoration: none;
   transition: transform 0.2s ease;

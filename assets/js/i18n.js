@@ -264,6 +264,49 @@
         { selector: "#contact .contact-box:nth-child(1) h3", en: "OFFICE (NEW ADDRESS)", id: "KANTOR (ALAMAT BARU)" },
         { selector: "#contact .contact-box:nth-child(2) h3", en: "WORKSHOP", id: "WORKSHOP" }
       ]
+    },
+
+    "why-sentra.html": {
+      title: {
+        en: "Why Sentra Netcomindo",
+        id: "Kenapa Sentra Netcomindo"
+      },
+      description: {
+        en: "Why organizations choose Sentra Netcomindo",
+        id: "Alasan organisasi memilih Sentra Netcomindo"
+      },
+      entries: [
+        { selector: ".hero-content h1", en: "WHY SENTRA NETCOMINDO", id: "KENAPA SENTRA NETCOMINDO" },
+        {
+          selector: ".hero-content p.hero-description",
+          en: "Why many organizations trust us for their IT solutions.",
+          id: "Kenapa banyak organisasi mempercayakan solusi IT-nya kepada kami."
+        },
+        { selector: ".section-header .section-title", en: "Reasons Companies Choose Us", id: "Contoh Kenapa Kami Dipilih" },
+        {
+          selector: ".section-header .section-subtitle",
+          en: "Several key factors that enterprise clients often consider.",
+          id: "Beberapa alasan yang sering menjadi pertimbangan client enterprise."
+        },
+        { selector: ".why-grid .why-card:nth-child(1) h3", en: "1) End-to-End Approach", id: "1) Pendekatan End-to-End" },
+        {
+          selector: ".why-grid .why-card:nth-child(1) p",
+          en: "We do more than provide products, we support clients from assessment and solution design to implementation and operational support for sustainable outcomes.",
+          id: "Kami tidak hanya menjual produk, tetapi mendampingi dari assessment, desain solusi, implementasi, hingga support operasional agar hasilnya berkelanjutan."
+        },
+        { selector: ".why-grid .why-card:nth-child(2) h3", en: "2) Reliability and Security Focus", id: "2) Fokus Reliability dan Security" },
+        {
+          selector: ".why-grid .why-card:nth-child(2) p",
+          en: "Each solution is designed to keep systems stable, secure, and ready for scale and compliance requirements.",
+          id: "Solusi dirancang agar sistem tetap stabil, aman, dan siap menghadapi kebutuhan scale maupun audit compliance."
+        },
+        { selector: ".why-grid .why-card:nth-child(3) h3", en: "3) Strong Vendor Partnership", id: "3) Vendor Partnership Kuat" },
+        {
+          selector: ".why-grid .why-card:nth-child(3) p",
+          en: "Support from global partners helps us recommend the right technology aligned with your business needs and budget.",
+          id: "Dukungan partner global membantu kami memberikan pilihan teknologi yang tepat sesuai kebutuhan bisnis dan anggaran."
+        }
+      ]
     }
   };
 
