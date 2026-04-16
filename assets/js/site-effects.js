@@ -113,6 +113,32 @@
       .hero {
         --spot-x: 50%;
         --spot-y: 35%;
+        background-size: 145% 145%;
+        animation-duration: 13s;
+      }
+
+      .hero::before {
+        opacity: 0.38;
+        animation-duration: 15s;
+      }
+
+      .hero::after {
+        opacity: 0.84;
+        animation-duration: 18s;
+      }
+
+      .hero-drift-layer {
+        position: absolute;
+        inset: -18%;
+        pointer-events: none;
+        z-index: 1;
+        background:
+          linear-gradient(115deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0) 38%),
+          linear-gradient(296deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0) 42%),
+          linear-gradient(180deg, rgba(14, 165, 233, 0.16) 0%, rgba(14, 165, 233, 0) 55%);
+        mix-blend-mode: screen;
+        opacity: 0.72;
+        animation: heroBandDrift 11s ease-in-out infinite alternate;
       }
 
       .hero-spotlight-layer {
@@ -122,10 +148,11 @@
         z-index: 1;
         background: radial-gradient(
           620px circle at var(--spot-x) var(--spot-y),
-          rgba(255, 255, 255, 0.22),
+          rgba(255, 255, 255, 0.3),
           rgba(255, 255, 255, 0) 58%
         );
-        opacity: 0.68;
+        opacity: 0.9;
+        mix-blend-mode: screen;
       }
 
       .hero-content {
@@ -187,11 +214,22 @@
         100% { transform: scale(1); }
       }
 
+      @keyframes heroBandDrift {
+        0% {
+          transform: translate3d(-6%, -2%, 0) rotate(-2.2deg) scale(1.02);
+        }
+        100% {
+          transform: translate3d(6%, 2.5%, 0) rotate(2.2deg) scale(1.06);
+        }
+      }
+
       @media (prefers-reduced-motion: reduce) {
         .js-premium-card,
         .js-magnetic,
-        .hero-content {
+        .hero-content,
+        .hero-drift-layer {
           transition: none !important;
+          animation: none !important;
         }
       }
     `;
@@ -231,12 +269,19 @@
   };
 
   const initHeroSpotlight = () => {
-    const heroes = document.querySelectorAll(".hero");
+    const heroes = Array.from(document.querySelectorAll(".hero"));
     if (!heroes.length || prefersReducedMotion) {
       return;
     }
 
-    heroes.forEach((hero) => {
+    const states = heroes.map((hero, index) => {
+      if (!hero.querySelector(".hero-drift-layer")) {
+        const driftLayer = document.createElement("div");
+        driftLayer.className = "hero-drift-layer";
+        driftLayer.setAttribute("aria-hidden", "true");
+        hero.appendChild(driftLayer);
+      }
+
       if (!hero.querySelector(".hero-spotlight-layer")) {
         const spotlight = document.createElement("div");
         spotlight.className = "hero-spotlight-layer";
@@ -244,53 +289,72 @@
         hero.appendChild(spotlight);
       }
 
-      const content = hero.querySelector(".hero-content");
-      if (!supportsFinePointer) {
-        return;
-      }
-
-      let rafPending = false;
-      let nextX = 50;
-      let nextY = 35;
-
-      const applySpotlight = () => {
-        hero.style.setProperty("--spot-x", `${nextX}%`);
-        hero.style.setProperty("--spot-y", `${nextY}%`);
-
-        if (content && supportsTranslateProperty) {
-          const offsetX = ((nextX - 50) / 50) * 8;
-          const offsetY = ((nextY - 40) / 60) * 6;
-          content.style.translate = `${offsetX.toFixed(2)}px ${offsetY.toFixed(2)}px`;
-        }
-
-        rafPending = false;
+      return {
+        hero,
+        content: hero.querySelector(".hero-content"),
+        index,
+        currentX: 50,
+        currentY: 35,
+        targetX: 50,
+        targetY: 35,
+        manualUntil: 0
       };
-
-      const scheduleSpotlight = () => {
-        if (rafPending) {
-          return;
-        }
-
-        rafPending = true;
-        window.requestAnimationFrame(applySpotlight);
-      };
-
-      hero.addEventListener("pointermove", (event) => {
-        const rect = hero.getBoundingClientRect();
-        const px = clamp((event.clientX - rect.left) / rect.width, 0, 1);
-        const py = clamp((event.clientY - rect.top) / rect.height, 0, 1);
-
-        nextX = px * 100;
-        nextY = py * 100;
-        scheduleSpotlight();
-      });
-
-      hero.addEventListener("pointerleave", () => {
-        nextX = 50;
-        nextY = 35;
-        scheduleSpotlight();
-      });
     });
+
+    if (!states.length) {
+      return;
+    }
+
+    if (supportsFinePointer) {
+      states.forEach((state) => {
+        state.hero.addEventListener("pointermove", (event) => {
+          const rect = state.hero.getBoundingClientRect();
+          const px = clamp((event.clientX - rect.left) / rect.width, 0, 1);
+          const py = clamp((event.clientY - rect.top) / rect.height, 0, 1);
+
+          state.targetX = px * 100;
+          state.targetY = py * 100;
+          state.manualUntil = performance.now() + 1400;
+        });
+
+        state.hero.addEventListener("pointerleave", () => {
+          state.manualUntil = 0;
+        });
+      });
+    }
+
+    const animateSpotlight = (timestamp) => {
+      const scrollRatio = clamp((window.scrollY || 0) / Math.max(window.innerHeight, 1), 0, 3);
+
+      states.forEach((state) => {
+        const isManual = timestamp < state.manualUntil;
+
+        if (!isManual) {
+          const t = timestamp * 0.001;
+          const waveX = Math.sin(t * 0.52 + state.index * 0.95) * 18;
+          const waveY = Math.cos(t * 0.41 + state.index * 0.73) * 11;
+
+          state.targetX = 50 + waveX;
+          state.targetY = 35 + waveY + scrollRatio * 4;
+        }
+
+        state.currentX += (state.targetX - state.currentX) * 0.08;
+        state.currentY += (state.targetY - state.currentY) * 0.08;
+
+        state.hero.style.setProperty("--spot-x", `${state.currentX.toFixed(2)}%`);
+        state.hero.style.setProperty("--spot-y", `${state.currentY.toFixed(2)}%`);
+
+        if (state.content && supportsTranslateProperty) {
+          const offsetX = ((state.currentX - 50) / 50) * 10;
+          const offsetY = ((state.currentY - 35) / 65) * 8;
+          state.content.style.translate = `${offsetX.toFixed(2)}px ${offsetY.toFixed(2)}px`;
+        }
+      });
+
+      window.requestAnimationFrame(animateSpotlight);
+    };
+
+    window.requestAnimationFrame(animateSpotlight);
   };
 
   const initCardTilt = () => {
