@@ -172,6 +172,10 @@
 
         { selector: ".hero-cta .cta-primary", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
         { selector: ".hero-cta .cta-secondary", en: "View Products", id: "Lihat Produk" },
+        { selector: ".hero-kicker", en: "Enterprise IT Security & Infrastructure", id: "Keamanan dan Infrastruktur TI Enterprise" },
+        { selector: ".hero-metrics div:nth-child(1) span", en: "Enterprise Projects", id: "Proyek Enterprise" },
+        { selector: ".hero-metrics div:nth-child(2) span", en: "Support Readiness", id: "Kesiapan Support" },
+        { selector: ".hero-metrics div:nth-child(3) span", en: "Industry Experience", id: "Pengalaman Industri" },
 
         { selector: "#about-brief .section-title", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
         {
