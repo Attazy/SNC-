@@ -1,3 +1,22 @@
+.hero {
+  min-height: clamp(340px, 58vh, 500px);
+  padding-top: 96px;
+}
+
+.hero .hero-content {
+  max-width: 760px;
+  padding: 18px 20px;
+}
+
+.hero h1 {
+  font-size: clamp(2.05rem, 4.4vw, 3.3rem);
+  letter-spacing: 0.06em;
+}
+
+.hero p {
+  font-size: clamp(1rem, 1.65vw, 1.2rem);
+}
+
 #subfeature-detail {
   background: #ffffff;
   border-top: 1px solid #e8dfcf;
@@ -81,6 +100,11 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: clamp(300px, 52vh, 420px);
+    padding-top: 88px;
+  }
+
   .subfeature-block {
     padding: 18px;
   }
