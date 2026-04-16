@@ -316,6 +316,45 @@
       ]
     },
 
+    "hardware-security-module.html": {
+      entries: [
+        {
+          selector: "#subfeature-detail .hsm-body-2",
+          en: "enterprises buy HSM to securing transactions, identities, cryptographic keys and provisioning encryption, decryption, authentication, and digital signing services for a wide range of applications. An HSM is a device used for key management encryption and decryption of data. The HSM holds the key material on the device and there is no way to export the keys in a usable format. This keeps and attacker from copying your encrypted database and then taking the key and decrypting the data offsite, on his own time, where he is less likely to be caught",
+          id: "Perusahaan menggunakan HSM untuk mengamankan transaksi, identitas, kunci kriptografi, serta penyediaan enkripsi, dekripsi, autentikasi, dan layanan tanda tangan digital untuk berbagai aplikasi. HSM adalah perangkat untuk manajemen kunci, enkripsi, dan dekripsi data. Material kunci disimpan di perangkat dan tidak dapat diekspor dalam format yang dapat digunakan. Hal ini mencegah penyerang menyalin database terenkripsi lalu mengambil kunci untuk mendekripsi data di luar lokasi."
+        },
+        { selector: "#subfeature-detail .hsm-readmore", en: "Read more", id: "Baca selengkapnya" }
+      ]
+    },
+
+    "internet-access-management.html": {
+      entries: [
+        {
+          selector: "#subfeature-detail .iam-body-2",
+          en: "As the leading vendor of Network Management, Sangfor IAM has been already listed in the SWG Gartner Magic Quadrant for 7 years in a row. It has professional internet bandwidth management, application control, URL filter, traffic control, information control, illegal hotspot/proxy control, behaviour analysis, wireless network management and many other features, which can truly help you achieve a Unified Internet Behaviour Management of all clients in the entire network.",
+          id: "Sebagai vendor terdepan di bidang Network Management, Sangfor IAM telah masuk dalam SWG Gartner Magic Quadrant selama 7 tahun berturut-turut. Solusi ini memiliki manajemen bandwidth internet profesional, application control, URL filter, traffic control, information control, kontrol hotspot/proxy ilegal, analisis perilaku, manajemen jaringan nirkabel, dan banyak fitur lain yang membantu mewujudkan Unified Internet Behaviour Management untuk seluruh klien dalam jaringan."
+        },
+        { selector: "#subfeature-detail .resource-brochure-iam", en: "Brocure and datasheet Sangfor IAM 5400", id: "Brosur dan datasheet Sangfor IAM 5400" },
+        { selector: "#subfeature-detail .resource-prefix-iam", en: "For more info, please check the", id: "Untuk info lebih lanjut, silakan cek" },
+        { selector: "#subfeature-detail .resource-site-iam", en: "Sangfor IAM's official website", id: "website resmi Sangfor IAM" },
+        {
+          selector: "#subfeature-detail .solution-note-iam",
+          en: "**If you interest with this solution, please contact us. We will happy to explain it and we are ready to show the demo or doing proof of concept (PoC) if needed.",
+          id: "**Jika Anda tertarik dengan solusi ini, silakan hubungi kami. Kami siap menjelaskan lebih lanjut dan siap menunjukkan demo atau melakukan proof of concept (PoC) jika dibutuhkan."
+        }
+      ]
+    },
+
+    "power-protection.html": {
+      entries: [
+        {
+          selector: "#subfeature-detail .power-intro-note",
+          en: "Here are our product solution that we provide:",
+          id: "Berikut solusi produk yang kami sediakan:"
+        }
+      ]
+    },
+
     "solutions.html": {
       title: {
         en: "Solutions | Sentra Netcomindo",
@@ -564,46 +603,22 @@
     "hardware-security-module.html": {
       title: { en: "Hardware Security Module | Sentra Netcomindo", id: "Modul Keamanan Perangkat Keras | Sentra Netcomindo" },
       description: { en: "Hardware Security Module - Sentra Netcomindo", id: "Modul Keamanan Perangkat Keras - Sentra Netcomindo" },
-      sectionTitle: { en: "Hardware Security Module", id: "Modul Keamanan Perangkat Keras" },
+      sectionTitle: { en: "Integrate Reliable Systems into Value Based Solution", id: "Integrasikan Sistem Andal ke Dalam Solusi Berbasis Nilai" },
       sectionSubtitle: {
-        en: "Protect cryptographic keys and sensitive transactions with enterprise-grade key management infrastructure.",
-        id: "Lindungi kunci kriptografi dan transaksi sensitif dengan infrastruktur manajemen kunci kelas enterprise."
+        en: "PT Sentra Netcomindo has an extensive experience in integrating multiple systems into solution that bring highest value to our customer.",
+        id: "PT Sentra Netcomindo memiliki pengalaman luas dalam mengintegrasikan berbagai sistem menjadi solusi yang memberikan nilai tertinggi bagi pelanggan kami."
       },
-      meta: { en: "Focus: Key Protection, Compliance, Transaction Security", id: "Fokus: Perlindungan Kunci, Kepatuhan, Keamanan Transaksi" },
-      block1Title: { en: "What We Deliver", id: "Apa yang Kami Berikan" },
+      meta: { en: "Those systems including :", id: "Sistem tersebut meliputi :" },
+      block1Title: { en: "Hardware Security Module", id: "Hardware Security Module" },
       block1Text: {
-        en: "We provide end-to-end HSM implementation for secure key generation, storage, and cryptographic processing, aligned with financial and public sector security standards.",
-        id: "Kami menyediakan implementasi HSM end-to-end untuk pembuatan kunci yang aman, penyimpanan, dan pemrosesan kriptografi, selaras dengan standar keamanan sektor keuangan dan publik."
+        en: "A hardware security module (HSM) is a dedicated crypto processor physical computing device which is specifically designed for the protection and manages of the digital crypto key lifecycle, strong authentication and provides cryptoprocessing. Hardware security modules protect the cryptographic infrastructure and can deploy high assurance security solutions, provide a hardened, tamper-resistant environment for performing secure cryptographic processing, key protection, and key management.",
+        id: "Hardware Security Module (HSM) adalah perangkat komputasi pemroses kripto khusus yang dirancang untuk perlindungan dan pengelolaan siklus hidup kunci kripto digital, autentikasi kuat, serta pemrosesan kriptografi. HSM melindungi infrastruktur kriptografi dan dapat menghadirkan solusi keamanan berjaminan tinggi, termasuk lingkungan yang hardened dan tahan manipulasi untuk pemrosesan kriptografi yang aman, perlindungan kunci, dan manajemen kunci."
       },
-      block2Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
-      block2Items: {
-        en: [
-          "Secure key lifecycle management for encryption and digital signing",
-          "Integration with payment switching, PKI, and core banking systems",
-          "High-availability deployment for business critical services",
-          "Support for audit readiness and regulatory controls"
-        ],
-        id: [
-          "Manajemen siklus hidup kunci yang aman untuk enkripsi dan tanda tangan digital",
-          "Integrasi dengan payment switching, PKI, dan core banking",
-          "Deployment high-availability untuk layanan bisnis kritikal",
-          "Dukungan kesiapan audit dan kontrol regulasi"
-        ]
-      },
-      block3Title: { en: "Business Benefits", id: "Manfaat Bisnis" },
-      block3Items: {
-        en: [
-          "Reduced risk of key compromise and fraudulent transactions",
-          "Improved trust for customer-facing digital services",
-          "Stronger compliance posture for internal and external audits"
-        ],
-        id: [
-          "Risiko kompromi kunci dan transaksi fraud berkurang",
-          "Kepercayaan terhadap layanan digital pelanggan meningkat",
-          "Posisi kepatuhan lebih kuat untuk audit internal dan eksternal"
-        ]
-      },
-      cta: { en: "Consult HSM Implementation", id: "Konsultasi Implementasi HSM" }
+      block2Title: { en: "", id: "" },
+      block2Items: { en: [], id: [] },
+      block3Title: { en: "", id: "" },
+      block3Items: { en: [], id: [] },
+      cta: { en: "Read more", id: "Baca selengkapnya" }
     },
 
     "internet-access-management.html": {
@@ -611,44 +626,37 @@
       description: { en: "Internet Access Management - Sentra Netcomindo", id: "Manajemen Akses Internet - Sentra Netcomindo" },
       sectionTitle: { en: "Internet Access Management", id: "Manajemen Akses Internet" },
       sectionSubtitle: {
-        en: "Control web access policies centrally to improve productivity, reduce risks, and simplify branch operations.",
-        id: "Kendalikan kebijakan akses web secara terpusat untuk meningkatkan produktivitas, mengurangi risiko, dan menyederhanakan operasional cabang."
+        en: "Imagine if your company has many users and every user has more than one device that connected to internet that you don't know whether they using it for job purpose or not, you don't know what they access, moreover you don't know who is access your internet, you don't know who or what that need to be prioritized. Everyone want to get good connection but in the same time the bandwidth is limited, big bandwidth is not the solution, you need to manage it, access right need to managed and everything should be considered and managed.",
+        id: "Bayangkan jika perusahaan Anda memiliki banyak pengguna dan setiap pengguna memiliki lebih dari satu perangkat yang terhubung ke internet, namun Anda tidak tahu apakah digunakan untuk pekerjaan atau tidak, tidak tahu apa yang mereka akses, bahkan tidak tahu siapa yang mengakses internet Anda dan siapa atau apa yang harus diprioritaskan. Semua orang ingin koneksi yang baik, tetapi di saat yang sama bandwidth terbatas, bandwidth besar bukan satu-satunya solusi, akses harus dikelola dan semuanya perlu dipertimbangkan dengan baik."
       },
-      meta: { en: "Focus: User Control, Visibility, Governance", id: "Fokus: Kontrol Pengguna, Visibilitas, Tata Kelola" },
-      block1Title: { en: "What We Deliver", id: "Apa yang Kami Berikan" },
+      meta: { en: "If your company have these problem, then you may consider our solution.", id: "Jika perusahaan Anda mengalami masalah ini, maka Anda dapat mempertimbangkan solusi kami." },
+      block1Title: { en: "Sangfor IAM (Internet Access Management)", id: "Sangfor IAM (Internet Access Management)" },
       block1Text: {
-        en: "We build secure internet access management platforms that combine authentication, policy control, and activity visibility for office, branch, and remote users.",
-        id: "Kami membangun platform manajemen akses internet yang aman dengan kombinasi autentikasi, kontrol kebijakan, dan visibilitas aktivitas untuk kantor, cabang, dan pengguna remote."
+        en: "In organization nowadays, internet is very important but also hard to manage if you have many connected devices and users, we can offer you solution to give easy way to manage your network but powerful, from bandwidth management, user authentication, unified management for LAN+WAN to built-in firewall.",
+        id: "Di organisasi saat ini, internet sangat penting namun juga sulit dikelola jika Anda memiliki banyak perangkat dan pengguna yang terhubung. Kami dapat menawarkan solusi untuk mengelola jaringan Anda dengan cara yang mudah namun tetap powerful, mulai dari manajemen bandwidth, autentikasi pengguna, manajemen terpadu LAN+WAN hingga built-in firewall."
       },
-      block2Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
+      block2Title: { en: "Here are the advantages:", id: "Berikut keunggulannya:" },
       block2Items: {
         en: [
-          "User and device based internet policy enforcement",
-          "Web filtering for categories, applications, and unsafe content",
-          "Quota, scheduling, and bandwidth allocation per group",
-          "Detailed reporting for usage analysis and compliance tracking"
+          "Simple & Intuitive Reporting",
+          "Intelligent and Accurate Traffic Management",
+          "Complete and effective data recording",
+          "Unified Management of all clients in the Entire network",
+          "Precise and Accurate Application Control",
+          "Value added service : Authentication via SMS, Portal, Social Media and QR Code and Sangfor Billing System for Internet Usage"
         ],
         id: [
-          "Penerapan kebijakan internet berbasis pengguna dan perangkat",
-          "Web filtering berdasarkan kategori, aplikasi, dan konten berisiko",
-          "Pengaturan kuota, jadwal, dan alokasi bandwidth per grup",
-          "Pelaporan detail untuk analisis penggunaan dan pelacakan kepatuhan"
+          "Pelaporan yang sederhana dan intuitif",
+          "Manajemen trafik yang cerdas dan akurat",
+          "Pencatatan data yang lengkap dan efektif",
+          "Manajemen terpadu untuk seluruh klien dalam satu jaringan",
+          "Kontrol aplikasi yang presisi dan akurat",
+          "Layanan bernilai tambah: autentikasi via SMS, Portal, Media Sosial, QR Code, serta Sangfor Billing System untuk penggunaan internet"
         ]
       },
-      block3Title: { en: "Business Benefits", id: "Manfaat Bisnis" },
-      block3Items: {
-        en: [
-          "Reduced exposure to malware, phishing, and shadow IT activity",
-          "Higher productivity through policy driven internet usage",
-          "Stronger governance with auditable user activity records"
-        ],
-        id: [
-          "Paparan malware, phishing, dan aktivitas shadow IT berkurang",
-          "Produktivitas meningkat melalui kebijakan penggunaan internet",
-          "Tata kelola lebih kuat dengan rekam aktivitas pengguna yang dapat diaudit"
-        ]
-      },
-      cta: { en: "Plan Access Policy Design", id: "Rencanakan Desain Kebijakan Akses" }
+      block3Title: { en: "", id: "" },
+      block3Items: { en: [], id: [] },
+      cta: { en: "Read more", id: "Baca selengkapnya" }
     },
 
     "network-security.html": {
@@ -701,44 +709,23 @@
       description: { en: "Power Protection - Sentra Netcomindo", id: "Perlindungan Daya - Sentra Netcomindo" },
       sectionTitle: { en: "Power Protection", id: "Perlindungan Daya" },
       sectionSubtitle: {
-        en: "Maintain system availability with resilient power infrastructure designed for critical IT and operational equipment.",
-        id: "Jaga ketersediaan sistem dengan infrastruktur daya andal yang dirancang untuk perangkat TI dan operasional kritikal."
+        en: "Power is very critical, especially for enterprise business. Many devices need to be always on to support the business, like server, storage, network devices, etc and sudden lost of power is fatal because can cause damage to these devices and for business it can make lost opportunities and trust. Power is the first key to make sure your business running and maintain your business continuity. So we bring proven solutions to ensure you can keep it.",
+        id: "Daya listrik sangat krusial, terutama untuk bisnis enterprise. Banyak perangkat harus selalu menyala untuk mendukung operasional, seperti server, storage, perangkat jaringan, dan lainnya. Kehilangan daya mendadak dapat menyebabkan kerusakan perangkat dan membuat bisnis kehilangan peluang serta kepercayaan. Daya adalah kunci utama agar bisnis tetap berjalan dan kontinuitas bisnis terjaga. Karena itu kami menghadirkan solusi yang terbukti andal untuk memastikan hal tersebut."
       },
-      meta: { en: "Focus: Uptime, Reliability, Infrastructure Safety", id: "Fokus: Uptime, Keandalan, Keamanan Infrastruktur" },
-      block1Title: { en: "What We Deliver", id: "Apa yang Kami Berikan" },
+      meta: {
+        en: "Among the solutions from us are Uninterruptible Power System (UPS) and its complementary. We are ready to provide you UPS that suit with your need from data center UPS to industrial UPS, from power rating 0.5 to 20 KVA.",
+        id: "Di antara solusi yang kami sediakan adalah Uninterruptible Power System (UPS) beserta perangkat pendukungnya. Kami siap menyediakan UPS yang sesuai kebutuhan Anda, mulai dari UPS data center hingga UPS industri, dengan rentang daya 0,5 hingga 20 KVA."
+      },
+      block1Title: { en: "Eaton", id: "Eaton" },
       block1Text: {
-        en: "We provide power continuity solutions that protect systems from outage, voltage instability, and power quality issues that can impact business operations.",
-        id: "Kami menyediakan solusi kontinuitas daya untuk melindungi sistem dari pemadaman, ketidakstabilan tegangan, dan masalah kualitas daya yang berdampak pada operasional bisnis."
+        en: "",
+        id: ""
       },
-      block2Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
-      block2Items: {
-        en: [
-          "UPS sizing and deployment for server rooms and branch offices",
-          "Power distribution and redundancy planning for critical loads",
-          "Battery health monitoring and preventive replacement planning",
-          "Integration with generator and facility management workflows"
-        ],
-        id: [
-          "Sizing dan deployment UPS untuk ruang server dan kantor cabang",
-          "Perencanaan distribusi daya dan redundansi untuk beban kritikal",
-          "Pemantauan kesehatan baterai dan rencana penggantian preventif",
-          "Integrasi dengan generator dan alur kerja manajemen fasilitas"
-        ]
-      },
-      block3Title: { en: "Business Benefits", id: "Manfaat Bisnis" },
-      block3Items: {
-        en: [
-          "Reduced downtime risk during utility disturbances",
-          "Protection of hardware investment and sensitive data systems",
-          "Higher confidence in business continuity readiness"
-        ],
-        id: [
-          "Risiko downtime saat gangguan listrik menurun",
-          "Investasi hardware dan sistem data sensitif lebih terlindungi",
-          "Kesiapan business continuity lebih terjamin"
-        ]
-      },
-      cta: { en: "Schedule Power Site Survey", id: "Jadwalkan Survey Daya" }
+      block2Title: { en: "Laplace", id: "Laplace" },
+      block2Items: { en: [], id: [] },
+      block3Title: { en: "", id: "" },
+      block3Items: { en: [], id: [] },
+      cta: { en: "Read more", id: "Baca selengkapnya" }
     },
 
     "storage-server.html": {

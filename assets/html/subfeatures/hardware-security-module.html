@@ -28,6 +28,104 @@
     <link rel="stylesheet" href="../../css/contact-footer.css" />
     <link rel="stylesheet" href="../../css/subfeature.css" />
     <link rel="stylesheet" href="../../css/responsive.css" />
+
+    <style>
+      .hsm-page {
+        max-width: 1320px;
+        text-align: left;
+      }
+
+      .hsm-page .section-header {
+        text-align: left;
+        max-width: 1240px;
+        margin-inline: auto;
+      }
+
+      .hsm-page .section-title {
+        font-size: clamp(2.1rem, 4vw, 2.9rem);
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+
+      .hsm-page .section-divider {
+        display: none;
+      }
+
+      .hsm-page .section-subtitle {
+        max-width: 100%;
+        color: #5b6c80;
+        line-height: 1.5;
+      }
+
+      .hsm-page .subfeature-meta {
+        margin-top: 6px;
+        display: block;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        color: #5b6c80;
+        font-size: 0.98rem;
+        font-weight: 500;
+      }
+
+      .hsm-page .subfeature-content {
+        max-width: 1240px;
+        margin: 20px auto 0;
+        display: block;
+      }
+
+      .hsm-page .subfeature-block {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+      }
+
+      .hsm-page .subfeature-block h3 {
+        margin-bottom: 14px;
+        color: #3a3f47;
+        font-size: clamp(2.1rem, 4.8vw, 3.7rem);
+        font-weight: 400;
+      }
+
+      .hsm-page .subfeature-block p {
+        color: #5b6c80;
+        line-height: 1.5;
+        margin-bottom: 14px;
+      }
+
+      .hsm-readmore {
+        display: inline-block;
+        margin-top: 4px;
+        color: #0d8ce4;
+        font-size: 2rem;
+        line-height: 1;
+        text-decoration: none;
+      }
+
+      .hsm-readmore:hover {
+        text-decoration: underline;
+      }
+
+      .subfeature-cta {
+        display: none;
+      }
+
+      @media (max-width: 900px) {
+        .hsm-page .section-header {
+          text-align: center;
+        }
+
+        .hsm-page .subfeature-content {
+          text-align: left;
+        }
+
+        .hsm-readmore {
+          font-size: 1.7rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -84,43 +182,25 @@
     </section>
 
     <section id="subfeature-detail">
-      <div class="container subfeature-wrap fade-in">
+      <div class="container subfeature-wrap fade-in hsm-page">
         <div class="section-header">
-          <h2 class="section-title">Hardware Security Module</h2>
+          <h2 class="section-title">Integrate Reliable Systems into Value Based Solution</h2>
           <span class="section-divider" aria-hidden="true"></span>
-          <p class="section-subtitle">Protect cryptographic keys and sensitive transactions with enterprise-grade key management infrastructure.</p>
-          <p class="subfeature-meta">Focus: Key Protection, Compliance, Transaction Security</p>
+          <p class="section-subtitle">PT Sentra Netcomindo has an extensive experience in integrating multiple systems into solution that bring highest value to our customer.</p>
+          <p class="subfeature-meta">Those systems including :</p>
         </div>
 
         <div class="subfeature-content">
           <article class="subfeature-block">
-            <h3>What We Deliver</h3>
+            <h3>Hardware Security Module</h3>
             <p>
-              We provide end-to-end HSM implementation for secure key generation, storage, and cryptographic processing,
-              aligned with financial and public sector security standards.
+              A hardware security module (HSM) is a dedicated crypto processor physical computing device which is specifically designed for the protection and manages of the digital crypto key lifecycle, strong authentication and provides cryptoprocessing. Hardware security modules protect the cryptographic infrastructure and can deploy high assurance security solutions, provide a hardened, tamper-resistant environment for performing secure cryptographic processing, key protection, and key management.
+            </p>
+            <p class="hsm-body-2">
+              enterprises buy HSM to securing transactions, identities, cryptographic keys and provisioning encryption, decryption, authentication, and digital signing services for a wide range of applications. An HSM is a device used for key management encryption and decryption of data. The HSM holds the key material on the device and there is no way to export the keys in a usable format. This keeps and attacker from copying your encrypted database and then taking the key and decrypting the data offsite, on his own time, where he is less likely to be caught
             </p>
           </article>
-
-          <article class="subfeature-block">
-            <h3>Key Capabilities</h3>
-            <ul>
-              <li>Secure key lifecycle management for encryption and digital signing</li>
-              <li>Integration with payment switching, PKI, and core banking systems</li>
-              <li>High-availability deployment for business critical services</li>
-              <li>Support for audit readiness and regulatory controls</li>
-            </ul>
-          </article>
-
-          <article class="subfeature-block">
-            <h3>Business Benefits</h3>
-            <ul>
-              <li>Reduced risk of key compromise and fraudulent transactions</li>
-              <li>Improved trust for customer-facing digital services</li>
-              <li>Stronger compliance posture for internal and external audits</li>
-            </ul>
-          </article>
-
-          <a class="subfeature-cta" href="../contact.html">Consult HSM Implementation</a>
+          <a class="hsm-readmore subfeature-cta" href="../contact.html">Read more</a>
         </div>
       </div>
     </section>
