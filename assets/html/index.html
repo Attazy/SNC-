@@ -102,9 +102,8 @@
       }
 
       .hero-fade {
-        opacity: 0;
-        transform: translateY(20px);
-        animation: heroFade 900ms ease forwards;
+        opacity: 1;
+        transform: none;
       }
 
       .hero-fade.delay-1 {
@@ -159,6 +158,21 @@
 
       .partner-card:hover {
         box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.35), 0 22px 46px -24px rgba(16, 185, 129, 0.52);
+      }
+
+      .product-hover-panel {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.45s ease, opacity 0.3s ease, margin-top 0.3s ease;
+        margin-top: 0;
+      }
+
+      .group:hover .product-hover-panel,
+      .group:focus-within .product-hover-panel {
+        max-height: 260px;
+        opacity: 1;
+        margin-top: 14px;
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -250,16 +264,16 @@
         <div class="hero-grid-pattern absolute inset-0 opacity-40"></div>
 
         <div id="heroFloatLayer" class="pointer-events-none absolute inset-0">
-          <div class="float-item absolute left-[12%] top-[26%] rounded-full border border-brand-200/45 bg-brand-500/18 p-3 text-brand-100 shadow-soft">
+          <div class="absolute left-[12%] top-[26%] rounded-full border border-brand-200/45 bg-brand-500/18 p-3 text-brand-100 shadow-soft">
             <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M6 12h12m-9 5h6" /></svg>
           </div>
-          <div class="float-item alt absolute right-[18%] top-[22%] rounded-full border border-brand-200/45 bg-brand-500/20 p-3 text-brand-100 shadow-soft">
+          <div class="absolute right-[18%] top-[22%] rounded-full border border-brand-200/45 bg-brand-500/20 p-3 text-brand-100 shadow-soft">
             <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-7-7h14" /></svg>
           </div>
-          <div class="float-item slow absolute bottom-[24%] left-[19%] rounded-full border border-brand-200/45 bg-brand-500/20 p-3 text-brand-100 shadow-soft">
+          <div class="absolute bottom-[24%] left-[19%] rounded-full border border-brand-200/45 bg-brand-500/20 p-3 text-brand-100 shadow-soft">
             <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h10" /></svg>
           </div>
-          <div class="float-item alt absolute bottom-[20%] right-[16%] rounded-full border border-brand-200/45 bg-brand-500/20 p-3 text-brand-100 shadow-soft">
+          <div class="absolute bottom-[20%] right-[16%] rounded-full border border-brand-200/45 bg-brand-500/20 p-3 text-brand-100 shadow-soft">
             <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 6h8M6 12h12M10 18h4" /></svg>
           </div>
         </div>
@@ -287,6 +301,13 @@
                 class="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:border-brand-300 hover:bg-brand-500/15"
                 >Jadwalkan Konsultasi</a
               >
+              <a
+                href="subfeatures/network-security.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-full border border-brand-300/60 bg-brand-500/15 px-7 py-3 text-sm font-semibold text-brand-100 transition duration-300 hover:bg-brand-500/30"
+                >Read More</a
+              >
             </div>
           </div>
 
@@ -300,7 +321,7 @@
               alt="Ilustrasi keamanan jaringan"
               loading="lazy"
               decoding="async"
-              class="float-item alt mt-6 h-36 w-full rounded-2xl border border-white/20 bg-slate-900/40 object-contain p-4"
+              class="mt-6 h-36 w-full rounded-2xl border border-white/20 bg-slate-900/40 object-contain p-4"
             />
             <div class="mt-5 grid grid-cols-3 gap-3 text-center text-xs">
               <div class="rounded-xl border border-white/15 bg-white/5 px-3 py-3">
@@ -343,6 +364,13 @@
                 <span>Implementasi enterprise-grade dengan dukungan tim tersertifikasi.</span>
               </li>
             </ul>
+            <a
+              href="subfeatures/managed-services.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-7 inline-flex items-center rounded-full border border-brand-600/30 bg-brand-50 px-5 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-100"
+              >Read More</a
+            >
           </div>
 
           <div class="reveal">
@@ -367,6 +395,13 @@
             <p class="mt-5 text-sm leading-relaxed text-slate-300 sm:text-base">
               Telusuri produk yang paling sering dipilih tim IT untuk mempercepat keputusan, menyederhanakan implementasi, dan menurunkan risiko.
             </p>
+            <a
+              href="subfeatures/storage-server.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-7 inline-flex items-center rounded-full border border-brand-300/60 bg-brand-500/15 px-5 py-2 text-sm font-semibold text-brand-100 transition hover:bg-brand-500/30"
+              >Read More</a
+            >
           </div>
 
           <div id="productsGrid" class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3"></div>
@@ -379,6 +414,13 @@
           <div class="reveal mx-auto max-w-3xl text-center">
             <p class="text-sm font-semibold uppercase tracking-[0.14em] text-brand-700">Why Choose Us</p>
             <h2 class="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">Alasan utama klien memilih bekerja dengan kami</h2>
+            <a
+              href="subfeatures/maintenance.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-7 inline-flex items-center rounded-full border border-brand-600/30 bg-brand-50 px-5 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-100"
+              >Read More</a
+            >
           </div>
 
           <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -423,55 +465,16 @@
           <div class="reveal mx-auto max-w-3xl text-center">
             <p class="text-sm font-semibold uppercase tracking-[0.14em] text-brand-300">Technology Partners</p>
             <h2 class="mt-4 text-3xl font-bold sm:text-4xl">Didukung vendor global yang sudah terbukti di enterprise</h2>
+            <a
+              href="contact.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-7 inline-flex items-center rounded-full border border-brand-300/60 bg-brand-500/15 px-5 py-2 text-sm font-semibold text-brand-100 transition hover:bg-brand-500/30"
+              >Read More</a
+            >
           </div>
 
-          <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <a
-              href="https://www.thalesgroup.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="partner-card reveal flex h-28 items-center justify-center rounded-2xl border border-white/10 bg-white/10 p-5 shadow-soft transition duration-300 hover:-translate-y-1.5"
-              aria-label="Website Thales"
-            >
-              <img src="../images/thales.png" alt="Thales" loading="lazy" decoding="async" class="h-10 w-auto object-contain" />
-            </a>
-
-            <a
-              href="https://www.sangfor.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="partner-card reveal flex h-28 items-center justify-center rounded-2xl border border-white/10 bg-white/10 p-5 shadow-soft transition duration-300 hover:-translate-y-1.5"
-              aria-label="Website Sangfor"
-            >
-              <img src="../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" class="h-10 w-auto object-contain" />
-            </a>
-
-            <a
-              href="https://cpl.thalesgroup.com/encryption/luna-hsms"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="partner-card reveal flex h-28 items-center justify-center rounded-2xl border border-white/10 bg-white/10 p-5 shadow-soft transition duration-300 hover:-translate-y-1.5"
-              aria-label="Website Safenet"
-            >
-              <svg viewBox="0 0 220 64" class="h-9 w-auto" xmlns="http://www.w3.org/2000/svg" aria-label="Safenet logo">
-                <rect width="220" height="64" rx="12" fill="#F9FAFB" />
-                <text x="26" y="42" fill="#0F766E" font-family="Poppins, sans-serif" font-size="28" font-weight="700">SafeNet</text>
-              </svg>
-            </a>
-
-            <a
-              href="https://www.senetas.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="partner-card reveal flex h-28 items-center justify-center rounded-2xl border border-white/10 bg-white/10 p-5 shadow-soft transition duration-300 hover:-translate-y-1.5"
-              aria-label="Website Senetas"
-            >
-              <svg viewBox="0 0 220 64" class="h-9 w-auto" xmlns="http://www.w3.org/2000/svg" aria-label="Senetas logo">
-                <rect width="220" height="64" rx="12" fill="#ECFDF5" />
-                <text x="22" y="42" fill="#065F46" font-family="Poppins, sans-serif" font-size="28" font-weight="700">Senetas</text>
-              </svg>
-            </a>
-          </div>
+          <div id="partnersGrid" class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
         </div>
       </section>
 
@@ -490,6 +493,13 @@
                 href="#contact"
                 class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-brand-700 transition duration-300 hover:-translate-y-0.5 hover:bg-brand-50"
                 >Minta Konsultasi</a
+              >
+              <a
+                href="contact.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-white/20"
+                >Read More</a
               >
             </div>
           </div>
@@ -569,56 +579,148 @@
     </a>
 
     <script>
-      // Product data source for dynamic accordion cards.
       const productData = [
         {
           name: "Safenet Luna EFT 2",
           vendor: "Thales / Safenet",
           summary: "Performa enkripsi tinggi untuk melindungi transaksi kritikal tanpa mengorbankan kecepatan.",
-          features: ["High-speed encryption", "Secure key management", "Banking grade security"]
+          features: [
+            "High-speed encryption",
+            "Secure key management",
+            "Banking grade security",
+            "Tamper-resistant hardware",
+            "Dual control workflow",
+            "FIPS validated cryptography",
+            "Low latency transaction flow",
+            "Scalable transaction throughput"
+          ]
         },
         {
           name: "Safenet Trusted Access (STA)",
           vendor: "Thales / Safenet",
           summary: "Akses aman berbasis identitas untuk mengurangi risiko login dan memperkuat kontrol akses.",
-          features: ["Multi-factor authentication", "Zero trust access", "Identity protection"]
+          features: [
+            "Multi-factor authentication",
+            "Zero trust access",
+            "Identity protection",
+            "Adaptive risk policy",
+            "Single sign-on integration",
+            "Cloud and on-prem support",
+            "Granular user governance",
+            "Detailed audit logging"
+          ]
         },
         {
           name: "Sangfor HCI",
           vendor: "Sangfor",
           summary: "Platform hyperconverged untuk menyederhanakan operasional data center dan memangkas kompleksitas.",
-          features: ["Hyperconverged infrastructure", "Virtualization", "Storage integration"]
+          features: [
+            "Hyperconverged infrastructure",
+            "Virtualization",
+            "Storage integration",
+            "One-click lifecycle management",
+            "High availability clustering",
+            "Built-in backup orchestration",
+            "Unified monitoring dashboard",
+            "Flexible node expansion"
+          ]
         },
         {
           name: "Sangfor NGAF",
           vendor: "Sangfor",
           summary: "Firewall generasi baru untuk memperkuat perlindungan jaringan enterprise secara menyeluruh.",
-          features: ["Firewall protection", "Intrusion prevention", "Web filtering"]
+          features: [
+            "Firewall protection",
+            "Intrusion prevention",
+            "Web filtering",
+            "Application visibility",
+            "Behavior-based detection",
+            "Threat intelligence feed",
+            "VPN secure connectivity",
+            "Centralized policy control"
+          ]
         },
         {
           name: "Senetas HSE",
           vendor: "Senetas",
           summary: "Enkripsi jaringan layer 2 berperforma tinggi untuk melindungi data sensitif secara real-time.",
-          features: ["Layer 2 encryption", "Ultra low latency", "High throughput"]
+          features: [
+            "Layer 2 encryption",
+            "Ultra low latency",
+            "High throughput",
+            "Carrier-grade deployment",
+            "Strong key lifecycle",
+            "Link-level confidentiality",
+            "Interoperable secure links",
+            "Mission-critical uptime support"
+          ]
         },
         {
           name: "Thales CipherTrust",
           vendor: "Thales",
           summary: "Platform keamanan data terpadu untuk kontrol enkripsi, kebijakan, dan visibilitas aset.",
-          features: ["Data security platform", "Encryption lifecycle", "Compliance ready"]
+          features: [
+            "Data security platform",
+            "Encryption lifecycle",
+            "Compliance ready",
+            "Centralized key manager",
+            "Tokenization service",
+            "Data discovery and classification",
+            "Policy-based access control",
+            "Cross-cloud data protection"
+          ]
         },
         {
           name: "Thales Imperva",
           vendor: "Thales",
           summary: "Perlindungan aplikasi web dan API dari ancaman modern yang bisa mengganggu layanan bisnis.",
-          features: ["Web application firewall", "DDoS protection", "API security"]
+          features: [
+            "Web application firewall",
+            "DDoS protection",
+            "API security",
+            "Bot mitigation",
+            "Runtime threat analytics",
+            "OWASP ruleset tuning",
+            "Real-time alerting",
+            "Managed security expertise"
+          ]
         },
         {
           name: "Thales Luna Network HSM",
           vendor: "Thales",
           summary: "Hardware security module untuk menjaga kunci kriptografi tetap aman dan siap audit.",
-          features: ["Hardware security module", "Key protection", "Crypto acceleration"]
+          features: [
+            "Hardware security module",
+            "Key protection",
+            "Crypto acceleration",
+            "PKI integration",
+            "Digital signing security",
+            "Secure key generation",
+            "Remote administration",
+            "Compliance audit readiness"
+          ]
         }
+      ];
+
+      const partnerImages = [
+        "Aruba.png",
+        "Brocade.png",
+        "Eaton.png",
+        "Education and Training.png",
+        "F5.png",
+        "fortinet.png",
+        "IAM.png",
+        "infoblox.png",
+        "Kunci.png",
+        "laplace.png",
+        "lenovo.png",
+        "Maintance.png",
+        "Manage Service.png",
+        "PAX.jpg",
+        "Power Protection.png",
+        "sangfor.png",
+        "thales.png",
+        "wallix.png"
       ];
 
       const siteHeader = document.getElementById("siteHeader");
@@ -627,8 +729,8 @@
       const menuIconOpen = document.getElementById("menuIconOpen");
       const menuIconClose = document.getElementById("menuIconClose");
       const heroParallax = document.getElementById("heroParallax");
-      const heroFloatLayer = document.getElementById("heroFloatLayer");
       const productsGrid = document.getElementById("productsGrid");
+      const partnersGrid = document.getElementById("partnersGrid");
 
       const anchorLinks = document.querySelectorAll('a[href^="#"]');
       const mobileLinks = document.querySelectorAll("[data-mobile-link]");
@@ -637,7 +739,7 @@
       function createProductCard(product, index) {
         const card = document.createElement("article");
         card.className =
-          "reveal rounded-2xl border border-white/10 bg-white/5 p-6 shadow-soft transition duration-300 hover:-translate-y-1.5 hover:border-brand-300/70 hover:shadow-lift";
+          "group reveal rounded-2xl border border-white/10 bg-white/5 p-6 shadow-soft transition duration-300 hover:-translate-y-1.5 hover:border-brand-300/70 hover:shadow-lift";
 
         card.innerHTML = `
           <div class="flex items-start justify-between gap-4">
@@ -650,17 +752,9 @@
             </span>
           </div>
           <p class="mt-4 text-sm leading-relaxed text-slate-300">${product.summary}</p>
-          <button
-            type="button"
-            class="product-toggle mt-5 inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-brand-200 transition hover:border-brand-300 hover:bg-brand-500/15"
-            aria-expanded="false"
-            aria-controls="product-panel-${index}"
-          >
-            <span>Lihat Sub Feature</span>
-            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" /></svg>
-          </button>
-          <div id="product-panel-${index}" class="accordion-panel">
-            <ul class="space-y-2 rounded-2xl border border-white/10 bg-slate-950/45 p-4 text-sm text-slate-200">
+          <p class="mt-5 text-xs font-semibold uppercase tracking-[0.12em] text-brand-200">Arahkan kursor ke card untuk lihat feature lengkap</p>
+          <div id="product-panel-${index}" class="product-hover-panel">
+            <ul class="max-h-60 space-y-2 overflow-y-auto rounded-2xl border border-white/10 bg-slate-950/45 p-4 text-sm text-slate-200">
               ${product.features
                 .map(
                   (item) =>
@@ -674,48 +768,32 @@
         productsGrid.appendChild(card);
       }
 
+      function createPartnerCard(filename) {
+        const partnerName = filename.replace(/\.[^.]+$/, "").replace(/[-_]/g, " ");
+        const imagePath = `../images/${encodeURIComponent(filename)}`;
+
+        const card = document.createElement("a");
+        card.href = imagePath;
+        card.target = "_blank";
+        card.rel = "noopener noreferrer";
+        card.className =
+          "partner-card reveal flex h-28 items-center justify-center rounded-2xl border border-white/10 bg-white/10 p-5 shadow-soft transition duration-300 hover:-translate-y-1.5";
+        card.setAttribute("aria-label", `Buka logo ${partnerName}`);
+
+        const img = document.createElement("img");
+        img.src = imagePath;
+        img.alt = partnerName;
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.className = "h-10 w-auto object-contain";
+
+        card.appendChild(img);
+        partnersGrid.appendChild(card);
+      }
+
       productData.forEach((product, index) => createProductCard(product, index));
+      partnerImages.forEach((file) => createPartnerCard(file));
       revealElements = document.querySelectorAll(".reveal");
-
-      const accordionButtons = document.querySelectorAll(".product-toggle");
-
-      function closeAccordion(button) {
-        const panel = button.nextElementSibling;
-        const icon = button.querySelector("svg");
-
-        button.setAttribute("aria-expanded", "false");
-        panel.style.maxHeight = "0px";
-        panel.classList.remove("is-open");
-        icon.classList.remove("rotate-180");
-      }
-
-      function openAccordion(button) {
-        const panel = button.nextElementSibling;
-        const icon = button.querySelector("svg");
-
-        button.setAttribute("aria-expanded", "true");
-        panel.classList.add("is-open");
-        panel.style.maxHeight = `${panel.scrollHeight}px`;
-        icon.classList.add("rotate-180");
-      }
-
-      accordionButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const isExpanded = button.getAttribute("aria-expanded") === "true";
-
-          accordionButtons.forEach((otherButton) => {
-            if (otherButton !== button) {
-              closeAccordion(otherButton);
-            }
-          });
-
-          if (isExpanded) {
-            closeAccordion(button);
-          } else {
-            openAccordion(button);
-          }
-        });
-      });
 
       function updateHeader() {
         const scrolled = window.scrollY > 24;
@@ -739,7 +817,6 @@
       menuButton.addEventListener("click", () => toggleMobileMenu());
       mobileLinks.forEach((link) => link.addEventListener("click", () => toggleMobileMenu(true)));
 
-      // Smooth scrolling with fixed-header offset.
       anchorLinks.forEach((anchor) => {
         anchor.addEventListener("click", (event) => {
           const href = anchor.getAttribute("href");
@@ -759,7 +836,6 @@
         });
       });
 
-      // Reveal elements when section enters viewport.
       const revealObserver = new IntersectionObserver(
         (entries, observer) => {
           entries.forEach((entry) => {
@@ -782,14 +858,12 @@
         revealObserver.observe(element);
       });
 
-      // Scroll effects: sticky header + hero parallax.
       let ticking = false;
       function runScrollEffects() {
         const y = window.scrollY;
 
         updateHeader();
         heroParallax.style.transform = `scale(1.12) translate3d(0, ${Math.min(y * 0.18, 165)}px, 0)`;
-        heroFloatLayer.style.transform = `translate3d(0, ${Math.min(y * 0.1, 90)}px, 0)`;
 
         ticking = false;
       }
@@ -804,14 +878,6 @@
       window.addEventListener("scroll", onScroll, { passive: true });
       window.addEventListener("resize", () => {
         updateHeader();
-
-        // Keep opened accordion height accurate after viewport changes.
-        accordionButtons.forEach((button) => {
-          if (button.getAttribute("aria-expanded") === "true") {
-            const panel = button.nextElementSibling;
-            panel.style.maxHeight = `${panel.scrollHeight}px`;
-          }
-        });
       });
 
       updateHeader();
