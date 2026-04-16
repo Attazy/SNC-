@@ -411,6 +411,8 @@
         display: grid;
         place-items: center;
         padding: 14px;
+        text-decoration: none;
+        color: inherit;
         transition: transform 0.22s ease, box-shadow 0.22s ease;
       }
 
@@ -423,6 +425,13 @@
       .partner-logo-card:hover {
         transform: translateY(-3px);
         box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+      }
+
+      .partner-logo-card:focus-visible {
+        transform: translateY(-3px);
+        box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+        outline: 2px solid #0f766e;
+        outline-offset: 3px;
       }
 
       @keyframes partnerScroll {
@@ -549,18 +558,14 @@
           <h2 class="section-title">Kenapa Sentra Netcomindo?</h2>
           <span class="section-divider" aria-hidden="true"></span>
           <p class="section-subtitle">
-            Karena kami tidak hanya kirim produk, tapi memastikan solusi berjalan stabil, aman, dan benar-benar membantu bisnis Anda tumbuh.
+            Kami fokus pada solusi IT enterprise yang stabil, aman, dan relevan dengan kebutuhan bisnis Anda.
           </p>
         </div>
 
         <div class="about-brief-copy">
           <p class="brief-body">
-            Pengalaman implementasi enterprise kami dibangun dari proyek keamanan, infrastruktur, dan business continuity
-            dengan standar eksekusi yang terukur dan tim teknis yang responsif.
-          </p>
-          <p class="brief-body">
-            Pendekatan kami berfokus pada kebutuhan nyata bisnis Anda, didukung partner teknologi global agar solusi
-            yang diterapkan bukan hanya berjalan hari ini, tetapi juga siap berkembang untuk kebutuhan jangka panjang.
+            Pengalaman implementasi kami dibangun dari proyek keamanan, infrastruktur, dan business continuity dengan
+            eksekusi terukur serta dukungan tim teknis yang responsif.
           </p>
           <p class="brief-cta-wrap">
             <a class="brief-cta-link" href="why-sentra.html">Lihat alasan lengkap kenapa banyak perusahaan memilih Sentra Netcomindo</a>
@@ -609,29 +614,29 @@
 
         <div class="partner-carousel" aria-label="Our technology partners">
           <div class="partner-track">
-            <article class="partner-logo-card"><img src="../images/F5.png" alt="F5" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/fortinet.png" alt="Fortinet" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/infoblox.png" alt="Infoblox" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/laplace.png" alt="Laplace" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/lenovo.png" alt="Lenovo" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/thales.png" alt="Thales" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/wallix.png" alt="Wallix" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/Aruba.png" alt="Aruba" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/Brocade.png" alt="Brocade" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card"><img src="../images/Eaton.png" alt="Eaton" loading="lazy" decoding="async" /></article>
+            <a class="partner-logo-card" href="https://www.f5.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit F5 website"><img src="../images/F5.png" alt="F5" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Fortinet website"><img src="../images/fortinet.png" alt="Fortinet" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.infoblox.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Infoblox website"><img src="../images/infoblox.png" alt="Infoblox" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://laplace.id/" target="_blank" rel="noopener noreferrer" aria-label="Visit Laplace website"><img src="../images/laplace.png" alt="Laplace" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.lenovo.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Lenovo website"><img src="../images/lenovo.png" alt="Lenovo" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.sangfor.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sangfor website"><img src="../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.thalesgroup.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Thales website"><img src="../images/thales.png" alt="Thales" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.wallix.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Wallix website"><img src="../images/wallix.png" alt="Wallix" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.arubanetworks.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Aruba website"><img src="../images/Aruba.png" alt="Aruba" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.broadcom.com/products/fibre-channel-networking/switches" target="_blank" rel="noopener noreferrer" aria-label="Visit Brocade website"><img src="../images/Brocade.png" alt="Brocade" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.eaton.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Eaton website"><img src="../images/Eaton.png" alt="Eaton" loading="lazy" decoding="async" /></a>
 
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/F5.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/fortinet.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/infoblox.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/laplace.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/lenovo.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/sangfor.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/thales.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/wallix.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/Aruba.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/Brocade.png" alt="" loading="lazy" decoding="async" /></article>
-            <article class="partner-logo-card" aria-hidden="true"><img src="../images/Eaton.png" alt="" loading="lazy" decoding="async" /></article>
+            <a class="partner-logo-card" href="https://www.f5.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/F5.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/fortinet.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.infoblox.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/infoblox.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://laplace.id/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/laplace.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.lenovo.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/lenovo.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.sangfor.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/sangfor.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.thalesgroup.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/thales.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.wallix.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/wallix.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.arubanetworks.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/Aruba.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.broadcom.com/products/fibre-channel-networking/switches" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/Brocade.png" alt="" loading="lazy" decoding="async" /></a>
+            <a class="partner-logo-card" href="https://www.eaton.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/Eaton.png" alt="" loading="lazy" decoding="async" /></a>
           </div>
         </div>
       </div>

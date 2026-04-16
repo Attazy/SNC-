@@ -189,18 +189,13 @@
         { selector: "#about-brief .section-title", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
         {
           selector: "#about-brief .section-subtitle",
-          en: "Because we do not just deliver products, we make sure your solution runs stable, secure, and truly helps your business grow.",
-          id: "Karena kami tidak hanya kirim produk, tapi memastikan solusi berjalan stabil, aman, dan benar-benar membantu bisnis Anda tumbuh."
+          en: "We focus on enterprise IT solutions that are stable, secure, and aligned with your business needs.",
+          id: "Kami fokus pada solusi IT enterprise yang stabil, aman, dan relevan dengan kebutuhan bisnis Anda."
         },
         {
           selector: "#about-brief .about-brief-copy .brief-body:nth-of-type(1)",
-          en: "Our enterprise implementation experience is built through security, infrastructure, and business continuity projects with measurable execution standards and a responsive technical team.",
-          id: "Pengalaman implementasi enterprise kami dibangun dari proyek keamanan, infrastruktur, dan business continuity dengan standar eksekusi yang terukur dan tim teknis yang responsif."
-        },
-        {
-          selector: "#about-brief .about-brief-copy .brief-body:nth-of-type(2)",
-          en: "Our approach is focused on your real business needs, supported by global technology partners so that the implemented solution is not only effective today, but also ready to scale for long-term requirements.",
-          id: "Pendekatan kami berfokus pada kebutuhan nyata bisnis Anda, didukung partner teknologi global agar solusi yang diterapkan bukan hanya berjalan hari ini, tetapi juga siap berkembang untuk kebutuhan jangka panjang."
+          en: "Our implementation track record is built through security, infrastructure, and business continuity projects with measurable execution and responsive technical support.",
+          id: "Pengalaman implementasi kami dibangun dari proyek keamanan, infrastruktur, dan business continuity dengan eksekusi terukur serta dukungan tim teknis yang responsif."
         },
         {
           selector: "#about-brief .about-brief-copy .brief-cta-link",
@@ -245,6 +240,140 @@
       ]
     },
 
+    "solutions.html": {
+      title: {
+        en: "Solutions | Sentra Netcomindo",
+        id: "Solusi | Sentra Netcomindo"
+      },
+      description: {
+        en: "Solutions by Sentra Netcomindo",
+        id: "Solusi oleh Sentra Netcomindo"
+      },
+      entries: [
+        { selector: ".hero-content h1", en: "SOLUTIONS", id: "SOLUSI" },
+        {
+          selector: ".hero-content p:not(.hero-description)",
+          en: "Core Sentra Netcomindo solutions for enterprise needs.",
+          id: "Solusi utama Sentra Netcomindo untuk kebutuhan enterprise."
+        },
+        { selector: ".section-header .section-title", en: "Solution Portfolio", id: "Portofolio Solusi" },
+        {
+          selector: ".section-header .section-subtitle",
+          en: "Click Read More on each solution to view the detailed page.",
+          id: "Klik Read More di tiap solusi untuk lihat detail halaman masing-masing."
+        },
+        {
+          selector: ".solutions-grid .solution-item:nth-child(1) p",
+          en: "Improve connection quality and traffic efficiency for daily operations.",
+          id: "Meningkatkan kualitas koneksi dan efisiensi trafik untuk operasional harian."
+        },
+        {
+          selector: ".solutions-grid .solution-item:nth-child(2) p",
+          en: "Cryptographic key protection for sensitive data and compliance readiness.",
+          id: "Proteksi kunci kriptografi untuk data sensitif dan compliance readiness."
+        },
+        {
+          selector: ".solutions-grid .solution-item:nth-child(3) p",
+          en: "Policy-based internet access control for secure and productive usage.",
+          id: "Kontrol akses internet berbasis policy agar aman dan produktif."
+        },
+        {
+          selector: ".solutions-grid .solution-item:nth-child(4) p",
+          en: "Layered network security to protect digital infrastructure.",
+          id: "Pengamanan jaringan berlapis untuk melindungi infrastruktur digital."
+        },
+        {
+          selector: ".solutions-grid .solution-item:nth-child(5) p",
+          en: "Maintain service continuity with reliable power management.",
+          id: "Menjaga continuity layanan dengan manajemen daya yang andal."
+        },
+        {
+          selector: ".solutions-grid .solution-item:nth-child(6) p",
+          en: "Storage and compute platform designed for enterprise performance.",
+          id: "Platform penyimpanan dan komputasi untuk performa enterprise."
+        },
+        { selector: ".solutions-grid .solution-item:nth-child(1) a", en: "Read More", id: "Baca Detail" },
+        { selector: ".solutions-grid .solution-item:nth-child(2) a", en: "Read More", id: "Baca Detail" },
+        { selector: ".solutions-grid .solution-item:nth-child(3) a", en: "Read More", id: "Baca Detail" },
+        { selector: ".solutions-grid .solution-item:nth-child(4) a", en: "Read More", id: "Baca Detail" },
+        { selector: ".solutions-grid .solution-item:nth-child(5) a", en: "Read More", id: "Baca Detail" },
+        { selector: ".solutions-grid .solution-item:nth-child(6) a", en: "Read More", id: "Baca Detail" }
+      ]
+    },
+
+    "services.html": {
+      title: {
+        en: "Services | Sentra Netcomindo",
+        id: "Layanan | Sentra Netcomindo"
+      },
+      description: {
+        en: "Services by Sentra Netcomindo",
+        id: "Layanan oleh Sentra Netcomindo"
+      },
+      entries: [
+        { selector: ".hero-content h1", en: "SERVICES", id: "LAYANAN" },
+        {
+          selector: ".hero-content p:not(.hero-description)",
+          en: "Technical and operational services to keep your systems performing optimally.",
+          id: "Layanan teknis dan operasional untuk memastikan sistem berjalan optimal."
+        },
+        { selector: ".section-header .section-title", en: "Service Portfolio", id: "Portofolio Layanan" },
+        {
+          selector: ".section-header .section-subtitle",
+          en: "Choose services that match your team and infrastructure needs.",
+          id: "Pilih layanan sesuai kebutuhan tim dan infrastruktur Anda."
+        },
+        {
+          selector: ".services-grid .service-item:nth-child(1) p",
+          en: "Routine maintenance and preventive actions to reduce downtime.",
+          id: "Perawatan berkala dan preventive action untuk menekan downtime."
+        },
+        {
+          selector: ".services-grid .service-item:nth-child(2) p",
+          en: "Daily operational support so your internal team can focus on business priorities.",
+          id: "Pendampingan operasional harian agar tim internal lebih fokus ke prioritas bisnis."
+        },
+        {
+          selector: ".services-grid .service-item:nth-child(3) p",
+          en: "Technical capability development programs for effective platform adoption.",
+          id: "Program peningkatan kompetensi teknis untuk penggunaan platform yang efektif."
+        },
+        { selector: ".services-grid .service-item:nth-child(1) a", en: "Read More", id: "Baca Detail" },
+        { selector: ".services-grid .service-item:nth-child(2) a", en: "Read More", id: "Baca Detail" },
+        { selector: ".services-grid .service-item:nth-child(3) a", en: "Read More", id: "Baca Detail" }
+      ]
+    },
+
+    "products.html": {
+      title: {
+        en: "Products | Sentra Netcomindo",
+        id: "Produk | Sentra Netcomindo"
+      },
+      description: {
+        en: "Product list by Sentra Netcomindo",
+        id: "Daftar produk oleh Sentra Netcomindo"
+      },
+      entries: [
+        { selector: ".hero-content h1", en: "PRODUCTS", id: "PRODUK" },
+        {
+          selector: ".hero-content p:not(.hero-description)",
+          en: "List of products available for your security and infrastructure needs.",
+          id: "Daftar produk yang tersedia untuk kebutuhan keamanan dan infrastruktur Anda."
+        },
+        { selector: ".section-header .section-title", en: "Our Products", id: "Produk Kami" },
+        {
+          selector: ".section-header .section-subtitle",
+          en: "Below is the main product portfolio we support and implement.",
+          id: "Di bawah ini daftar produk utama yang kami support dan implementasikan."
+        },
+        {
+          selector: ".product-sections .product-box:nth-child(4) h3",
+          en: "Infrastructure & Supporting Products",
+          id: "Produk Infrastruktur & Pendukung"
+        }
+      ]
+    },
+
     "contact.html": {
       title: {
         en: "Contact Us | Sentra Netcomindo",
@@ -261,7 +390,7 @@
           en: "Yes we want to help you. Please don't doubt to email or call us",
           id: "Kami siap membantu Anda. Silakan hubungi kami melalui email atau telepon."
         },
-        { selector: "#contact .contact-box:nth-child(1) h3", en: "OFFICE (NEW ADDRESS)", id: "KANTOR (ALAMAT BARU)" },
+        { selector: "#contact .contact-box:nth-child(1) h3", en: "OFFICE", id: "KANTOR" },
         { selector: "#contact .contact-box:nth-child(2) h3", en: "WORKSHOP", id: "WORKSHOP" }
       ]
     },
