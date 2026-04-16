@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Sentra Netcomindo</title>
+    <meta name="description" content="Why choose Sentra Netcomindo" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/contact-footer.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <style>
+      .hero {
+        min-height: 55vh;
+      }
+
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .why-card {
+        background: #ffffff;
+        border: 1px solid var(--border-soft);
+        border-radius: 12px;
+        box-shadow: var(--shadow-soft);
+        padding: 22px;
+      }
+
+      .why-card h3 {
+        margin-bottom: 10px;
+        color: #253244;
+      }
+
+      .why-card p {
+        color: var(--text-muted);
+      }
+
+      @media (max-width: 900px) {
+        .why-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="../images/logo-sentra.png" alt="Sentra Netcomindo Logo" />
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="solutions.html">Solution</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="why-sentra.html">Why Sentra</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content fade-in">
+        <h1>WHY SENTRA NETCOMINDO</h1>
+        <p>Kenapa banyak organisasi mempercayakan solusi IT-nya kepada kami.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Contoh Kenapa Kami Dipilih</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">Beberapa alasan yang sering menjadi pertimbangan client enterprise.</p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card fade-in">
+            <h3>1) Pendekatan End-to-End</h3>
+            <p>
+              Kami tidak hanya menjual produk, tetapi mendampingi dari assessment, desain solusi, implementasi,
+              hingga support operasional agar hasilnya berkelanjutan.
+            </p>
+          </article>
+
+          <article class="why-card fade-in">
+            <h3>2) Fokus Reliability dan Security</h3>
+            <p>
+              Solusi dirancang agar sistem tetap stabil, aman, dan siap menghadapi kebutuhan scale maupun audit
+              compliance.
+            </p>
+          </article>
+
+          <article class="why-card fade-in">
+            <h3>3) Vendor Partnership Kuat</h3>
+            <p>
+              Dukungan partner global membantu kami memberikan pilihan teknologi yang tepat sesuai kebutuhan bisnis
+              dan anggaran.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">Copyright &copy; 2026 Sentra Netcomindo. All rights reserved.</div>
+    </footer>
+
+    <a class="wa-button" href="https://wa.me/62217399554" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/scroll-animations.js"></script>
+    <script src="../js/site-effects.js"></script>
+  </body>
+</html>

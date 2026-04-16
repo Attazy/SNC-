@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Sentra Netcomindo</title>
+    <meta name="description" content="Services by Sentra Netcomindo" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/services.css" />
+    <link rel="stylesheet" href="../css/contact-footer.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <style>
+      .hero {
+        min-height: 55vh;
+      }
+
+      .service-item a {
+        margin-top: 14px;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--accent-dark);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="../images/logo-sentra.png" alt="Sentra Netcomindo Logo" />
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="solutions.html">Solution</a></li>
+          <li class="has-sub">
+            <a href="services.html">Services</a>
+            <button class="submenu-toggle" type="button" aria-label="Toggle Services submenu"><i class="fa-solid fa-chevron-down"></i></button>
+            <ul class="submenu">
+              <li><a href="subfeatures/maintenance.html">Maintenance</a></li>
+              <li><a href="subfeatures/managed-services.html">Managed Services</a></li>
+              <li><a href="subfeatures/education-training.html">Education and Training</a></li>
+            </ul>
+          </li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="why-sentra.html">Why Sentra</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content fade-in">
+        <h1>SERVICES</h1>
+        <p>Layanan teknis dan operasional untuk memastikan sistem berjalan optimal.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Service Portfolio</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">Pilih layanan sesuai kebutuhan tim dan infrastruktur Anda.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-item fade-in">
+            <div class="service-icon"><img src="../images/Maintance.png" alt="Maintenance" /></div>
+            <h3>Maintenance</h3>
+            <p>Perawatan berkala dan preventive action untuk menekan downtime.</p>
+            <a href="subfeatures/maintenance.html">Read More</a>
+          </article>
+
+          <article class="service-item fade-in">
+            <div class="service-icon"><img src="../images/Manage Service.png" alt="Managed Services" /></div>
+            <h3>Managed Services</h3>
+            <p>Pendampingan operasional harian agar tim internal lebih fokus ke prioritas bisnis.</p>
+            <a href="subfeatures/managed-services.html">Read More</a>
+          </article>
+
+          <article class="service-item fade-in">
+            <div class="service-icon"><img src="../images/Education and Training.png" alt="Education and Training" /></div>
+            <h3>Education &amp; Training</h3>
+            <p>Program peningkatan kompetensi teknis untuk penggunaan platform yang efektif.</p>
+            <a href="subfeatures/education-training.html">Read More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">Copyright &copy; 2026 Sentra Netcomindo. All rights reserved.</div>
+    </footer>
+
+    <a class="wa-button" href="https://wa.me/62217399554" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/scroll-animations.js"></script>
+    <script src="../js/site-effects.js"></script>
+  </body>
+</html>

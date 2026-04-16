@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Sentra Netcomindo</title>
+    <meta name="description" content="Product list by Sentra Netcomindo" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/contact-footer.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <style>
+      .hero {
+        min-height: 55vh;
+      }
+
+      .product-sections {
+        display: grid;
+        gap: 22px;
+      }
+
+      .product-box {
+        background: #ffffff;
+        border: 1px solid var(--border-soft);
+        border-radius: 12px;
+        box-shadow: var(--shadow-soft);
+        padding: 22px;
+      }
+
+      .product-box h3 {
+        margin-bottom: 10px;
+        color: #253244;
+      }
+
+      .product-box ul {
+        padding-left: 22px;
+      }
+
+      .product-box li {
+        color: var(--text-muted);
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="../images/logo-sentra.png" alt="Sentra Netcomindo Logo" />
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="solutions.html">Solution</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="why-sentra.html">Why Sentra</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content fade-in">
+        <h1>PRODUCTS</h1>
+        <p>Daftar produk yang tersedia untuk kebutuhan keamanan dan infrastruktur Anda.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Produk Kami</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">Di bawah ini daftar produk utama yang kami support dan implementasikan.</p>
+        </div>
+
+        <div class="product-sections">
+          <article class="product-box fade-in">
+            <h3>Thales / Safenet</h3>
+            <ul>
+              <li>Safenet Luna EFT 2</li>
+              <li>Safenet Trusted Access (STA)</li>
+              <li>Thales CipherTrust Data Security Platform</li>
+              <li>Thales Luna Network HSM</li>
+              <li>Thales Imperva WAF &amp; API Security</li>
+            </ul>
+          </article>
+
+          <article class="product-box fade-in">
+            <h3>Sangfor</h3>
+            <ul>
+              <li>Sangfor HCI</li>
+              <li>Sangfor NGAF</li>
+              <li>Sangfor Endpoint Secure</li>
+              <li>Sangfor Access Secure</li>
+            </ul>
+          </article>
+
+          <article class="product-box fade-in">
+            <h3>Senetas</h3>
+            <ul>
+              <li>Senetas HSE (High Speed Encryptor)</li>
+              <li>Senetas CN Series Encryption</li>
+            </ul>
+          </article>
+
+          <article class="product-box fade-in">
+            <h3>Infrastructure &amp; Supporting Products</h3>
+            <ul>
+              <li>Lenovo Server &amp; Storage</li>
+              <li>Eaton Power Protection</li>
+              <li>Infoblox DNS/DHCP/IPAM</li>
+              <li>Fortinet Security Appliances</li>
+              <li>F5 Application Delivery &amp; Security</li>
+              <li>Aruba Networking</li>
+              <li>Brocade SAN Switch</li>
+              <li>Wallix Privileged Access Management</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">Copyright &copy; 2026 Sentra Netcomindo. All rights reserved.</div>
+    </footer>
+
+    <a class="wa-button" href="https://wa.me/62217399554" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/scroll-animations.js"></script>
+    <script src="../js/site-effects.js"></script>
+  </body>
+</html>

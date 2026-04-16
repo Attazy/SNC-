@@ -1,887 +1,246 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sentra Netcomindo | Enterprise IT Security & Infrastructure</title>
+    <title>Sentra Netcomindo | Home</title>
     <meta
       name="description"
-      content="Solusi enterprise untuk keamanan data, infrastruktur jaringan, dan enkripsi kelas industri dari Sentra Netcomindo."
+      content="Sentra Netcomindo - Enterprise IT solutions, services, and products for secure and reliable digital infrastructure."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              poppins: ["Poppins", "sans-serif"]
-            },
-            colors: {
-              brand: {
-                50: "#ecfdf5",
-                100: "#d1fae5",
-                200: "#a7f3d0",
-                300: "#6ee7b7",
-                400: "#34d399",
-                500: "#10b981",
-                600: "#059669",
-                700: "#047857",
-                800: "#065f46",
-                900: "#064e3b"
-              }
-            },
-            boxShadow: {
-              soft: "0 20px 40px -26px rgba(2, 6, 23, 0.45)",
-              lift: "0 30px 70px -30px rgba(5, 150, 105, 0.38)",
-              glow: "0 0 0 1px rgba(52, 211, 153, 0.24), 0 18px 45px -22px rgba(16, 185, 129, 0.52)"
-            }
-          }
-        }
-      };
-    </script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/hero.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/solutions.css" />
+    <link rel="stylesheet" href="../css/services.css" />
+    <link rel="stylesheet" href="../css/contact-footer.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
 
     <style>
-      html {
-        scroll-behavior: smooth;
+      .hero {
+        background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.45)),
+          url("../images/firewall.png");
       }
 
-      body {
-        font-family: "Poppins", sans-serif;
-        background:
-          radial-gradient(circle at 20% 0%, rgba(16, 185, 129, 0.12), transparent 40%),
-          radial-gradient(circle at 80% 100%, rgba(5, 150, 105, 0.1), transparent 38%),
-          #f8fafc;
+      .hero-cta {
+        margin-top: 24px;
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
-      .glass {
-        background: rgba(15, 23, 42, 0.45);
-        border: 1px solid rgba(255, 255, 255, 0.16);
-        backdrop-filter: blur(14px);
+      .hero-cta a {
+        text-decoration: none;
+        border-radius: 999px;
+        padding: 10px 20px;
+        font-weight: 700;
+        font-size: 0.92rem;
+        letter-spacing: 0.02em;
       }
 
-      .hero-parallax-layer {
-        transform: scale(1.12) translate3d(0, 0, 0);
-        transform-origin: center;
-        will-change: transform;
+      .cta-primary {
+        color: #ffffff;
+        background: linear-gradient(120deg, #2b8b57, #1e6c44);
       }
 
-      .hero-grid-pattern {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-        background-size: 56px 56px;
+      .cta-secondary {
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.5);
       }
 
-      .float-item {
-        animation: floatMove 7s ease-in-out infinite;
+      .mini-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        margin-top: 28px;
       }
 
-      .float-item.alt {
-        animation-duration: 9s;
+      .mini-card {
+        background: #ffffff;
+        border: 1px solid var(--border-soft);
+        border-radius: 12px;
+        box-shadow: var(--shadow-soft);
+        padding: 22px;
       }
 
-      .float-item.slow {
-        animation-duration: 11s;
+      .mini-card h3 {
+        margin-bottom: 8px;
+        color: #253244;
       }
 
-      @keyframes floatMove {
-        0%,
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-        50% {
-          transform: translate3d(0, -16px, 0);
-        }
+      .mini-card p {
+        color: var(--text-muted);
+        font-size: 0.98rem;
       }
 
-      .hero-fade {
-        opacity: 1;
-        transform: none;
+      .mini-card a {
+        display: inline-block;
+        margin-top: 12px;
+        color: var(--accent-dark);
+        text-decoration: none;
+        font-weight: 700;
       }
 
-      .hero-fade.delay-1 {
-        animation-delay: 100ms;
-      }
-
-      .hero-fade.delay-2 {
-        animation-delay: 220ms;
-      }
-
-      .hero-fade.delay-3 {
-        animation-delay: 340ms;
-      }
-
-      .hero-fade.delay-4 {
-        animation-delay: 460ms;
-      }
-
-      @keyframes heroFade {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .reveal {
-        opacity: 0;
-        transform: translateY(28px);
-        transition: opacity 0.72s ease, transform 0.72s ease;
-      }
-
-      .reveal.is-visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .accordion-panel {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        margin-top: 0;
-        transition:
-          max-height 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
-          opacity 0.3s ease,
-          margin-top 0.3s ease;
-      }
-
-      .accordion-panel.is-open {
-        opacity: 1;
+      .reason-list {
         margin-top: 14px;
+        padding-left: 20px;
+        color: var(--text-muted);
       }
 
-      .partner-card:hover {
-        box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.35), 0 22px 46px -24px rgba(16, 185, 129, 0.52);
+      .reason-list li {
+        margin-bottom: 8px;
       }
 
-      .product-hover-panel {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: max-height 0.45s ease, opacity 0.3s ease, margin-top 0.3s ease;
-        margin-top: 0;
-      }
-
-      .group:hover .product-hover-panel,
-      .group:focus-within .product-hover-panel {
-        max-height: 260px;
-        opacity: 1;
-        margin-top: 14px;
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-
-        .reveal,
-        .hero-fade,
-        .float-item {
-          opacity: 1;
-          transform: none;
-          animation: none;
-          transition: none;
+      @media (max-width: 900px) {
+        .mini-grid {
+          grid-template-columns: 1fr;
         }
       }
     </style>
   </head>
 
-  <body class="text-slate-800 antialiased">
-    <header
-      id="siteHeader"
-      class="fixed inset-x-0 top-0 z-50 border-b border-transparent bg-transparent transition-all duration-300"
-    >
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#home" class="flex items-center gap-3" aria-label="Sentra Netcomindo">
-          <img src="../images/logo-sentra.png" alt="Sentra Netcomindo" class="h-10 w-auto" />
-          <div class="hidden sm:block">
-            <p class="text-sm font-semibold tracking-wide text-white">Sentra Netcomindo</p>
-            <p class="text-xs text-white/75">Enterprise IT Security Partner</p>
-          </div>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+          <img src="../images/logo-sentra.png" alt="Sentra Netcomindo Logo" />
         </a>
 
-        <nav class="hidden items-center gap-7 text-sm font-medium lg:flex" aria-label="Navigasi utama">
-          <a href="#home" class="text-white/80 transition hover:text-brand-300">Home</a>
-          <a href="#about" class="text-white/80 transition hover:text-brand-300">Tentang</a>
-          <a href="#products" class="text-white/80 transition hover:text-brand-300">Produk</a>
-          <a href="#why-us" class="text-white/80 transition hover:text-brand-300">Keunggulan</a>
-          <a href="#partners" class="text-white/80 transition hover:text-brand-300">Partner</a>
-          <a
-            href="#contact"
-            class="rounded-full border border-white/35 bg-white/10 px-5 py-2 text-white transition hover:border-brand-300 hover:bg-brand-500/20"
-            >Konsultasi</a
-          >
-        </nav>
-
-        <button
-          id="menuButton"
-          type="button"
-          class="inline-flex items-center justify-center rounded-lg border border-white/35 bg-white/10 p-2 text-white backdrop-blur lg:hidden"
-          aria-label="Buka menu"
-          aria-expanded="false"
-          aria-controls="mobileNav"
-        >
-          <svg id="menuIconOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <svg id="menuIconClose" xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m6 6 12 12M6 18 18 6" />
-          </svg>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
         </button>
-      </div>
 
-      <div id="mobileNav" class="hidden border-t border-white/10 bg-slate-950/95 px-6 py-5 backdrop-blur lg:hidden">
-        <nav class="flex flex-col gap-4 text-sm font-medium" aria-label="Navigasi mobile">
-          <a href="#home" data-mobile-link class="text-white/90 transition hover:text-brand-300">Home</a>
-          <a href="#about" data-mobile-link class="text-white/90 transition hover:text-brand-300">Tentang</a>
-          <a href="#products" data-mobile-link class="text-white/90 transition hover:text-brand-300">Produk</a>
-          <a href="#why-us" data-mobile-link class="text-white/90 transition hover:text-brand-300">Keunggulan</a>
-          <a href="#partners" data-mobile-link class="text-white/90 transition hover:text-brand-300">Partner</a>
-          <a href="#contact" data-mobile-link class="text-white/90 transition hover:text-brand-300">Kontak</a>
-        </nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-sub">
+            <a href="solutions.html">Solution</a>
+            <button class="submenu-toggle" type="button" aria-label="Toggle Solution submenu">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <ul class="submenu">
+              <li><a href="subfeatures/bandwidth-optimization.html">Bandwidth Optimization</a></li>
+              <li><a href="subfeatures/hardware-security-module.html">Hardware Security Module</a></li>
+              <li><a href="subfeatures/internet-access-management.html">Internet Access Management</a></li>
+              <li><a href="subfeatures/network-security.html">Network Security</a></li>
+              <li><a href="subfeatures/power-protection.html">Power Protection</a></li>
+              <li><a href="subfeatures/storage-server.html">Storage &amp; Server</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="services.html">Services</a>
+            <button class="submenu-toggle" type="button" aria-label="Toggle Services submenu">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <ul class="submenu">
+              <li><a href="subfeatures/maintenance.html">Maintenance</a></li>
+              <li><a href="subfeatures/managed-services.html">Managed Services</a></li>
+              <li><a href="subfeatures/education-training.html">Education and Training</a></li>
+            </ul>
+          </li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="why-sentra.html">Why Sentra</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
       </div>
     </header>
 
-    <main>
-      <!-- Hero: Fullscreen + floating network icons + parallax -->
-      <section id="home" class="relative flex min-h-screen items-center overflow-hidden">
-        <img
-          id="heroParallax"
-          src="../images/hero-network-bg.svg"
-          alt="Background jaringan enterprise"
-          class="hero-parallax-layer absolute inset-0 h-full w-full object-cover"
-          fetchpriority="high"
-          decoding="async"
-        />
-
-        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-900/88 to-slate-900/60"></div>
-        <div class="hero-grid-pattern absolute inset-0 opacity-40"></div>
-
-        <div id="heroFloatLayer" class="pointer-events-none absolute inset-0">
-          <div class="absolute left-[12%] top-[26%] rounded-full border border-brand-200/45 bg-brand-500/18 p-3 text-brand-100 shadow-soft">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M6 12h12m-9 5h6" /></svg>
-          </div>
-          <div class="absolute right-[18%] top-[22%] rounded-full border border-brand-200/45 bg-brand-500/20 p-3 text-brand-100 shadow-soft">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-7-7h14" /></svg>
-          </div>
-          <div class="absolute bottom-[24%] left-[19%] rounded-full border border-brand-200/45 bg-brand-500/20 p-3 text-brand-100 shadow-soft">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h10" /></svg>
-          </div>
-          <div class="absolute bottom-[20%] right-[16%] rounded-full border border-brand-200/45 bg-brand-500/20 p-3 text-brand-100 shadow-soft">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 6h8M6 12h12M10 18h4" /></svg>
-          </div>
-        </div>
-
-        <div class="relative mx-auto grid w-full max-w-7xl gap-14 px-6 pb-20 pt-36 lg:grid-cols-[1.08fr_0.92fr] lg:px-8">
-          <div>
-            <span class="hero-fade inline-flex rounded-full border border-brand-300/50 bg-brand-500/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-brand-100">
-              Enterprise Security & Infrastructure
-            </span>
-            <h1 class="hero-fade delay-1 mt-6 max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
-              Bangun Infrastruktur IT yang Aman, Stabil, dan Siap Scale
-            </h1>
-            <p class="hero-fade delay-2 mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
-              Kami membantu tim IT dan bisnis memilih solusi enterprise untuk melindungi data, memperkuat jaringan, dan menurunkan risiko operasional.
-            </p>
-
-            <div class="hero-fade delay-3 mt-10 flex flex-wrap items-center gap-4">
-              <a
-                href="#products"
-                class="inline-flex items-center justify-center rounded-full bg-brand-500 px-7 py-3 text-sm font-semibold text-white shadow-lift transition duration-300 hover:-translate-y-0.5 hover:bg-brand-400"
-                >Lihat Solusi</a
-              >
-              <a
-                href="#contact"
-                class="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:border-brand-300 hover:bg-brand-500/15"
-                >Jadwalkan Konsultasi</a
-              >
-              <a
-                href="subfeatures/network-security.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center rounded-full border border-brand-300/60 bg-brand-500/15 px-7 py-3 text-sm font-semibold text-brand-100 transition duration-300 hover:bg-brand-500/30"
-                >Read More</a
-              >
-            </div>
-          </div>
-
-          <aside class="hero-fade delay-4 glass self-end rounded-3xl p-6 text-white shadow-2xl sm:p-8">
-            <p class="text-sm font-semibold uppercase tracking-[0.12em] text-brand-200">Security-first stack</p>
-            <p class="mt-3 text-sm text-slate-200">
-              Mulai dari HSM, NGAF, hingga platform data protection enterprise untuk misi bisnis kritikal.
-            </p>
-            <img
-              src="../images/firewall.png"
-              alt="Ilustrasi keamanan jaringan"
-              loading="lazy"
-              decoding="async"
-              class="mt-6 h-36 w-full rounded-2xl border border-white/20 bg-slate-900/40 object-contain p-4"
-            />
-            <div class="mt-5 grid grid-cols-3 gap-3 text-center text-xs">
-              <div class="rounded-xl border border-white/15 bg-white/5 px-3 py-3">
-                <p class="text-lg font-bold text-brand-200">100+</p>
-                <p class="text-slate-300">Clients</p>
-              </div>
-              <div class="rounded-xl border border-white/15 bg-white/5 px-3 py-3">
-                <p class="text-lg font-bold text-brand-200">24/7</p>
-                <p class="text-slate-300">Support</p>
-              </div>
-              <div class="rounded-xl border border-white/15 bg-white/5 px-3 py-3">
-                <p class="text-lg font-bold text-brand-200">10+</p>
-                <p class="text-slate-300">Years</p>
-              </div>
-            </div>
-          </aside>
-        </div>
-
-        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-slate-50"></div>
-      </section>
-
-      <!-- About: minimal 2-column impact message -->
-      <section id="about" class="relative py-24 sm:py-28">
-        <div class="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-          <div class="reveal">
-            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-brand-700">About Us</p>
-            <h2 class="mt-4 text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">
-              Partner teknologi untuk organisasi yang ingin bergerak lebih cepat dan lebih aman
-            </h2>
-            <p class="mt-6 text-base leading-relaxed text-slate-600">
-              Sentra Netcomindo membantu perusahaan merancang, mengamankan, dan mengoptimalkan infrastruktur digital dengan pendekatan yang fokus pada hasil bisnis, bukan sekadar implementasi.
-            </p>
-            <ul class="mt-7 space-y-3 text-sm text-slate-700">
-              <li class="flex items-start gap-3">
-                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-                <span>Fokus pada reliability, compliance, dan business continuity.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-                <span>Implementasi enterprise-grade dengan dukungan tim tersertifikasi.</span>
-              </li>
-            </ul>
-            <a
-              href="subfeatures/managed-services.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mt-7 inline-flex items-center rounded-full border border-brand-600/30 bg-brand-50 px-5 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-100"
-              >Read More</a
-            >
-          </div>
-
-          <div class="reveal">
-            <img
-              src="../images/about-it-team.svg"
-              alt="Tim profesional IT enterprise"
-              loading="lazy"
-              decoding="async"
-              class="h-[420px] w-full rounded-3xl border border-slate-200 bg-white object-cover shadow-lift"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Products: interactive accordion cards with sub-features -->
-      <section id="products" class="relative bg-slate-900 py-24 text-white sm:py-28">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(16,185,129,0.22),_transparent_38%)]"></div>
-        <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="reveal mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-brand-300">Product Showcase</p>
-            <h2 class="mt-4 text-3xl font-bold sm:text-4xl">Solusi yang paling relevan untuk memperkuat keamanan dan performa operasional</h2>
-            <p class="mt-5 text-sm leading-relaxed text-slate-300 sm:text-base">
-              Telusuri produk yang paling sering dipilih tim IT untuk mempercepat keputusan, menyederhanakan implementasi, dan menurunkan risiko.
-            </p>
-            <a
-              href="subfeatures/storage-server.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mt-7 inline-flex items-center rounded-full border border-brand-300/60 bg-brand-500/15 px-5 py-2 text-sm font-semibold text-brand-100 transition hover:bg-brand-500/30"
-              >Read More</a
-            >
-          </div>
-
-          <div id="productsGrid" class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3"></div>
-        </div>
-      </section>
-
-      <!-- Why choose us -->
-      <section id="why-us" class="py-24 sm:py-28">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="reveal mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-brand-700">Why Choose Us</p>
-            <h2 class="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">Alasan utama klien memilih bekerja dengan kami</h2>
-            <a
-              href="subfeatures/maintenance.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mt-7 inline-flex items-center rounded-full border border-brand-600/30 bg-brand-50 px-5 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-100"
-              >Read More</a
-            >
-          </div>
-
-          <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <article class="reveal rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-              <div class="inline-flex rounded-lg bg-brand-100 p-3 text-brand-700">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-              </div>
-              <h3 class="mt-4 text-lg font-semibold text-slate-900">Trusted Partner</h3>
-              <p class="mt-2 text-sm leading-relaxed text-slate-600">Pendekatan jangka panjang untuk menjaga keamanan dan stabilitas operasional bisnis.</p>
-            </article>
-
-            <article class="reveal rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-              <div class="inline-flex rounded-lg bg-brand-100 p-3 text-brand-700">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 7.5 12 3 7.5 7.5M12 3v18" /></svg>
-              </div>
-              <h3 class="mt-4 text-lg font-semibold text-slate-900">Certified Engineer</h3>
-              <p class="mt-2 text-sm leading-relaxed text-slate-600">Tim teknis tersertifikasi dengan pengalaman implementasi di lingkungan enterprise.</p>
-            </article>
-
-            <article class="reveal rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-              <div class="inline-flex rounded-lg bg-brand-100 p-3 text-brand-700">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l3.5 3.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-              </div>
-              <h3 class="mt-4 text-lg font-semibold text-slate-900">24/7 Support</h3>
-              <p class="mt-2 text-sm leading-relaxed text-slate-600">Respon cepat untuk isu kritikal agar downtime dan risiko operasional tetap minimal.</p>
-            </article>
-
-            <article class="reveal rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-              <div class="inline-flex rounded-lg bg-brand-100 p-3 text-brand-700">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5V6.75A2.25 2.25 0 0 1 6.25 4.5h11.5A2.25 2.25 0 0 1 20 6.75V19.5m-16 0h16" /></svg>
-              </div>
-              <h3 class="mt-4 text-lg font-semibold text-slate-900">Enterprise Solution</h3>
-              <p class="mt-2 text-sm leading-relaxed text-slate-600">Portofolio produk dan layanan lengkap dari security sampai infrastruktur hybrid.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Partners: colorful, clickable logos -->
-      <section id="partners" class="bg-slate-950 py-24 text-white sm:py-28">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="reveal mx-auto max-w-3xl text-center">
-            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-brand-300">Technology Partners</p>
-            <h2 class="mt-4 text-3xl font-bold sm:text-4xl">Didukung vendor global yang sudah terbukti di enterprise</h2>
-            <a
-              href="contact.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mt-7 inline-flex items-center rounded-full border border-brand-300/60 bg-brand-500/15 px-5 py-2 text-sm font-semibold text-brand-100 transition hover:bg-brand-500/30"
-              >Read More</a
-            >
-          </div>
-
-          <div id="partnersGrid" class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="py-20">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="reveal relative overflow-hidden rounded-3xl border border-white/20 bg-gradient-to-r from-brand-700 via-brand-600 to-brand-500 px-8 py-12 text-white shadow-lift sm:px-12">
-            <div class="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-white/20 blur-2xl"></div>
-            <div class="absolute -bottom-16 left-8 h-44 w-44 rounded-full bg-slate-950/30 blur-2xl"></div>
-            <div class="relative flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
-              <div>
-                <p class="text-sm font-medium uppercase tracking-[0.14em] text-brand-100">Call To Action</p>
-                <h2 class="mt-3 text-3xl font-bold leading-tight sm:text-4xl">Sedang evaluasi solusi IT? Kami bantu pilih yang paling tepat.</h2>
-              </div>
-              <a
-                href="#contact"
-                class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-brand-700 transition duration-300 hover:-translate-y-0.5 hover:bg-brand-50"
-                >Minta Konsultasi</a
-              >
-              <a
-                href="contact.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-8 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-white/20"
-                >Read More</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Contact + footer -->
-    <section id="contact" class="bg-slate-900 py-16 text-slate-200">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="grid gap-6 md:grid-cols-2">
-          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-sm font-semibold uppercase tracking-[0.14em] text-white">Office</h3>
-            <p class="mt-4 text-sm leading-relaxed text-slate-300">
-              Gandaria 8 Office Tower, 21st Floor<br />
-              Jl. Sultan Iskandar Muda, Jakarta 12240<br />
-              Telp: +62 21 7399554
-            </p>
-          </article>
-          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-sm font-semibold uppercase tracking-[0.14em] text-white">Workshop</h3>
-            <p class="mt-4 text-sm leading-relaxed text-slate-300">
-              Jl. Martimbang Raya No. 30<br />
-              Kebayoran Baru, Jakarta Selatan<br />
-              Telp: +62 21 7399554
-            </p>
-          </article>
-        </div>
-
-        <div class="mt-10 grid gap-8 lg:grid-cols-[1.2fr_1fr_1fr]">
-          <div class="reveal">
-            <img src="../images/logo-sentra.png" alt="Sentra Netcomindo" class="h-11 w-auto" loading="lazy" decoding="async" />
-            <p class="mt-4 max-w-md text-sm leading-relaxed text-slate-400">
-              Solusi IT enterprise untuk keamanan, konektivitas, dan keandalan infrastruktur digital bisnis modern.
-            </p>
-          </div>
-          <div class="reveal">
-            <h4 class="text-sm font-semibold uppercase tracking-[0.14em] text-white">Kontak</h4>
-            <ul class="mt-4 space-y-2 text-sm text-slate-300">
-              <li>Email: inquiry@sentranetcomindo.com</li>
-              <li>Phone: +62 21 7399554</li>
-              <li>WhatsApp: +62 21 7399554</li>
-            </ul>
-          </div>
-          <div class="reveal">
-            <h4 class="text-sm font-semibold uppercase tracking-[0.14em] text-white">Navigasi Cepat</h4>
-            <ul class="mt-4 space-y-2 text-sm text-slate-300">
-              <li><a href="#products" class="transition hover:text-brand-300">Produk</a></li>
-              <li><a href="#partners" class="transition hover:text-brand-300">Partner</a></li>
-              <li><a href="#contact" class="transition hover:text-brand-300">Kontak</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="mt-10 border-t border-white/10 pt-6 text-xs text-slate-500">
-          Copyright 2026 Sentra Netcomindo. All rights reserved.
+    <section class="hero" id="home">
+      <div class="hero-content fade-in">
+        <h1>SENTRA NETCOMINDO</h1>
+        <p>Solid and Reputable IT Solution Provider</p>
+        <div class="hero-cta">
+          <a class="cta-primary" href="why-sentra.html">Kenapa Sentra Netcomindo?</a>
+          <a class="cta-secondary" href="products.html">Lihat Produk</a>
         </div>
       </div>
     </section>
 
-    <!-- Floating WhatsApp -->
+    <section id="about-brief">
+      <div class="container about-content fade-in">
+        <div class="section-header">
+          <h2 class="section-title">Kenapa Sentra Netcomindo?</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">
+            Karena kami tidak hanya kirim produk, tapi memastikan solusi berjalan stabil, aman, dan benar-benar membantu bisnis Anda tumbuh.
+          </p>
+        </div>
+
+        <ul class="reason-list">
+          <li>Pengalaman implementasi enterprise untuk security, infrastructure, dan business continuity.</li>
+          <li>Tim teknis fokus pada kualitas implementasi, reliability, dan support yang responsif.</li>
+          <li>Rekomendasi solusi disesuaikan kebutuhan nyata, bukan sekadar jual produk.</li>
+          <li>Didukung partner teknologi global untuk kebutuhan skala kecil sampai enterprise.</li>
+        </ul>
+
+        <p style="margin-top: 14px">
+          <a href="why-sentra.html" style="text-decoration: none; font-weight: 700; color: var(--accent-dark)">Lihat alasan lengkap kenapa banyak perusahaan memilih Sentra Netcomindo</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="solutions" id="quick-pages">
+      <div class="container fade-in">
+        <div class="section-header">
+          <h2 class="section-title">Halaman Utama</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">Untuk detail lengkap, lanjut ke halaman terpisah di bawah ini.</p>
+        </div>
+
+        <div class="mini-grid">
+          <article class="mini-card">
+            <h3>Solutions</h3>
+            <p>Detail solusi teknis dari bandwidth hingga network security.</p>
+            <a href="solutions.html">Buka halaman Solutions</a>
+          </article>
+
+          <article class="mini-card">
+            <h3>Services</h3>
+            <p>Detail layanan implementasi, managed services, dan training.</p>
+            <a href="services.html">Buka halaman Services</a>
+          </article>
+
+          <article class="mini-card">
+            <h3>Products</h3>
+            <p>Daftar produk yang kami support lengkap per kategori dan brand.</p>
+            <a href="products.html">Buka halaman Products</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">Copyright &copy; 2026 Sentra Netcomindo. All rights reserved.</div>
+    </footer>
+
     <a
+      class="wa-button"
       href="https://wa.me/62217399554"
       target="_blank"
       rel="noopener noreferrer"
-      class="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-glow transition duration-300 hover:scale-105 hover:bg-green-400"
-      aria-label="Chat via WhatsApp"
+      aria-label="Contact us on WhatsApp"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-7 w-7 fill-current">
-        <path
-          d="M19.1 17.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-1-1.6-2.1-1.8-2.5-.2-.3 0-.5.1-.7.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.4-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.6 5.7 5 .8.3 1.5.5 2 .7.8.2 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"
-        />
-        <path
-          d="M16.3 3.2c-6.8 0-12.4 5.5-12.4 12.3 0 2.2.6 4.4 1.7 6.3L3.2 28.8l7.1-2.3c1.9 1 4 1.5 6 1.5h.1c6.8 0 12.4-5.5 12.4-12.3S23.1 3.2 16.3 3.2zm0 22.5h-.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.2 1.3 1.4-4.1-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6 0-5.5 4.5-10 10.1-10 2.7 0 5.2 1 7.1 2.9 1.9 1.9 3 4.4 3 7.1 0 5.5-4.5 10-10 10z"
-        />
-      </svg>
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     </a>
 
-    <script>
-      const productData = [
-        {
-          name: "Safenet Luna EFT 2",
-          vendor: "Thales / Safenet",
-          summary: "Performa enkripsi tinggi untuk melindungi transaksi kritikal tanpa mengorbankan kecepatan.",
-          features: [
-            "High-speed encryption",
-            "Secure key management",
-            "Banking grade security",
-            "Tamper-resistant hardware",
-            "Dual control workflow",
-            "FIPS validated cryptography",
-            "Low latency transaction flow",
-            "Scalable transaction throughput"
-          ]
-        },
-        {
-          name: "Safenet Trusted Access (STA)",
-          vendor: "Thales / Safenet",
-          summary: "Akses aman berbasis identitas untuk mengurangi risiko login dan memperkuat kontrol akses.",
-          features: [
-            "Multi-factor authentication",
-            "Zero trust access",
-            "Identity protection",
-            "Adaptive risk policy",
-            "Single sign-on integration",
-            "Cloud and on-prem support",
-            "Granular user governance",
-            "Detailed audit logging"
-          ]
-        },
-        {
-          name: "Sangfor HCI",
-          vendor: "Sangfor",
-          summary: "Platform hyperconverged untuk menyederhanakan operasional data center dan memangkas kompleksitas.",
-          features: [
-            "Hyperconverged infrastructure",
-            "Virtualization",
-            "Storage integration",
-            "One-click lifecycle management",
-            "High availability clustering",
-            "Built-in backup orchestration",
-            "Unified monitoring dashboard",
-            "Flexible node expansion"
-          ]
-        },
-        {
-          name: "Sangfor NGAF",
-          vendor: "Sangfor",
-          summary: "Firewall generasi baru untuk memperkuat perlindungan jaringan enterprise secara menyeluruh.",
-          features: [
-            "Firewall protection",
-            "Intrusion prevention",
-            "Web filtering",
-            "Application visibility",
-            "Behavior-based detection",
-            "Threat intelligence feed",
-            "VPN secure connectivity",
-            "Centralized policy control"
-          ]
-        },
-        {
-          name: "Senetas HSE",
-          vendor: "Senetas",
-          summary: "Enkripsi jaringan layer 2 berperforma tinggi untuk melindungi data sensitif secara real-time.",
-          features: [
-            "Layer 2 encryption",
-            "Ultra low latency",
-            "High throughput",
-            "Carrier-grade deployment",
-            "Strong key lifecycle",
-            "Link-level confidentiality",
-            "Interoperable secure links",
-            "Mission-critical uptime support"
-          ]
-        },
-        {
-          name: "Thales CipherTrust",
-          vendor: "Thales",
-          summary: "Platform keamanan data terpadu untuk kontrol enkripsi, kebijakan, dan visibilitas aset.",
-          features: [
-            "Data security platform",
-            "Encryption lifecycle",
-            "Compliance ready",
-            "Centralized key manager",
-            "Tokenization service",
-            "Data discovery and classification",
-            "Policy-based access control",
-            "Cross-cloud data protection"
-          ]
-        },
-        {
-          name: "Thales Imperva",
-          vendor: "Thales",
-          summary: "Perlindungan aplikasi web dan API dari ancaman modern yang bisa mengganggu layanan bisnis.",
-          features: [
-            "Web application firewall",
-            "DDoS protection",
-            "API security",
-            "Bot mitigation",
-            "Runtime threat analytics",
-            "OWASP ruleset tuning",
-            "Real-time alerting",
-            "Managed security expertise"
-          ]
-        },
-        {
-          name: "Thales Luna Network HSM",
-          vendor: "Thales",
-          summary: "Hardware security module untuk menjaga kunci kriptografi tetap aman dan siap audit.",
-          features: [
-            "Hardware security module",
-            "Key protection",
-            "Crypto acceleration",
-            "PKI integration",
-            "Digital signing security",
-            "Secure key generation",
-            "Remote administration",
-            "Compliance audit readiness"
-          ]
-        }
-      ];
-
-      const partnerImages = [
-        "Aruba.png",
-        "Brocade.png",
-        "Eaton.png",
-        "Education and Training.png",
-        "F5.png",
-        "fortinet.png",
-        "IAM.png",
-        "infoblox.png",
-        "Kunci.png",
-        "laplace.png",
-        "lenovo.png",
-        "Maintance.png",
-        "Manage Service.png",
-        "PAX.jpg",
-        "Power Protection.png",
-        "sangfor.png",
-        "thales.png",
-        "wallix.png"
-      ];
-
-      const siteHeader = document.getElementById("siteHeader");
-      const menuButton = document.getElementById("menuButton");
-      const mobileNav = document.getElementById("mobileNav");
-      const menuIconOpen = document.getElementById("menuIconOpen");
-      const menuIconClose = document.getElementById("menuIconClose");
-      const heroParallax = document.getElementById("heroParallax");
-      const productsGrid = document.getElementById("productsGrid");
-      const partnersGrid = document.getElementById("partnersGrid");
-
-      const anchorLinks = document.querySelectorAll('a[href^="#"]');
-      const mobileLinks = document.querySelectorAll("[data-mobile-link]");
-      let revealElements;
-
-      function createProductCard(product, index) {
-        const card = document.createElement("article");
-        card.className =
-          "group reveal rounded-2xl border border-white/10 bg-white/5 p-6 shadow-soft transition duration-300 hover:-translate-y-1.5 hover:border-brand-300/70 hover:shadow-lift";
-
-        card.innerHTML = `
-          <div class="flex items-start justify-between gap-4">
-            <div>
-              <p class="text-xs font-semibold uppercase tracking-[0.12em] text-brand-300">${product.vendor}</p>
-              <h3 class="mt-2 text-xl font-semibold text-white">${product.name}</h3>
-            </div>
-            <span class="inline-flex rounded-lg bg-brand-500/20 p-2 text-brand-300">
-              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M6 12h12m-9 5h6" /></svg>
-            </span>
-          </div>
-          <p class="mt-4 text-sm leading-relaxed text-slate-300">${product.summary}</p>
-          <p class="mt-5 text-xs font-semibold uppercase tracking-[0.12em] text-brand-200">Arahkan kursor ke card untuk lihat feature lengkap</p>
-          <div id="product-panel-${index}" class="product-hover-panel">
-            <ul class="max-h-60 space-y-2 overflow-y-auto rounded-2xl border border-white/10 bg-slate-950/45 p-4 text-sm text-slate-200">
-              ${product.features
-                .map(
-                  (item) =>
-                    `<li class="flex items-start gap-2"><span class="mt-[7px] h-2 w-2 rounded-full bg-brand-400"></span><span>${item}</span></li>`
-                )
-                .join("")}
-            </ul>
-          </div>
-        `;
-
-        productsGrid.appendChild(card);
-      }
-
-      function createPartnerCard(filename) {
-        const partnerName = filename.replace(/\.[^.]+$/, "").replace(/[-_]/g, " ");
-        const imagePath = `../images/${encodeURIComponent(filename)}`;
-
-        const card = document.createElement("a");
-        card.href = imagePath;
-        card.target = "_blank";
-        card.rel = "noopener noreferrer";
-        card.className =
-          "partner-card reveal flex h-28 items-center justify-center rounded-2xl border border-white/10 bg-white/10 p-5 shadow-soft transition duration-300 hover:-translate-y-1.5";
-        card.setAttribute("aria-label", `Buka logo ${partnerName}`);
-
-        const img = document.createElement("img");
-        img.src = imagePath;
-        img.alt = partnerName;
-        img.loading = "lazy";
-        img.decoding = "async";
-        img.className = "h-10 w-auto object-contain";
-
-        card.appendChild(img);
-        partnersGrid.appendChild(card);
-      }
-
-      productData.forEach((product, index) => createProductCard(product, index));
-      partnerImages.forEach((file) => createPartnerCard(file));
-      revealElements = document.querySelectorAll(".reveal");
-
-      function updateHeader() {
-        const scrolled = window.scrollY > 24;
-        if (scrolled) {
-          siteHeader.classList.add("bg-slate-950/88", "backdrop-blur-xl", "border-slate-700/60", "shadow-2xl");
-          siteHeader.classList.remove("bg-transparent", "border-transparent");
-        } else {
-          siteHeader.classList.remove("bg-slate-950/88", "backdrop-blur-xl", "border-slate-700/60", "shadow-2xl");
-          siteHeader.classList.add("bg-transparent", "border-transparent");
-        }
-      }
-
-      function toggleMobileMenu(forceClose = false) {
-        const shouldOpen = forceClose ? false : mobileNav.classList.contains("hidden");
-        mobileNav.classList.toggle("hidden", !shouldOpen);
-        menuIconOpen.classList.toggle("hidden", shouldOpen);
-        menuIconClose.classList.toggle("hidden", !shouldOpen);
-        menuButton.setAttribute("aria-expanded", String(shouldOpen));
-      }
-
-      menuButton.addEventListener("click", () => toggleMobileMenu());
-      mobileLinks.forEach((link) => link.addEventListener("click", () => toggleMobileMenu(true)));
-
-      anchorLinks.forEach((anchor) => {
-        anchor.addEventListener("click", (event) => {
-          const href = anchor.getAttribute("href");
-          if (!href || href === "#") {
-            return;
-          }
-
-          const target = document.querySelector(href);
-          if (!target) {
-            return;
-          }
-
-          event.preventDefault();
-          const offset = 86;
-          const targetY = target.getBoundingClientRect().top + window.scrollY - offset;
-          window.scrollTo({ top: targetY, behavior: "smooth" });
-        });
-      });
-
-      const revealObserver = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) {
-              return;
-            }
-
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          });
-        },
-        {
-          threshold: 0.14,
-          rootMargin: "0px 0px -50px 0px"
-        }
-      );
-
-      revealElements.forEach((element, index) => {
-        element.style.transitionDelay = `${Math.min((index % 3) * 110, 220)}ms`;
-        revealObserver.observe(element);
-      });
-
-      let ticking = false;
-      function runScrollEffects() {
-        const y = window.scrollY;
-
-        updateHeader();
-        heroParallax.style.transform = `scale(1.12) translate3d(0, ${Math.min(y * 0.18, 165)}px, 0)`;
-
-        ticking = false;
-      }
-
-      function onScroll() {
-        if (!ticking) {
-          requestAnimationFrame(runScrollEffects);
-          ticking = true;
-        }
-      }
-
-      window.addEventListener("scroll", onScroll, { passive: true });
-      window.addEventListener("resize", () => {
-        updateHeader();
-      });
-
-      updateHeader();
-      runScrollEffects();
-    </script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/scroll-animations.js"></script>
+    <script src="../js/site-effects.js"></script>
+    <script src="../js/i18n.js"></script>
   </body>
 </html>
