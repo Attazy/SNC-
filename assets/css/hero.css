@@ -4,28 +4,80 @@
   place-items: center;
   text-align: center;
   position: relative;
+  isolation: isolate;
   overflow: hidden;
   padding-top: 90px;
-  background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.45)),
-    url("https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(16, 185, 129, 0.28), transparent 42%),
+    radial-gradient(circle at 82% 20%, rgba(14, 165, 233, 0.22), transparent 40%),
+    radial-gradient(circle at 78% 78%, rgba(59, 130, 246, 0.18), transparent 36%),
+    linear-gradient(128deg, #040916 0%, #071326 42%, #0b1f2e 100%);
+  background-size: 120% 120%;
+  animation: heroDrift 20s ease-in-out infinite alternate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.09) 1px, transparent 1px);
+  background-size: 62px 62px;
+  opacity: 0.28;
+  animation: gridShift 22s linear infinite;
+  pointer-events: none;
 }
 
 .hero::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(26, 165, 103, 0.3), transparent 44%);
+  inset: -16%;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(16, 185, 129, 0.14),
+    rgba(14, 165, 233, 0.1),
+    rgba(16, 185, 129, 0.14)
+  );
+  filter: blur(42px);
+  opacity: 0.7;
+  animation: auraSpin 26s linear infinite;
   pointer-events: none;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   color: #fff;
   max-width: 900px;
   padding: 24px;
+}
+
+@keyframes heroDrift {
+  0% {
+    background-position: 45% 44%;
+  }
+  100% {
+    background-position: 58% 57%;
+  }
+}
+
+@keyframes gridShift {
+  from {
+    background-position: 0 0, 0 0;
+  }
+  to {
+    background-position: 0 62px, 62px 0;
+  }
+}
+
+@keyframes auraSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hero h1 {
@@ -39,4 +91,12 @@
   font-size: clamp(1rem, 2.2vw, 1.4rem);
   font-weight: 400;
   color: #e5ece8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .hero::before,
+  .hero::after {
+    animation: none;
+  }
 }

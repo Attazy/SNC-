@@ -52,14 +52,17 @@
       id: "Edukasi dan Pelatihan"
     },
     { selector: "#navLinks > li > a[href='products.html'], #navLinks > li > a[href='../products.html']", en: "Products", id: "Produk" },
-    { selector: "#navLinks > li > a[href='why-sentra.html'], #navLinks > li > a[href='../why-sentra.html']", en: "Why Sentra", id: "Kenapa Sentra" },
     {
       selector: "#navLinks > li > a[href='contact.html'], #navLinks > li > a[href='../contact.html'], #navLinks > li > a[href='#contact']",
       en: "Contact Us",
       id: "Hubungi Kami"
     },
-    { selector: ".hero-content p", en: "Solid and Reputable IT Solution Provider", id: "Penyedia Solusi TI yang Solid dan Terpercaya" },
-    { selector: "footer .container", en: "Copyright \u00a9 2026 Sentra Netcomindo. All rights reserved.", id: "Hak Cipta \u00a9 2026 Sentra Netcomindo. Seluruh hak dilindungi." }
+    { selector: ".hero-content p:not(.hero-description)", en: "Solid and Reputable IT Solution Provider", id: "Penyedia Solusi TI yang Solid dan Terpercaya" },
+    {
+      selector: ".site-footer .footer-bottom .container",
+      en: "Copyright \u00a9 2026 Sentra Netcomindo. All rights reserved.",
+      id: "Hak Cipta \u00a9 2026 Sentra Netcomindo. Seluruh hak dilindungi."
+    }
   ];
 
   const pageTranslations = {
@@ -170,6 +173,12 @@
         { selector: "#contact .contact-box:nth-child(1) h3", en: "OFFICE", id: "KANTOR" },
         { selector: "#contact .contact-box:nth-child(2) h3", en: "WORKSHOP", id: "WORKSHOP" },
 
+        { selector: ".hero-content h1", en: "PT. Sentra Netcomindo", id: "PT. Sentra Netcomindo" },
+        {
+          selector: ".hero-content p.hero-description",
+          en: "Founded in 2009, we start as a Network Infratructure company and has delivered comprehensive solution from networking products to cabling solution eversince. Now, PT Sentra Netcomindo expands its services to offer wider range of ICT Solution as a respond of growing needs in our based clients as well as other potential clients in the industry",
+          id: "Didirikan pada tahun 2009, kami memulai sebagai perusahaan Network Infrastructure dan telah menghadirkan solusi komprehensif mulai dari produk networking hingga solusi cabling. Kini, PT Sentra Netcomindo memperluas layanan untuk menawarkan ragam solusi ICT yang lebih luas sebagai respons atas kebutuhan klien utama kami serta klien potensial lainnya di berbagai industri."
+        },
         { selector: ".hero-cta .cta-primary", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
         { selector: ".hero-cta .cta-secondary", en: "View Products", id: "Lihat Produk" },
         { selector: ".hero-kicker", en: "Enterprise IT Security & Infrastructure", id: "Keamanan dan Infrastruktur TI Enterprise" },

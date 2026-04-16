@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -145,6 +145,13 @@
 
       .hero p {
         color: #dbeafe;
+      }
+
+      .hero-description {
+        max-width: 760px;
+        margin-inline: auto;
+        line-height: 1.65;
+        font-size: clamp(0.98rem, 1.45vw, 1.22rem);
       }
 
       @keyframes heroDrift {
@@ -431,7 +438,6 @@
             </ul>
           </li>
           <li><a href="products.html">Products</a></li>
-          <li><a href="why-sentra.html">Why Sentra</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a id="languageToggle" href="#">Indonesia</a></li>
         </ul>
@@ -444,8 +450,13 @@
       <div class="hero-orb orb-c" aria-hidden="true"></div>
       <div class="hero-content fade-in">
         <span class="hero-kicker">Enterprise IT Security &amp; Infrastructure</span>
-        <h1>SENTRA NETCOMINDO</h1>
-        <p>Solid and Reputable IT Solution Provider</p>
+        <h1>PT. Sentra Netcomindo</h1>
+        <p class="hero-description">
+          Founded in 2009, we start as a Network Infratructure company and has delivered comprehensive solution from
+          networking products to cabling solution eversince. Now, PT Sentra Netcomindo expands its services to offer
+          wider range of ICT Solution as a respond of growing needs in our based clients as well as other potential
+          clients in the industry
+        </p>
         <div class="hero-cta">
           <a class="cta-primary" href="why-sentra.html">Kenapa Sentra Netcomindo?</a>
           <a class="cta-secondary" href="products.html">Lihat Produk</a>
@@ -520,8 +531,31 @@
       </div>
     </section>
 
-    <footer>
-      <div class="container">Copyright &copy; 2026 Sentra Netcomindo. All rights reserved.</div>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <article class="footer-box">
+          <h3>OFFICE</h3>
+          <p>
+            Gandaria 8 Office Tower, 21st Floor,<br />
+            Jl. Sultan Iskandar Muda, Jakarta 12240<br />
+            Telp: +62 21 7399554/7399245<br />
+            Email : inquiry(at) sentranetcomindo.com
+          </p>
+        </article>
+
+        <article class="footer-box">
+          <h3>WORKSHOP</h3>
+          <p>
+            Ruko Kemala Square No. 86D, Jl. Ciledug Raya No.86D 4,<br />
+            RT.4/RW.4, Cipulir, Kec. Kebayoran Lama, Kota Jakarta Selatan,<br />
+            Daerah Khusus Ibukota Jakarta 12230
+          </p>
+        </article>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">Copyright &copy; 2026 Sentra Netcomindo. All rights reserved.</div>
+      </div>
     </footer>
 
     <a
@@ -541,3 +575,4 @@
     <script src="../js/i18n.js"></script>
   </body>
 </html>
+
