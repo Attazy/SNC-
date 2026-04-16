@@ -256,7 +256,7 @@
         id: "Profil perusahaan, visi, misi, dan tujuan Sentra Netcomindo"
       },
       entries: [
-        { selector: ".hero-content h1", en: "ABOUT SENTRA NETCOMINDO", id: "TENTANG SENTRA NETCOMINDO" },
+        { selector: ".hero-content h1", en: "SENTRA NETCOMINDO", id: "SENTRA NETCOMINDO" },
         {
           selector: ".hero-content p:not(.hero-description)",
           en: "Company profile, vision, mission, and objectives.",

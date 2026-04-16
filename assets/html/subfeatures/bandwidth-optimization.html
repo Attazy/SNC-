@@ -100,35 +100,12 @@
         width: 100%;
       }
 
-      .wano-device-mock {
-        width: 210px;
-        height: 58px;
-        border-radius: 5px;
-        border: 1px solid #95a2b5;
-        background: linear-gradient(180deg, #526da0 0%, #263a60 55%, #1f2b47 100%);
-        box-shadow: 0 5px 10px rgba(15, 23, 42, 0.18);
-        position: relative;
-      }
-
-      .wano-device-mock::before {
-        content: "";
-        position: absolute;
-        left: 7px;
-        right: 7px;
-        top: 7px;
-        height: 9px;
-        border-radius: 2px;
-        background: rgba(255, 255, 255, 0.16);
-      }
-
-      .wano-device-mock::after {
-        content: "";
-        position: absolute;
-        left: 12px;
-        right: 12px;
-        bottom: 9px;
-        height: 10px;
-        background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.28) 0 8px, transparent 8px 13px);
+      .wano-device-photo {
+        width: 245px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px rgba(15, 23, 42, 0.15);
       }
 
       .wano-text h3 {
@@ -282,7 +259,13 @@
               <div class="wano-logo-frame">
                 <img src="../../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" />
               </div>
-              <div class="wano-device-mock" aria-hidden="true">WANO Appliance</div>
+              <img
+                class="wano-device-photo"
+                src="../../images/Sangfor WAN Optimization.jpg"
+                alt="Sangfor WAN Optimization appliance"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="wano-text">
               <h3>Sangfor WAN Optimization</h3>
