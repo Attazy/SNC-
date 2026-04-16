@@ -305,9 +305,14 @@
 
     "bandwidth-optimization.html": {
       entries: [
-        { selector: "#subfeature-detail .resource-brochure", en: "Brochure and datasheet", id: "Brosur dan datasheet" },
+        { selector: "#subfeature-detail .resource-brochure", en: "Brocure and datasheet", id: "Brosur dan datasheet" },
         { selector: "#subfeature-detail .resource-prefix", en: "For more info, please check", id: "Untuk info lebih lanjut, silakan cek" },
-        { selector: "#subfeature-detail .resource-site", en: "Sangfor's official website", id: "website resmi Sangfor" }
+        { selector: "#subfeature-detail .resource-site", en: "Sangfor's official website", id: "website resmi Sangfor" },
+        {
+          selector: "#subfeature-detail .solution-note",
+          en: "**If you interest with this solution, please contact us. We will happy to explain it and we are ready to show the demo if needed.",
+          id: "**Jika Anda tertarik dengan solusi ini, silakan hubungi kami. Kami siap menjelaskan lebih lanjut dan siap menunjukkan demo jika dibutuhkan."
+        }
       ]
     },
 
@@ -516,27 +521,27 @@
       description: { en: "Bandwidth Optimization - Sentra Netcomindo", id: "Optimasi Bandwidth - Sentra Netcomindo" },
       sectionTitle: { en: "Bandwidth Optimization", id: "Optimasi Bandwidth" },
       sectionSubtitle: {
-        en: "When you have many branch offices or factories and need to interconnect them while your WAN bandwidth is often full and repetitive traffic keeps flowing, this solution can optimize your network, improve user experience, minimize bandwidth costs, accelerate applications, and reduce redundant data.",
-        id: "Saat Anda memiliki banyak kantor cabang atau pabrik yang perlu saling terhubung, sementara bandwidth WAN sering penuh dan trafik berulang terus terjadi, solusi ini dapat mengoptimalkan jaringan, meningkatkan pengalaman pengguna, meminimalkan biaya bandwidth, mempercepat aplikasi, dan mengurangi data redundan."
+        en: "When you have many branch office or factory but need to interconnect and you feel your WAN bandwidth is always full and there is repetition data flowing in it that make bandwidth seems very tied then you may consider our solution. We can provides solution that not only optimize your network but also improve user experience, minimize bandwidth cost, accelerate your application, optimize the transmission and reduce redundant data.",
+        id: "Saat Anda memiliki banyak kantor cabang atau pabrik yang perlu saling terhubung, sementara bandwidth WAN terasa selalu penuh dan ada data berulang yang terus mengalir, maka Anda dapat mempertimbangkan solusi kami. Kami menyediakan solusi yang tidak hanya mengoptimalkan jaringan, tetapi juga meningkatkan pengalaman pengguna, meminimalkan biaya bandwidth, mempercepat aplikasi, mengoptimalkan transmisi, dan mengurangi data redundan."
       },
       meta: { en: "Here is our product solution to fulfill this need:", id: "Berikut solusi produk kami untuk memenuhi kebutuhan tersebut:" },
       block1Title: { en: "Sangfor WAN Optimization", id: "Sangfor WAN Optimization" },
       block1Text: {
-        en: "SANGFOR WANO (WAN Optimization) provides your company with a competitive edge by expanding business potential. WANO helps create seamless connectivity among offices, research facilities, and manufacturing plants in different locations, locally or globally. Connecting employees through the same network environment with consistent performance improves both productivity and business continuity.",
-        id: "SANGFOR WANO (WAN Optimization) memberi perusahaan Anda keunggulan kompetitif dengan memperluas potensi bisnis. WANO membantu menghadirkan konektivitas yang mulus antar kantor, fasilitas riset, dan pabrik di berbagai lokasi, baik lokal maupun global. Menghubungkan karyawan melalui lingkungan jaringan yang sama dengan performa konsisten dapat meningkatkan produktivitas sekaligus menjaga kontinuitas bisnis."
+        en: "SANGFOR WANO (Wan Optimization) provides your company with a competitive edge by expanding your business potential. WANO lets you have a seamless connectivity among offices, research facilities and manufacturing plants in different locations, locally or globally. Connecting your employees directly over the same network environment with the same performance, enhances both your productivity and business continuity.",
+        id: "SANGFOR WANO (Wan Optimization) memberi perusahaan Anda keunggulan kompetitif dengan memperluas potensi bisnis. WANO memungkinkan konektivitas yang mulus antar kantor, fasilitas riset, dan pabrik di berbagai lokasi, baik lokal maupun global. Menghubungkan karyawan langsung pada lingkungan jaringan yang sama dengan performa yang konsisten dapat meningkatkan produktivitas sekaligus menjaga kontinuitas bisnis."
       },
-      block2Title: { en: "WANO's Benefits", id: "Manfaat WANO" },
+      block2Title: { en: "WANO's benefit:", id: "Manfaat WANO:" },
       block2Items: {
         en: [
           "Increase the productivity of employees",
-          "Minimize bandwidth costs",
-          "Reduce investment needs for remote IT",
+          "Minimize bandwidth cost",
+          "Reduce the investment for remote IT",
           "Improve user experience for business"
         ],
         id: [
           "Meningkatkan produktivitas karyawan",
           "Meminimalkan biaya bandwidth",
-          "Mengurangi kebutuhan investasi untuk IT remote",
+          "Mengurangi investasi untuk IT remote",
           "Meningkatkan pengalaman pengguna untuk operasional bisnis"
         ]
       },

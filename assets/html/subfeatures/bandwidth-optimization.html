@@ -39,76 +39,130 @@
         text-align: left;
         max-width: 1060px;
         margin-inline: auto;
+        margin-bottom: 18px;
+      }
+
+      .bandwidth-page .section-title,
+      .bandwidth-page .section-divider {
+        display: none;
       }
 
       .bandwidth-page .section-subtitle {
         max-width: 100%;
-        line-height: 1.45;
-      }
-
-      .bandwidth-page .section-divider {
-        margin-inline: 0;
+        color: #697586;
+        line-height: 1.5;
       }
 
       .bandwidth-page .subfeature-meta {
-        margin-top: 12px;
+        margin-top: 8px;
+        display: block;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        color: #697586;
+        font-weight: 500;
       }
 
       .bandwidth-content {
         max-width: 1060px;
         margin: 24px auto 0;
+        display: block;
+      }
+
+      .bandwidth-content .subfeature-block {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
       }
 
       .wano-overview {
         display: grid;
-        grid-template-columns: 260px 1fr;
-        gap: 26px;
-        align-items: center;
+        grid-template-columns: 220px 1fr;
+        gap: 32px;
+        align-items: start;
       }
 
       .wano-visual {
-        display: grid;
-        gap: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
       }
 
       .wano-logo-frame {
-        border: 1px solid #e7edf4;
-        border-radius: 12px;
-        background: #ffffff;
-        padding: 18px;
-        display: grid;
-        place-items: center;
+        padding: 0;
       }
 
       .wano-logo-frame img {
-        max-width: 170px;
+        max-width: 175px;
         width: 100%;
       }
 
       .wano-device-mock {
-        border-radius: 12px;
-        border: 1px solid #dce7f2;
-        background: linear-gradient(135deg, #1f2a37, #0f172a);
-        min-height: 80px;
-        display: grid;
-        place-items: center;
-        color: #dbeafe;
-        font-size: 0.82rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+        width: 210px;
+        height: 58px;
+        border-radius: 5px;
+        border: 1px solid #95a2b5;
+        background: linear-gradient(180deg, #526da0 0%, #263a60 55%, #1f2b47 100%);
+        box-shadow: 0 5px 10px rgba(15, 23, 42, 0.18);
+        position: relative;
+      }
+
+      .wano-device-mock::before {
+        content: "";
+        position: absolute;
+        left: 7px;
+        right: 7px;
+        top: 7px;
+        height: 9px;
+        border-radius: 2px;
+        background: rgba(255, 255, 255, 0.16);
+      }
+
+      .wano-device-mock::after {
+        content: "";
+        position: absolute;
+        left: 12px;
+        right: 12px;
+        bottom: 9px;
+        height: 10px;
+        background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.28) 0 8px, transparent 8px 13px);
       }
 
       .wano-text h3 {
         font-size: clamp(1.9rem, 3vw, 2.8rem);
         margin-bottom: 12px;
+        color: #2f3339;
       }
 
       .wano-text p {
+        color: #697586;
         line-height: 1.55;
       }
 
+      .wano-benefits,
+      .wano-resources {
+        margin-top: 10px;
+        margin-left: 252px;
+      }
+
+      .wano-benefits h3 {
+        margin-bottom: 8px;
+        color: #697586;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .wano-benefits ul {
+        padding-left: 28px;
+        color: #697586;
+        line-height: 1.5;
+      }
+
       .wano-resources .resource-line {
-        margin-top: 14px;
+        margin-top: 8px;
       }
 
       .wano-resources .resource-link {
@@ -122,7 +176,17 @@
       }
 
       .wano-resources .resource-site-wrap {
-        color: #475569;
+        color: #697586;
+      }
+
+      .solution-note {
+        margin-top: 12px;
+        color: #697586;
+        line-height: 1.5;
+      }
+
+      .subfeature-cta {
+        display: none;
       }
 
       @media (max-width: 920px) {
@@ -130,12 +194,21 @@
           grid-template-columns: 1fr;
         }
 
-        .bandwidth-page .section-divider {
-          margin-inline: auto;
-        }
-
         .bandwidth-page .section-header {
           text-align: center;
+        }
+
+        .wano-visual {
+          align-items: center;
+        }
+
+        .wano-benefits,
+        .wano-resources {
+          margin-left: 0;
+        }
+
+        .wano-benefits h3 {
+          font-size: 1.7rem;
         }
       }
     </style>
@@ -222,8 +295,8 @@
             </div>
           </article>
 
-          <article class="subfeature-block">
-            <h3>WANO's Benefits</h3>
+          <article class="subfeature-block wano-benefits">
+            <h3>WANO's benefit:</h3>
             <ul>
               <li>Increase the productivity of employees</li>
               <li>Minimize bandwidth costs</li>
@@ -233,20 +306,14 @@
           </article>
 
           <article class="subfeature-block wano-resources">
-            <h3>Additional Information</h3>
-            <ul>
-              <li>WANO helps improve business continuity across distributed operations</li>
-              <li>Consistent application experience supports faster daily collaboration</li>
-              <li>*If you are interested in this solution, please contact us for explanation and demo session.</li>
-            </ul>
-
             <p class="resource-line">
-              <a class="resource-link resource-brochure" href="https://www.sangfor.com/resources" target="_blank" rel="noopener noreferrer">Brochure and datasheet</a>
+              <a class="resource-link resource-brochure" href="https://www.sangfor.com/resources" target="_blank" rel="noopener noreferrer">Brocure and datasheet</a>
             </p>
             <p class="resource-line resource-site-wrap">
               <span class="resource-prefix">For more info, please check</span>
               <a class="resource-link resource-site" href="https://www.sangfor.com/" target="_blank" rel="noopener noreferrer">Sangfor's official website</a>
             </p>
+            <p class="solution-note">**If you interest with this solution, please contact us. We will happy to explain it and we are ready to show the demo if needed.</p>
           </article>
 
           <a class="subfeature-cta" href="../contact.html">Contact Us for Demo</a>
