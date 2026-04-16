@@ -28,6 +28,117 @@
     <link rel="stylesheet" href="../../css/contact-footer.css" />
     <link rel="stylesheet" href="../../css/subfeature.css" />
     <link rel="stylesheet" href="../../css/responsive.css" />
+
+    <style>
+      .bandwidth-page {
+        max-width: 1160px;
+        text-align: left;
+      }
+
+      .bandwidth-page .section-header {
+        text-align: left;
+        max-width: 1060px;
+        margin-inline: auto;
+      }
+
+      .bandwidth-page .section-subtitle {
+        max-width: 100%;
+        line-height: 1.45;
+      }
+
+      .bandwidth-page .section-divider {
+        margin-inline: 0;
+      }
+
+      .bandwidth-page .subfeature-meta {
+        margin-top: 12px;
+      }
+
+      .bandwidth-content {
+        max-width: 1060px;
+        margin: 24px auto 0;
+      }
+
+      .wano-overview {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        gap: 26px;
+        align-items: center;
+      }
+
+      .wano-visual {
+        display: grid;
+        gap: 14px;
+      }
+
+      .wano-logo-frame {
+        border: 1px solid #e7edf4;
+        border-radius: 12px;
+        background: #ffffff;
+        padding: 18px;
+        display: grid;
+        place-items: center;
+      }
+
+      .wano-logo-frame img {
+        max-width: 170px;
+        width: 100%;
+      }
+
+      .wano-device-mock {
+        border-radius: 12px;
+        border: 1px solid #dce7f2;
+        background: linear-gradient(135deg, #1f2a37, #0f172a);
+        min-height: 80px;
+        display: grid;
+        place-items: center;
+        color: #dbeafe;
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .wano-text h3 {
+        font-size: clamp(1.9rem, 3vw, 2.8rem);
+        margin-bottom: 12px;
+      }
+
+      .wano-text p {
+        line-height: 1.55;
+      }
+
+      .wano-resources .resource-line {
+        margin-top: 14px;
+      }
+
+      .wano-resources .resource-link {
+        color: #0d8ce4;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .wano-resources .resource-link:hover {
+        text-decoration: underline;
+      }
+
+      .wano-resources .resource-site-wrap {
+        color: #475569;
+      }
+
+      @media (max-width: 920px) {
+        .wano-overview {
+          grid-template-columns: 1fr;
+        }
+
+        .bandwidth-page .section-divider {
+          margin-inline: auto;
+        }
+
+        .bandwidth-page .section-header {
+          text-align: center;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -84,43 +195,61 @@
     </section>
 
     <section id="subfeature-detail">
-      <div class="container subfeature-wrap fade-in">
+      <div class="container subfeature-wrap fade-in bandwidth-page">
         <div class="section-header">
           <h2 class="section-title">Bandwidth Optimization</h2>
           <span class="section-divider" aria-hidden="true"></span>
-          <p class="section-subtitle">Deliver faster and more stable application access across branches without increasing recurring bandwidth costs.</p>
-          <p class="subfeature-meta">Focus: Performance, Cost Efficiency, User Experience</p>
+          <p class="section-subtitle">When you have many branch offices or factories and need to interconnect them while your WAN bandwidth is often full and repetitive traffic keeps flowing, this solution can optimize your network, improve user experience, minimize bandwidth costs, accelerate applications, and reduce redundant data.</p>
+          <p class="subfeature-meta">Here is our product solution to fulfill this need:</p>
         </div>
 
-        <div class="subfeature-content">
+        <div class="subfeature-content bandwidth-content">
+          <article class="subfeature-block wano-overview">
+            <div class="wano-visual">
+              <div class="wano-logo-frame">
+                <img src="../../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" />
+              </div>
+              <div class="wano-device-mock" aria-hidden="true">WANO Appliance</div>
+            </div>
+            <div class="wano-text">
+              <h3>Sangfor WAN Optimization</h3>
+              <p>
+                SANGFOR WANO (WAN Optimization) provides your company with a competitive edge by expanding business
+                potential. WANO helps create seamless connectivity among offices, research facilities, and
+                manufacturing plants in different locations, locally or globally. Connecting employees through the same
+                network environment with consistent performance improves both productivity and business continuity.
+              </p>
+            </div>
+          </article>
+
           <article class="subfeature-block">
-            <h3>What We Deliver</h3>
-            <p>
-              We design and implement optimization architecture that reduces unnecessary traffic,
-              prioritizes mission-critical applications, and improves response time for distributed users.
+            <h3>WANO's Benefits</h3>
+            <ul>
+              <li>Increase the productivity of employees</li>
+              <li>Minimize bandwidth costs</li>
+              <li>Reduce investment needs for remote IT</li>
+              <li>Improve user experience for business</li>
+            </ul>
+          </article>
+
+          <article class="subfeature-block wano-resources">
+            <h3>Additional Information</h3>
+            <ul>
+              <li>WANO helps improve business continuity across distributed operations</li>
+              <li>Consistent application experience supports faster daily collaboration</li>
+              <li>*If you are interested in this solution, please contact us for explanation and demo session.</li>
+            </ul>
+
+            <p class="resource-line">
+              <a class="resource-link resource-brochure" href="https://www.sangfor.com/resources" target="_blank" rel="noopener noreferrer">Brochure and datasheet</a>
+            </p>
+            <p class="resource-line resource-site-wrap">
+              <span class="resource-prefix">For more info, please check</span>
+              <a class="resource-link resource-site" href="https://www.sangfor.com/" target="_blank" rel="noopener noreferrer">Sangfor's official website</a>
             </p>
           </article>
 
-          <article class="subfeature-block">
-            <h3>Key Capabilities</h3>
-            <ul>
-              <li>Application-aware traffic shaping and QoS policy design</li>
-              <li>WAN optimization, caching, compression, and deduplication</li>
-              <li>Real-time utilization monitoring with threshold based alerting</li>
-              <li>Policy tuning to prioritize core systems such as ERP, CBS, and collaboration tools</li>
-            </ul>
-          </article>
-
-          <article class="subfeature-block">
-            <h3>Business Benefits</h3>
-            <ul>
-              <li>Higher branch productivity through lower application latency</li>
-              <li>Controlled operational cost by delaying unnecessary bandwidth upgrades</li>
-              <li>Better user experience for cloud and hybrid workloads</li>
-            </ul>
-          </article>
-
-          <a class="subfeature-cta" href="../contact.html">Discuss Bandwidth Assessment</a>
+          <a class="subfeature-cta" href="../contact.html">Contact Us for Demo</a>
         </div>
       </div>
     </section>

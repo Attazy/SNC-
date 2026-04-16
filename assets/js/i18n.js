@@ -303,6 +303,14 @@
       ]
     },
 
+    "bandwidth-optimization.html": {
+      entries: [
+        { selector: "#subfeature-detail .resource-brochure", en: "Brochure and datasheet", id: "Brosur dan datasheet" },
+        { selector: "#subfeature-detail .resource-prefix", en: "For more info, please check", id: "Untuk info lebih lanjut, silakan cek" },
+        { selector: "#subfeature-detail .resource-site", en: "Sangfor's official website", id: "website resmi Sangfor" }
+      ]
+    },
+
     "solutions.html": {
       title: {
         en: "Solutions | Sentra Netcomindo",
@@ -508,44 +516,44 @@
       description: { en: "Bandwidth Optimization - Sentra Netcomindo", id: "Optimasi Bandwidth - Sentra Netcomindo" },
       sectionTitle: { en: "Bandwidth Optimization", id: "Optimasi Bandwidth" },
       sectionSubtitle: {
-        en: "Deliver faster and more stable application access across branches without increasing recurring bandwidth costs.",
-        id: "Hadirkan akses aplikasi yang lebih cepat dan stabil di seluruh cabang tanpa meningkatkan biaya bandwidth berulang."
+        en: "When you have many branch offices or factories and need to interconnect them while your WAN bandwidth is often full and repetitive traffic keeps flowing, this solution can optimize your network, improve user experience, minimize bandwidth costs, accelerate applications, and reduce redundant data.",
+        id: "Saat Anda memiliki banyak kantor cabang atau pabrik yang perlu saling terhubung, sementara bandwidth WAN sering penuh dan trafik berulang terus terjadi, solusi ini dapat mengoptimalkan jaringan, meningkatkan pengalaman pengguna, meminimalkan biaya bandwidth, mempercepat aplikasi, dan mengurangi data redundan."
       },
-      meta: { en: "Focus: Performance, Cost Efficiency, User Experience", id: "Fokus: Performa, Efisiensi Biaya, Pengalaman Pengguna" },
-      block1Title: { en: "What We Deliver", id: "Apa yang Kami Berikan" },
+      meta: { en: "Here is our product solution to fulfill this need:", id: "Berikut solusi produk kami untuk memenuhi kebutuhan tersebut:" },
+      block1Title: { en: "Sangfor WAN Optimization", id: "Sangfor WAN Optimization" },
       block1Text: {
-        en: "We design and implement optimization architecture that reduces unnecessary traffic, prioritizes mission-critical applications, and improves response time for distributed users.",
-        id: "Kami merancang dan mengimplementasikan arsitektur optimasi yang mengurangi trafik tidak perlu, memprioritaskan aplikasi kritikal, dan meningkatkan waktu respons bagi pengguna terdistribusi."
+        en: "SANGFOR WANO (WAN Optimization) provides your company with a competitive edge by expanding business potential. WANO helps create seamless connectivity among offices, research facilities, and manufacturing plants in different locations, locally or globally. Connecting employees through the same network environment with consistent performance improves both productivity and business continuity.",
+        id: "SANGFOR WANO (WAN Optimization) memberi perusahaan Anda keunggulan kompetitif dengan memperluas potensi bisnis. WANO membantu menghadirkan konektivitas yang mulus antar kantor, fasilitas riset, dan pabrik di berbagai lokasi, baik lokal maupun global. Menghubungkan karyawan melalui lingkungan jaringan yang sama dengan performa konsisten dapat meningkatkan produktivitas sekaligus menjaga kontinuitas bisnis."
       },
-      block2Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
+      block2Title: { en: "WANO's Benefits", id: "Manfaat WANO" },
       block2Items: {
         en: [
-          "Application-aware traffic shaping and QoS policy design",
-          "WAN optimization, caching, compression, and deduplication",
-          "Real-time utilization monitoring with threshold based alerting",
-          "Policy tuning to prioritize core systems such as ERP, CBS, and collaboration tools"
+          "Increase the productivity of employees",
+          "Minimize bandwidth costs",
+          "Reduce investment needs for remote IT",
+          "Improve user experience for business"
         ],
         id: [
-          "Traffic shaping berbasis aplikasi dan desain kebijakan QoS",
-          "Optimasi WAN, caching, kompresi, dan deduplikasi",
-          "Pemantauan utilisasi real-time dengan notifikasi berbasis ambang batas",
-          "Penyesuaian kebijakan untuk memprioritaskan sistem inti seperti ERP, CBS, dan kolaborasi"
+          "Meningkatkan produktivitas karyawan",
+          "Meminimalkan biaya bandwidth",
+          "Mengurangi kebutuhan investasi untuk IT remote",
+          "Meningkatkan pengalaman pengguna untuk operasional bisnis"
         ]
       },
-      block3Title: { en: "Business Benefits", id: "Manfaat Bisnis" },
+      block3Title: { en: "Additional Information", id: "Informasi Tambahan" },
       block3Items: {
         en: [
-          "Higher branch productivity through lower application latency",
-          "Controlled operational cost by delaying unnecessary bandwidth upgrades",
-          "Better user experience for cloud and hybrid workloads"
+          "WANO helps improve business continuity across distributed operations",
+          "Consistent application experience supports faster daily collaboration",
+          "*If you are interested in this solution, please contact us for explanation and demo session."
         ],
         id: [
-          "Produktivitas cabang meningkat melalui latensi aplikasi yang lebih rendah",
-          "Biaya operasional lebih terkendali dengan menunda upgrade bandwidth yang tidak perlu",
-          "Pengalaman pengguna lebih baik untuk beban kerja cloud dan hybrid"
+          "WANO membantu meningkatkan kontinuitas bisnis pada operasional yang tersebar",
+          "Pengalaman aplikasi yang konsisten mendukung kolaborasi harian yang lebih cepat",
+          "*Jika Anda tertarik dengan solusi ini, silakan hubungi kami untuk penjelasan dan sesi demo."
         ]
       },
-      cta: { en: "Discuss Bandwidth Assessment", id: "Diskusikan Assessment Bandwidth" }
+      cta: { en: "Contact Us for Demo", id: "Hubungi Kami untuk Demo" }
     },
 
     "hardware-security-module.html": {
