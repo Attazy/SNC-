@@ -36,7 +36,7 @@ img {
 }
 
 .container {
-  width: min(1260px, 94%);
+  width: min(1180px, 92%);
   margin-inline: auto;
 }
 
@@ -58,7 +58,7 @@ section {
 
 .section-subtitle {
   color: var(--text-muted);
-  max-width: 1240px;
+  max-width: 980px;
   margin: 10px auto 0;
   font-size: clamp(0.98rem, 1.3vw, 1.25rem);
   line-height: 1.2;
