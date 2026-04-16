@@ -3,19 +3,61 @@
   const DEFAULT_LANG = "en";
 
   const commonTranslations = [
-    { selector: "#navLinks > li:nth-child(1) > a", en: "Home", id: "Beranda" },
-    { selector: "#navLinks > li:nth-child(2) > a", en: "Solution", id: "Solusi" },
-    { selector: "#navLinks > li:nth-child(2) .submenu li:nth-child(1) a", en: "Bandwidth Optimization", id: "Optimasi Bandwidth" },
-    { selector: "#navLinks > li:nth-child(2) .submenu li:nth-child(2) a", en: "Hardware Security Module", id: "Modul Keamanan Perangkat Keras" },
-    { selector: "#navLinks > li:nth-child(2) .submenu li:nth-child(3) a", en: "Internet Access Management", id: "Manajemen Akses Internet" },
-    { selector: "#navLinks > li:nth-child(2) .submenu li:nth-child(4) a", en: "Network Security", id: "Keamanan Jaringan" },
-    { selector: "#navLinks > li:nth-child(2) .submenu li:nth-child(5) a", en: "Power Protection", id: "Perlindungan Daya" },
-    { selector: "#navLinks > li:nth-child(2) .submenu li:nth-child(6) a", en: "Storage & Server", id: "Penyimpanan & Server" },
-    { selector: "#navLinks > li:nth-child(3) > a", en: "Services", id: "Layanan" },
-    { selector: "#navLinks > li:nth-child(3) .submenu li:nth-child(1) a", en: "Maintenance", id: "Pemeliharaan" },
-    { selector: "#navLinks > li:nth-child(3) .submenu li:nth-child(2) a", en: "Managed Services", id: "Layanan Terkelola" },
-    { selector: "#navLinks > li:nth-child(3) .submenu li:nth-child(3) a", en: "Education and Training", id: "Edukasi dan Pelatihan" },
-    { selector: "#navLinks > li:nth-child(4) > a", en: "Contact Us", id: "Hubungi Kami" },
+    { selector: "#navLinks > li > a[href='index.html'], #navLinks > li > a[href='../index.html']", en: "Home", id: "Beranda" },
+    { selector: "#navLinks > li > a[href='solutions.html'], #navLinks > li > a[href='../solutions.html']", en: "Solution", id: "Solusi" },
+    {
+      selector: "#navLinks .submenu a[href='subfeatures/bandwidth-optimization.html'], #navLinks .submenu a[href='bandwidth-optimization.html']",
+      en: "Bandwidth Optimization",
+      id: "Optimasi Bandwidth"
+    },
+    {
+      selector: "#navLinks .submenu a[href='subfeatures/hardware-security-module.html'], #navLinks .submenu a[href='hardware-security-module.html']",
+      en: "Hardware Security Module",
+      id: "Modul Keamanan Perangkat Keras"
+    },
+    {
+      selector: "#navLinks .submenu a[href='subfeatures/internet-access-management.html'], #navLinks .submenu a[href='internet-access-management.html']",
+      en: "Internet Access Management",
+      id: "Manajemen Akses Internet"
+    },
+    {
+      selector: "#navLinks .submenu a[href='subfeatures/network-security.html'], #navLinks .submenu a[href='network-security.html']",
+      en: "Network Security",
+      id: "Keamanan Jaringan"
+    },
+    {
+      selector: "#navLinks .submenu a[href='subfeatures/power-protection.html'], #navLinks .submenu a[href='power-protection.html']",
+      en: "Power Protection",
+      id: "Perlindungan Daya"
+    },
+    {
+      selector: "#navLinks .submenu a[href='subfeatures/storage-server.html'], #navLinks .submenu a[href='storage-server.html']",
+      en: "Storage & Server",
+      id: "Penyimpanan & Server"
+    },
+    { selector: "#navLinks > li > a[href='services.html'], #navLinks > li > a[href='../services.html']", en: "Services", id: "Layanan" },
+    {
+      selector: "#navLinks .submenu a[href='subfeatures/maintenance.html'], #navLinks .submenu a[href='maintenance.html']",
+      en: "Maintenance",
+      id: "Pemeliharaan"
+    },
+    {
+      selector: "#navLinks .submenu a[href='subfeatures/managed-services.html'], #navLinks .submenu a[href='managed-services.html']",
+      en: "Managed Services",
+      id: "Layanan Terkelola"
+    },
+    {
+      selector: "#navLinks .submenu a[href='subfeatures/education-training.html'], #navLinks .submenu a[href='education-training.html']",
+      en: "Education and Training",
+      id: "Edukasi dan Pelatihan"
+    },
+    { selector: "#navLinks > li > a[href='products.html'], #navLinks > li > a[href='../products.html']", en: "Products", id: "Produk" },
+    { selector: "#navLinks > li > a[href='why-sentra.html'], #navLinks > li > a[href='../why-sentra.html']", en: "Why Sentra", id: "Kenapa Sentra" },
+    {
+      selector: "#navLinks > li > a[href='contact.html'], #navLinks > li > a[href='../contact.html'], #navLinks > li > a[href='#contact']",
+      en: "Contact Us",
+      id: "Hubungi Kami"
+    },
     { selector: ".hero-content p", en: "Solid and Reputable IT Solution Provider", id: "Penyedia Solusi TI yang Solid dan Terpercaya" },
     { selector: "footer .container", en: "Copyright \u00a9 2026 Sentra Netcomindo. All rights reserved.", id: "Hak Cipta \u00a9 2026 Sentra Netcomindo. Seluruh hak dilindungi." }
   ];
@@ -23,12 +65,12 @@
   const pageTranslations = {
     "index.html": {
       title: {
-        en: "Sentra Netcomindo | Company Profile",
-        id: "Sentra Netcomindo | Profil Perusahaan"
+        en: "Sentra Netcomindo | Home",
+        id: "Sentra Netcomindo | Beranda"
       },
       description: {
-        en: "Sentra Netcomindo - Solid and Reputable IT Solution Provider",
-        id: "Sentra Netcomindo - Penyedia Solusi TI yang Solid dan Terpercaya"
+        en: "Sentra Netcomindo - Enterprise IT solutions, services, and products for secure and reliable digital infrastructure.",
+        id: "Sentra Netcomindo - Solusi, layanan, dan produk TI enterprise untuk infrastruktur digital yang aman dan andal."
       },
       entries: [
         { selector: ".about-company-title", en: "About Company", id: "Tentang Perusahaan" },
@@ -126,7 +168,70 @@
           id: "Kami siap membantu Anda. Silakan hubungi kami melalui email atau telepon."
         },
         { selector: "#contact .contact-box:nth-child(1) h3", en: "OFFICE", id: "KANTOR" },
-        { selector: "#contact .contact-box:nth-child(2) h3", en: "WORKSHOP", id: "WORKSHOP" }
+        { selector: "#contact .contact-box:nth-child(2) h3", en: "WORKSHOP", id: "WORKSHOP" },
+
+        { selector: ".hero-cta .cta-primary", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
+        { selector: ".hero-cta .cta-secondary", en: "View Products", id: "Lihat Produk" },
+
+        { selector: "#about-brief .section-title", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
+        {
+          selector: "#about-brief .section-subtitle",
+          en: "Because we do not just deliver products, we make sure your solution runs stable, secure, and truly helps your business grow.",
+          id: "Karena kami tidak hanya kirim produk, tapi memastikan solusi berjalan stabil, aman, dan benar-benar membantu bisnis Anda tumbuh."
+        },
+        {
+          selector: "#about-brief .reason-list li:nth-child(1)",
+          en: "Enterprise implementation experience for security, infrastructure, and business continuity.",
+          id: "Pengalaman implementasi enterprise untuk security, infrastructure, dan business continuity."
+        },
+        {
+          selector: "#about-brief .reason-list li:nth-child(2)",
+          en: "Technical team focused on implementation quality, reliability, and responsive support.",
+          id: "Tim teknis fokus pada kualitas implementasi, reliability, dan support yang responsif."
+        },
+        {
+          selector: "#about-brief .reason-list li:nth-child(3)",
+          en: "Solution recommendations based on your real needs, not just product selling.",
+          id: "Rekomendasi solusi disesuaikan kebutuhan nyata, bukan sekadar jual produk."
+        },
+        {
+          selector: "#about-brief .reason-list li:nth-child(4)",
+          en: "Supported by global technology partners for small to enterprise scale requirements.",
+          id: "Didukung partner teknologi global untuk kebutuhan skala kecil sampai enterprise."
+        },
+        {
+          selector: "#about-brief p a",
+          en: "See full reasons why many companies choose Sentra Netcomindo",
+          id: "Lihat alasan lengkap kenapa banyak perusahaan memilih Sentra Netcomindo"
+        },
+
+        { selector: "#quick-pages .section-title", en: "Main Pages", id: "Halaman Utama" },
+        {
+          selector: "#quick-pages .section-subtitle",
+          en: "For complete details, continue to the dedicated pages below.",
+          id: "Untuk detail lengkap, lanjut ke halaman terpisah di bawah ini."
+        },
+        { selector: ".mini-grid .mini-card:nth-child(1) h3", en: "Solutions", id: "Solusi" },
+        {
+          selector: ".mini-grid .mini-card:nth-child(1) p",
+          en: "Detailed technical solutions from bandwidth to network security.",
+          id: "Detail solusi teknis dari bandwidth hingga network security."
+        },
+        { selector: ".mini-grid .mini-card:nth-child(1) a", en: "Open Solutions page", id: "Buka halaman Solutions" },
+        { selector: ".mini-grid .mini-card:nth-child(2) h3", en: "Services", id: "Layanan" },
+        {
+          selector: ".mini-grid .mini-card:nth-child(2) p",
+          en: "Detailed implementation services, managed services, and training.",
+          id: "Detail layanan implementasi, managed services, dan training."
+        },
+        { selector: ".mini-grid .mini-card:nth-child(2) a", en: "Open Services page", id: "Buka halaman Services" },
+        { selector: ".mini-grid .mini-card:nth-child(3) h3", en: "Products", id: "Produk" },
+        {
+          selector: ".mini-grid .mini-card:nth-child(3) p",
+          en: "List of products we support by category and brand.",
+          id: "Daftar produk yang kami support lengkap per kategori dan brand."
+        },
+        { selector: ".mini-grid .mini-card:nth-child(3) a", en: "Open Products page", id: "Buka halaman Products" }
       ]
     },
 
@@ -146,7 +251,7 @@
           en: "Yes we want to help you. Please don't doubt to email or call us",
           id: "Kami siap membantu Anda. Silakan hubungi kami melalui email atau telepon."
         },
-        { selector: "#contact .contact-box:nth-child(1) h3", en: "OFFICE", id: "KANTOR" },
+        { selector: "#contact .contact-box:nth-child(1) h3", en: "OFFICE (NEW ADDRESS)", id: "KANTOR (ALAMAT BARU)" },
         { selector: "#contact .contact-box:nth-child(2) h3", en: "WORKSHOP", id: "WORKSHOP" }
       ]
     }
@@ -561,7 +666,7 @@
 
   const LANGUAGES = new Set(["en", "id"]);
   const PAGE_FALLBACK = "index.html";
-  const LANGUAGE_TOGGLE_SELECTOR = "#navLinks > li:last-child > a";
+  const LANGUAGE_TOGGLE_SELECTOR = "#languageToggle";
 
   /**
    * Safely query a single DOM element.

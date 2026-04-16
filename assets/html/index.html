@@ -32,8 +32,41 @@
 
     <style>
       .hero {
-        background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.45)),
-          url("../images/firewall.png");
+        background-image: linear-gradient(120deg, rgba(3, 8, 20, 0.9), rgba(8, 18, 38, 0.72)),
+          url("../images/hero-network-bg.svg");
+        background-size: 118% 118%;
+        background-position: 50% 50%;
+        animation: heroDrift 18s ease-in-out infinite alternate;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: -8%;
+        background: radial-gradient(circle at 20% 28%, rgba(16, 185, 129, 0.28), transparent 48%);
+        animation: auraPulse 7s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      @keyframes heroDrift {
+        0% {
+          background-position: 46% 42%;
+        }
+        100% {
+          background-position: 58% 56%;
+        }
+      }
+
+      @keyframes auraPulse {
+        0%,
+        100% {
+          opacity: 0.6;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.05);
+        }
       }
 
       .hero-cta {
@@ -155,6 +188,7 @@
           <li><a href="products.html">Products</a></li>
           <li><a href="why-sentra.html">Why Sentra</a></li>
           <li><a href="contact.html">Contact Us</a></li>
+          <li><a id="languageToggle" href="#">Indonesia</a></li>
         </ul>
       </div>
     </header>
