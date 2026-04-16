@@ -277,11 +277,30 @@
 
       #about-brief .about-content {
         max-width: 980px;
-        border-radius: 18px;
-        border: 1px solid #e2e8f0;
-        background: #ffffff;
-        box-shadow: 0 18px 42px rgba(2, 6, 23, 0.08);
-        padding: clamp(22px, 3.2vw, 38px);
+        padding: 0 clamp(8px, 1.4vw, 16px);
+      }
+
+      .about-brief-copy {
+        max-width: 920px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .about-brief-copy .brief-body {
+        margin-top: 16px;
+        color: #475569;
+        font-size: clamp(1rem, 1.32vw, 1.15rem);
+        line-height: 1.78;
+      }
+
+      .about-brief-copy .brief-cta-wrap {
+        margin-top: 20px;
+      }
+
+      .about-brief-copy .brief-cta-link {
+        color: #0f766e;
+        text-decoration: none;
+        font-weight: 700;
       }
 
       .mini-grid {
@@ -335,39 +354,42 @@
         box-shadow: 0 24px 44px rgba(15, 23, 42, 0.12);
       }
 
-      .reason-list {
-        margin-top: 14px;
-        padding-left: 0;
-        list-style: none;
-        color: var(--text-muted);
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
-      }
-
-      .reason-list li {
-        margin-bottom: 0;
-        position: relative;
-        border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        background: #f8fafc;
-        padding: 14px 16px 14px 44px;
-      }
-
-      .reason-list li::before {
-        content: "";
-        position: absolute;
-        left: 16px;
-        top: 16px;
-        width: 18px;
-        height: 18px;
-        border-radius: 999px;
-        background: #16a34a;
-        box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.16);
-      }
-
       #quick-pages {
         background: linear-gradient(180deg, #f8fafc, #eef4f7);
+      }
+
+      #home-partners {
+        background: #ffffff;
+      }
+
+      .partner-logo-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 26px;
+      }
+
+      .partner-logo-card {
+        border: 1px solid #d9e4ef;
+        border-radius: 14px;
+        background: #ffffff;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
+        min-height: 106px;
+        display: grid;
+        place-items: center;
+        padding: 16px;
+        transition: transform 0.22s ease, box-shadow 0.22s ease;
+      }
+
+      .partner-logo-card img {
+        max-height: 44px;
+        width: auto;
+        object-fit: contain;
+      }
+
+      .partner-logo-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
       }
 
       @media (max-width: 900px) {
@@ -379,12 +401,12 @@
           grid-template-columns: 1fr;
         }
 
-        .reason-list {
+        .mini-grid {
           grid-template-columns: 1fr;
         }
 
-        .mini-grid {
-          grid-template-columns: 1fr;
+        .partner-logo-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
 
@@ -488,16 +510,19 @@
           </p>
         </div>
 
-        <ul class="reason-list">
-          <li>Pengalaman implementasi enterprise untuk security, infrastructure, dan business continuity.</li>
-          <li>Tim teknis fokus pada kualitas implementasi, reliability, dan support yang responsif.</li>
-          <li>Rekomendasi solusi disesuaikan kebutuhan nyata, bukan sekadar jual produk.</li>
-          <li>Didukung partner teknologi global untuk kebutuhan skala kecil sampai enterprise.</li>
-        </ul>
-
-        <p style="margin-top: 14px">
-          <a href="why-sentra.html" style="text-decoration: none; font-weight: 700; color: var(--accent-dark)">Lihat alasan lengkap kenapa banyak perusahaan memilih Sentra Netcomindo</a>
-        </p>
+        <div class="about-brief-copy">
+          <p class="brief-body">
+            Pengalaman implementasi enterprise kami dibangun dari proyek keamanan, infrastruktur, dan business continuity
+            dengan standar eksekusi yang terukur dan tim teknis yang responsif.
+          </p>
+          <p class="brief-body">
+            Pendekatan kami berfokus pada kebutuhan nyata bisnis Anda, didukung partner teknologi global agar solusi
+            yang diterapkan bukan hanya berjalan hari ini, tetapi juga siap berkembang untuk kebutuhan jangka panjang.
+          </p>
+          <p class="brief-cta-wrap">
+            <a class="brief-cta-link" href="why-sentra.html">Lihat alasan lengkap kenapa banyak perusahaan memilih Sentra Netcomindo</a>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -527,6 +552,27 @@
             <p>Daftar produk yang kami support lengkap per kategori dan brand.</p>
             <a href="products.html">Buka halaman Products</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="home-partners">
+      <div class="container fade-in">
+        <div class="section-header">
+          <h2 class="section-title">Our Partners</h2>
+          <span class="section-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">Supported by trusted technology partners to deliver the right solutions.</p>
+        </div>
+
+        <div class="partner-logo-grid">
+          <article class="partner-logo-card"><img src="../images/F5.png" alt="F5" loading="lazy" decoding="async" /></article>
+          <article class="partner-logo-card"><img src="../images/fortinet.png" alt="Fortinet" loading="lazy" decoding="async" /></article>
+          <article class="partner-logo-card"><img src="../images/infoblox.png" alt="Infoblox" loading="lazy" decoding="async" /></article>
+          <article class="partner-logo-card"><img src="../images/laplace.png" alt="Laplace" loading="lazy" decoding="async" /></article>
+          <article class="partner-logo-card"><img src="../images/lenovo.png" alt="Lenovo" loading="lazy" decoding="async" /></article>
+          <article class="partner-logo-card"><img src="../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" /></article>
+          <article class="partner-logo-card"><img src="../images/thales.png" alt="Thales" loading="lazy" decoding="async" /></article>
+          <article class="partner-logo-card"><img src="../images/wallix.png" alt="Wallix" loading="lazy" decoding="async" /></article>
         </div>
       </div>
     </section>

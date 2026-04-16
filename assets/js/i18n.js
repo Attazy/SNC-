@@ -193,27 +193,17 @@
           id: "Karena kami tidak hanya kirim produk, tapi memastikan solusi berjalan stabil, aman, dan benar-benar membantu bisnis Anda tumbuh."
         },
         {
-          selector: "#about-brief .reason-list li:nth-child(1)",
-          en: "Enterprise implementation experience for security, infrastructure, and business continuity.",
-          id: "Pengalaman implementasi enterprise untuk security, infrastructure, dan business continuity."
+          selector: "#about-brief .about-brief-copy .brief-body:nth-of-type(1)",
+          en: "Our enterprise implementation experience is built through security, infrastructure, and business continuity projects with measurable execution standards and a responsive technical team.",
+          id: "Pengalaman implementasi enterprise kami dibangun dari proyek keamanan, infrastruktur, dan business continuity dengan standar eksekusi yang terukur dan tim teknis yang responsif."
         },
         {
-          selector: "#about-brief .reason-list li:nth-child(2)",
-          en: "Technical team focused on implementation quality, reliability, and responsive support.",
-          id: "Tim teknis fokus pada kualitas implementasi, reliability, dan support yang responsif."
+          selector: "#about-brief .about-brief-copy .brief-body:nth-of-type(2)",
+          en: "Our approach is focused on your real business needs, supported by global technology partners so that the implemented solution is not only effective today, but also ready to scale for long-term requirements.",
+          id: "Pendekatan kami berfokus pada kebutuhan nyata bisnis Anda, didukung partner teknologi global agar solusi yang diterapkan bukan hanya berjalan hari ini, tetapi juga siap berkembang untuk kebutuhan jangka panjang."
         },
         {
-          selector: "#about-brief .reason-list li:nth-child(3)",
-          en: "Solution recommendations based on your real needs, not just product selling.",
-          id: "Rekomendasi solusi disesuaikan kebutuhan nyata, bukan sekadar jual produk."
-        },
-        {
-          selector: "#about-brief .reason-list li:nth-child(4)",
-          en: "Supported by global technology partners for small to enterprise scale requirements.",
-          id: "Didukung partner teknologi global untuk kebutuhan skala kecil sampai enterprise."
-        },
-        {
-          selector: "#about-brief p a",
+          selector: "#about-brief .about-brief-copy .brief-cta-link",
           en: "See full reasons why many companies choose Sentra Netcomindo",
           id: "Lihat alasan lengkap kenapa banyak perusahaan memilih Sentra Netcomindo"
         },
@@ -244,7 +234,14 @@
           en: "List of products we support by category and brand.",
           id: "Daftar produk yang kami support lengkap per kategori dan brand."
         },
-        { selector: ".mini-grid .mini-card:nth-child(3) a", en: "Open Products page", id: "Buka halaman Products" }
+        { selector: ".mini-grid .mini-card:nth-child(3) a", en: "Open Products page", id: "Buka halaman Products" },
+
+        { selector: "#home-partners .section-title", en: "Our Partners", id: "Mitra Kami" },
+        {
+          selector: "#home-partners .section-subtitle",
+          en: "Supported by trusted technology partners to deliver the right solutions.",
+          id: "Didukung oleh partner teknologi terpercaya untuk menghadirkan solusi yang tepat."
+        }
       ]
     },
 
