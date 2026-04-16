@@ -182,6 +182,11 @@
         },
         { selector: ".hero-cta .cta-primary", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
         { selector: ".hero-cta .cta-secondary", en: "View Products", id: "Lihat Produk" },
+        {
+          selector: ".hero-cert span",
+          en: "ISO/IEC 27001 Certified Company",
+          id: "Perusahaan Tersertifikasi ISO/IEC 27001"
+        },
         { selector: ".hero-kicker", en: "Enterprise IT Security & Infrastructure", id: "Keamanan dan Infrastruktur TI Enterprise" },
         { selector: ".hero-metrics div:nth-child(1) span", en: "Enterprise Projects", id: "Proyek Enterprise" },
         { selector: ".hero-metrics div:nth-child(2) span", en: "Support Readiness", id: "Kesiapan Support" },
@@ -272,6 +277,11 @@
           selector: "#about-company .about-intro .about-paragraph:nth-of-type(2)",
           en: "Today, Sentra Netcomindo expands its services to offer a wider range of IT solutions in response to growing customer needs, especially in Financial Institutions, Telecommunications, and Public Services.",
           id: "Saat ini, Sentra Netcomindo memperluas layanan untuk menghadirkan ragam solusi TI yang lebih luas sebagai respons atas kebutuhan pelanggan yang terus berkembang, terutama di sektor institusi keuangan, telekomunikasi, dan layanan publik."
+        },
+        {
+          selector: "#about-company .iso-highlight span",
+          en: "ISO/IEC 27001 Certified Company",
+          id: "Perusahaan Tersertifikasi ISO/IEC 27001"
         },
         { selector: "#about-company .about-vision h3", en: "VISION", id: "VISI" },
         { selector: "#about-company .about-vision li:nth-child(1)", en: "To be a respectable IT Solution Provider Company", id: "Menjadi perusahaan penyedia solusi TI yang terpercaya" },
