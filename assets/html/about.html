@@ -3,36 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us | Sentra Netcomindo</title>
-    <meta
-      name="description"
-      content="Contact Sentra Netcomindo - Office and Workshop information"
-    />
+    <title>About | Sentra Netcomindo</title>
+    <meta name="description" content="Company profile, vision, mission, and objectives of Sentra Netcomindo" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      referrerpolicy="no-referrer"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/hero.css" />
     <link rel="stylesheet" href="../css/about.css" />
-    <link rel="stylesheet" href="../css/solutions.css" />
-    <link rel="stylesheet" href="../css/services.css" />
-    <link rel="stylesheet" href="../css/partners.css" />
     <link rel="stylesheet" href="../css/contact-footer.css" />
-    <link rel="stylesheet" href="../css/subfeature.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
-  </head>
 
+    <style>
+      .hero {
+        min-height: 50vh;
+      }
+
+      #about-company {
+        background: linear-gradient(180deg, #f8fafc, #eef4f7);
+      }
+
+      .about-content {
+        text-align: left;
+      }
+
+      .about-intro {
+        margin-top: 8px;
+        margin-bottom: 20px;
+      }
+
+      .about-paragraph {
+        margin-bottom: 12px;
+      }
+
+      .about-values {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .about-objectives {
+        grid-column: auto;
+      }
+
+      .about-box li {
+        margin-bottom: 8px;
+      }
+
+      @media (max-width: 980px) {
+        .about-values {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
   <body>
     <header class="navbar" id="navbar">
       <div class="container nav-wrap">
@@ -73,7 +100,7 @@
             </ul>
           </li>
           <li><a href="products.html">Products</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
           <li><a id="languageToggle" href="#">Indonesia</a></li>
         </ul>
       </div>
@@ -81,39 +108,53 @@
 
     <section class="hero" id="home">
       <div class="hero-content fade-in">
-        <h1>SENTRA NETCOMINDO</h1>
-        <p>Solid and Reputable IT Solution Provider</p>
+        <h1>ABOUT SENTRA NETCOMINDO</h1>
+        <p>Company profile, vision, mission, and objectives.</p>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">CONTACT US</h2>
+    <section id="about-company">
+      <div class="container about-content fade-in">
+        <div class="section-header">
+          <h2 class="section-title">Company Overview</h2>
           <span class="section-divider" aria-hidden="true"></span>
-          <p class="section-subtitle">Yes we want to help you. Please don't doubt to email or call us</p>
+          <p class="section-subtitle">Short profile of who we are and what we deliver.</p>
         </div>
 
-        <div class="contact-wrap">
-          <article class="contact-box fade-in">
-            <h3>OFFICE</h3>
-            <p>
-              Gandaria 8 Office Tower, 21st Floor,<br />
-              Jl. Sultan Iskandar Muda, Jakarta 12240<br />
-              Telp: +62 21 7399554/7399245<br />
-              Email: <a href="mailto:inquiry@sentranetcomindo.com">inquiry@sentranetcomindo.com</a>
-            </p>
+        <div class="about-intro">
+          <p class="about-paragraph">
+            Founded in 2009, Sentra Netcomindo started as a Network Infrastructure Provider and has delivered
+            comprehensive solutions from networking products to cabling solutions ever since.
+          </p>
+          <p class="about-paragraph">
+            Today, Sentra Netcomindo expands its services to offer a wider range of IT solutions in response to growing
+            customer needs, especially in Financial Institutions, Telecommunications, and Public Services.
+          </p>
+        </div>
+
+        <div class="about-values">
+          <article class="about-box about-vision">
+            <h3>VISION</h3>
+            <ul>
+              <li>To be a respectable IT Solution Provider Company</li>
+            </ul>
           </article>
 
-          <article class="contact-box fade-in">
-            <h3>WORKSHOP</h3>
-            <p>
-              Ruko Kemala Square No. 86D,<br />
-              Jl. Ciledug Raya No.86D 4,<br />
-              RT.4/RW.4, Cipulir, Kec. Kebayoran Lama,<br />
-              Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12230<br />
-              Telp: 021 739 9554
-            </p>
+          <article class="about-box about-mission">
+            <h3>MISSION</h3>
+            <ul>
+              <li>Building a strong competency in IT Industry through continuous human resources development</li>
+              <li>Delivering value based solution to customer</li>
+              <li>Building a solid foundation of Financial Structure</li>
+            </ul>
+          </article>
+
+          <article class="about-box about-objectives">
+            <h3>OBJECTIVES</h3>
+            <ul>
+              <li>Giving the best deliverables to customer</li>
+              <li>Leveraging relationship with customers to a point of becoming mutual partner in success</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -163,9 +204,3 @@
     <script src="../js/i18n.js"></script>
   </body>
 </html>
-
-
-
-
-
-

@@ -4,6 +4,7 @@
 
   const commonTranslations = [
     { selector: "#navLinks > li > a[href='index.html'], #navLinks > li > a[href='../index.html']", en: "Home", id: "Beranda" },
+    { selector: "#navLinks > li > a[href='about.html'], #navLinks > li > a[href='../about.html']", en: "About", id: "Tentang" },
     { selector: "#navLinks > li > a[href='solutions.html'], #navLinks > li > a[href='../solutions.html']", en: "Solution", id: "Solusi" },
     {
       selector: "#navLinks .submenu a[href='subfeatures/bandwidth-optimization.html'], #navLinks .submenu a[href='bandwidth-optimization.html']",
@@ -236,6 +237,58 @@
           selector: "#home-partners .section-subtitle",
           en: "Supported by trusted technology partners to deliver the right solutions.",
           id: "Didukung oleh partner teknologi terpercaya untuk menghadirkan solusi yang tepat."
+        }
+      ]
+    },
+
+    "about.html": {
+      title: {
+        en: "About | Sentra Netcomindo",
+        id: "Tentang | Sentra Netcomindo"
+      },
+      description: {
+        en: "Company profile, vision, mission, and objectives of Sentra Netcomindo",
+        id: "Profil perusahaan, visi, misi, dan tujuan Sentra Netcomindo"
+      },
+      entries: [
+        { selector: ".hero-content h1", en: "ABOUT SENTRA NETCOMINDO", id: "TENTANG SENTRA NETCOMINDO" },
+        {
+          selector: ".hero-content p:not(.hero-description)",
+          en: "Company profile, vision, mission, and objectives.",
+          id: "Profil perusahaan, visi, misi, dan tujuan."
+        },
+        { selector: "#about-company .section-title", en: "Company Overview", id: "Gambaran Perusahaan" },
+        {
+          selector: "#about-company .section-subtitle",
+          en: "Short profile of who we are and what we deliver.",
+          id: "Profil singkat tentang siapa kami dan apa yang kami hadirkan."
+        },
+        {
+          selector: "#about-company .about-intro .about-paragraph:nth-of-type(1)",
+          en: "Founded in 2009, Sentra Netcomindo started as a Network Infrastructure Provider and has delivered comprehensive solutions from networking products to cabling solutions ever since.",
+          id: "Didirikan pada tahun 2009, Sentra Netcomindo memulai sebagai penyedia infrastruktur jaringan dan sejak saat itu menghadirkan solusi menyeluruh dari produk jaringan hingga solusi pengkabelan."
+        },
+        {
+          selector: "#about-company .about-intro .about-paragraph:nth-of-type(2)",
+          en: "Today, Sentra Netcomindo expands its services to offer a wider range of IT solutions in response to growing customer needs, especially in Financial Institutions, Telecommunications, and Public Services.",
+          id: "Saat ini, Sentra Netcomindo memperluas layanan untuk menghadirkan ragam solusi TI yang lebih luas sebagai respons atas kebutuhan pelanggan yang terus berkembang, terutama di sektor institusi keuangan, telekomunikasi, dan layanan publik."
+        },
+        { selector: "#about-company .about-vision h3", en: "VISION", id: "VISI" },
+        { selector: "#about-company .about-vision li:nth-child(1)", en: "To be a respectable IT Solution Provider Company", id: "Menjadi perusahaan penyedia solusi TI yang terpercaya" },
+        { selector: "#about-company .about-mission h3", en: "MISSION", id: "MISI" },
+        {
+          selector: "#about-company .about-mission li:nth-child(1)",
+          en: "Building a strong competency in IT Industry through continuous human resources development",
+          id: "Membangun kompetensi kuat di industri TI melalui pengembangan sumber daya manusia secara berkelanjutan"
+        },
+        { selector: "#about-company .about-mission li:nth-child(2)", en: "Delivering value based solution to customer", id: "Memberikan solusi berbasis nilai kepada pelanggan" },
+        { selector: "#about-company .about-mission li:nth-child(3)", en: "Building a solid foundation of Financial Structure", id: "Membangun fondasi struktur keuangan yang solid" },
+        { selector: "#about-company .about-objectives h3", en: "OBJECTIVES", id: "TUJUAN" },
+        { selector: "#about-company .about-objectives li:nth-child(1)", en: "Giving the best deliverables to customer", id: "Memberikan hasil terbaik bagi pelanggan" },
+        {
+          selector: "#about-company .about-objectives li:nth-child(2)",
+          en: "Leveraging relationship with customers to a point of becoming mutual partner in success",
+          id: "Membangun hubungan dengan pelanggan hingga menjadi mitra sukses bersama"
         }
       ]
     },
