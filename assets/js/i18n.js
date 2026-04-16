@@ -361,21 +361,21 @@
         id: "Solusi | Sentra Netcomindo"
       },
       description: {
-        en: "Enterprise IT solutions portfolio from Sentra Netcomindo.",
-        id: "Portofolio solusi TI enterprise dari Sentra Netcomindo."
+        en: "Solutions by Sentra Netcomindo",
+        id: "Solusi oleh Sentra Netcomindo"
       },
       entries: [
         { selector: ".hero-content h1", en: "SOLUTIONS", id: "SOLUSI" },
         {
           selector: ".hero-content p:not(.hero-description)",
-          en: "Core Sentra Netcomindo solutions designed for enterprise requirements.",
+          en: "Core Sentra Netcomindo solutions for enterprise needs.",
           id: "Solusi utama Sentra Netcomindo yang dirancang untuk kebutuhan enterprise."
         },
         { selector: ".section-header .section-title", en: "Solution Portfolio", id: "Portofolio Solusi" },
         {
           selector: ".section-header .section-subtitle",
-          en: "Select Read More on each solution to explore the detailed solution page.",
-          id: "Pilih Read More pada setiap solusi untuk melihat detail solusi secara lengkap."
+          en: "Click Read More on each solution to view the detailed page.",
+          id: "Klik Read More di tiap solusi untuk lihat detail halaman masing-masing."
         },
         {
           selector: ".solutions-grid .solution-item:nth-child(1) p",
@@ -384,8 +384,8 @@
         },
         {
           selector: ".solutions-grid .solution-item:nth-child(2) p",
-          en: "Protect cryptographic keys for sensitive data and compliance readiness.",
-          id: "Lindungi kunci kriptografi untuk data sensitif dan kesiapan kepatuhan."
+          en: "Cryptographic key protection for sensitive data and compliance readiness.",
+          id: "Proteksi kunci kriptografi untuk data sensitif dan compliance readiness."
         },
         {
           selector: ".solutions-grid .solution-item:nth-child(3) p",
@@ -404,8 +404,8 @@
         },
         {
           selector: ".solutions-grid .solution-item:nth-child(6) p",
-          en: "Storage and compute platforms built for enterprise performance.",
-          id: "Platform penyimpanan dan komputasi yang dibangun untuk performa enterprise."
+          en: "Storage and compute platform designed for enterprise performance.",
+          id: "Platform penyimpanan dan komputasi untuk performa enterprise."
         },
         { selector: ".solutions-grid .solution-item:nth-child(1) a", en: "Read More", id: "Baca Detail" },
         { selector: ".solutions-grid .solution-item:nth-child(2) a", en: "Read More", id: "Baca Detail" },
@@ -422,8 +422,8 @@
         id: "Layanan | Sentra Netcomindo"
       },
       description: {
-        en: "Enterprise services from Sentra Netcomindo.",
-        id: "Layanan enterprise dari Sentra Netcomindo."
+        en: "Services by Sentra Netcomindo",
+        id: "Layanan oleh Sentra Netcomindo"
       },
       entries: [
         { selector: ".hero-content h1", en: "SERVICES", id: "LAYANAN" },
@@ -435,23 +435,23 @@
         { selector: ".section-header .section-title", en: "Service Portfolio", id: "Portofolio Layanan" },
         {
           selector: ".section-header .section-subtitle",
-          en: "Choose services that align with your team structure and infrastructure priorities.",
-          id: "Pilih layanan yang selaras dengan struktur tim dan prioritas infrastruktur Anda."
+          en: "Choose services that match your team and infrastructure needs.",
+          id: "Pilih layanan sesuai kebutuhan tim dan infrastruktur Anda."
         },
         {
           selector: ".services-grid .service-item:nth-child(1) p",
-          en: "Routine maintenance and preventive actions to reduce unplanned downtime.",
-          id: "Perawatan berkala dan tindakan preventif untuk menekan downtime tak terencana."
+          en: "Routine maintenance and preventive actions to reduce downtime.",
+          id: "Perawatan berkala dan preventive action untuk menekan downtime."
         },
         {
           selector: ".services-grid .service-item:nth-child(2) p",
-          en: "Daily operational support so your internal team can focus on strategic priorities.",
-          id: "Dukungan operasional harian agar tim internal lebih fokus pada prioritas strategis."
+          en: "Daily operational support so your internal team can focus on business priorities.",
+          id: "Pendampingan operasional harian agar tim internal lebih fokus ke prioritas bisnis."
         },
         {
           selector: ".services-grid .service-item:nth-child(3) p",
-          en: "Technical capability programs that accelerate effective platform adoption.",
-          id: "Program kapabilitas teknis yang mempercepat adopsi platform secara efektif."
+          en: "Technical capability development programs for effective platform adoption.",
+          id: "Program peningkatan kompetensi teknis untuk penggunaan platform yang efektif."
         },
         { selector: ".services-grid .service-item:nth-child(1) a", en: "Read More", id: "Baca Detail" },
         { selector: ".services-grid .service-item:nth-child(2) a", en: "Read More", id: "Baca Detail" },
