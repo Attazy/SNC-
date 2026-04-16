@@ -1,5 +1,66 @@
 (() => {
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const METRICS_STORAGE_KEY = "snc-cta-metrics-v1";
+
+  const getCurrentPage = () => window.location.pathname.split("/").pop() || "index.html";
+
+  const getElementContext = (element) => {
+    if (element.closest(".nav-links")) {
+      return "navigation";
+    }
+
+    if (element.closest(".hero")) {
+      return "hero";
+    }
+
+    if (element.closest(".site-footer")) {
+      return "footer";
+    }
+
+    if (element.closest("#subfeature-detail")) {
+      return "subfeature-content";
+    }
+
+    return "content";
+  };
+
+  const persistMetric = (eventName, payload) => {
+    try {
+      const rawMetrics = window.localStorage.getItem(METRICS_STORAGE_KEY);
+      const metrics = rawMetrics ? JSON.parse(rawMetrics) : {};
+      const page = payload?.page || getCurrentPage();
+      const label = payload?.context || payload?.destination || "general";
+      const metricKey = `${eventName}|${page}|${label}`;
+
+      metrics[metricKey] = (metrics[metricKey] || 0) + 1;
+      metrics.lastUpdatedAt = new Date().toISOString();
+
+      window.localStorage.setItem(METRICS_STORAGE_KEY, JSON.stringify(metrics));
+    } catch {
+      // Ignore localStorage unavailability or JSON parsing errors.
+    }
+  };
+
+  const trackEvent = (eventName, payload = {}) => {
+    if (typeof eventName !== "string" || !eventName) {
+      return;
+    }
+
+    const eventPayload = {
+      page: getCurrentPage(),
+      ...payload
+    };
+
+    if (typeof window.gtag === "function") {
+      window.gtag("event", eventName, eventPayload);
+    }
+
+    if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({ event: eventName, ...eventPayload });
+    }
+
+    persistMetric(eventName, eventPayload);
+  };
 
   const injectGlobalEffectsStyle = () => {
     const style = document.createElement("style");
@@ -17,14 +78,14 @@
         box-shadow: 0 4px 12px rgba(26, 39, 54, 0.18);
       }
 
-      .wa-button.pulse-attention {
-        animation: waPulse 1.2s ease;
+      .subfeature-cta.is-focused {
+        animation: ctaFocusPulse 0.9s ease;
       }
 
-      @keyframes waPulse {
+      @keyframes ctaFocusPulse {
         0% { transform: scale(1); }
-        35% { transform: scale(1.14); }
-        65% { transform: scale(0.96); }
+        35% { transform: scale(1.04); }
+        65% { transform: scale(0.99); }
         100% { transform: scale(1); }
       }
     `;
@@ -37,16 +98,28 @@
     progress.setAttribute("aria-hidden", "true");
     document.body.appendChild(progress);
 
+    let rafPending = false;
+
     const updateProgress = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
       const ratio = scrollable > 0 ? Math.min(1, Math.max(0, scrollTop / scrollable)) : 0;
       progress.style.transform = `scaleX(${ratio})`;
+      rafPending = false;
     };
 
-    updateProgress();
-    window.addEventListener("scroll", updateProgress, { passive: true });
-    window.addEventListener("resize", updateProgress);
+    const scheduleProgressUpdate = () => {
+      if (rafPending) {
+        return;
+      }
+
+      rafPending = true;
+      window.requestAnimationFrame(updateProgress);
+    };
+
+    scheduleProgressUpdate();
+    window.addEventListener("scroll", scheduleProgressUpdate, { passive: true });
+    window.addEventListener("resize", scheduleProgressUpdate);
   };
 
   const initStaggerReveal = () => {
@@ -54,6 +127,7 @@
       ".solutions-grid .fade-in",
       ".services-grid .fade-in",
       ".about-values .about-box.fade-in",
+      ".subfeature-kpi-grid .subfeature-kpi-card.fade-in",
       ".subfeature-content .subfeature-block",
       ".contact-wrap .fade-in"
     ];
@@ -67,54 +141,77 @@
     });
   };
 
-  const initTiltCards = () => {
-    if (prefersReducedMotion || !window.matchMedia("(pointer: fine)").matches) {
+  const initConversionCtaFocus = () => {
+    const ctaButton = document.querySelector(".subfeature-cta");
+    if (!ctaButton || prefersReducedMotion) {
       return;
     }
 
-    const targets = document.querySelectorAll(
-      ".solution-item, .service-item, .about-box, .subfeature-block, .partner-item"
+    const ctaObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            ctaButton.classList.add("is-focused");
+            ctaObserver.disconnect();
+          }
+        });
+      },
+      { threshold: 0.45 }
     );
 
-    targets.forEach((card) => {
-      card.style.willChange = "transform";
-      card.style.transition = "transform 0.18s ease";
+    ctaObserver.observe(ctaButton);
+  };
 
-      card.addEventListener("mousemove", (event) => {
-        const rect = card.getBoundingClientRect();
-        const offsetX = (event.clientX - rect.left) / rect.width;
-        const offsetY = (event.clientY - rect.top) / rect.height;
+  const initCtaTracking = () => {
+    document.addEventListener("click", (event) => {
+      const clickedElement = event.target.closest("a, button");
+      if (!clickedElement) {
+        return;
+      }
 
-        const rotateY = (offsetX - 0.5) * 8;
-        const rotateX = (0.5 - offsetY) * 8;
+      const href = clickedElement.getAttribute("href") || "";
 
-        card.style.transform = `perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-3px)`;
-      });
+      if (clickedElement.matches(".subfeature-cta")) {
+        trackEvent("subfeature_conversion_click", {
+          destination: href || "contact.html",
+          context: getElementContext(clickedElement),
+          ctaText: clickedElement.textContent?.trim() || "subfeature-cta"
+        });
+      }
 
-      card.addEventListener("mouseleave", () => {
-        card.style.transform = "perspective(900px) rotateX(0deg) rotateY(0deg) translateY(0)";
-      });
+      const isContactClick =
+        href === "contact.html" ||
+        href === "../contact.html" ||
+        href === "#contact" ||
+        href.startsWith("mailto:");
+
+      if (isContactClick) {
+        trackEvent("contact_click", {
+          destination: href,
+          context: getElementContext(clickedElement),
+          linkText: clickedElement.textContent?.trim() || "contact-link"
+        });
+      }
     });
   };
 
-  const initWhatsAppAttention = () => {
-    const button = document.querySelector(".wa-button");
-    if (!button || prefersReducedMotion) {
+  const initSubfeatureViewTracking = () => {
+    if (!document.querySelector(".subfeature-cta")) {
       return;
     }
 
-    const triggerPulse = () => {
-      button.classList.remove("pulse-attention");
-      window.requestAnimationFrame(() => button.classList.add("pulse-attention"));
-    };
-
-    window.setTimeout(triggerPulse, 1400);
-    window.setInterval(triggerPulse, 9000);
+    trackEvent("subfeature_page_view", {
+      context: "page-load"
+    });
   };
 
   injectGlobalEffectsStyle();
   initScrollProgress();
-  initStaggerReveal();
-  initTiltCards();
-  initWhatsAppAttention();
+  initCtaTracking();
+  initSubfeatureViewTracking();
+
+  if (!prefersReducedMotion) {
+    initStaggerReveal();
+    initConversionCtaFocus();
+  }
 })();

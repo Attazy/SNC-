@@ -177,8 +177,8 @@
         { selector: ".hero-content h1", en: "PT. Sentra Netcomindo", id: "PT. Sentra Netcomindo" },
         {
           selector: ".hero-content p.hero-description",
-          en: "Founded in 2009, we start as a Network Infratructure company and has delivered comprehensive solution from networking products to cabling solution eversince. Now, PT Sentra Netcomindo expands its services to offer wider range of ICT Solution as a respond of growing needs in our based clients as well as other potential clients in the industry",
-          id: "Didirikan pada tahun 2009, kami memulai sebagai perusahaan Network Infrastructure dan telah menghadirkan solusi komprehensif mulai dari produk networking hingga solusi cabling. Kini, PT Sentra Netcomindo memperluas layanan untuk menawarkan ragam solusi ICT yang lebih luas sebagai respons atas kebutuhan klien utama kami serta klien potensial lainnya di berbagai industri."
+          en: "Founded in 2009, PT Sentra Netcomindo began as a network infrastructure provider and has delivered comprehensive solutions ranging from networking products to cabling services. Today, we continue to expand our ICT portfolio to meet evolving client needs across financial institutions, telecommunications, and public services.",
+          id: "Didirikan pada tahun 2009, PT Sentra Netcomindo memulai perjalanan sebagai penyedia infrastruktur jaringan dan terus menghadirkan solusi komprehensif mulai dari produk jaringan hingga layanan pengkabelan. Saat ini, kami terus memperluas portofolio ICT untuk menjawab kebutuhan klien yang terus berkembang di sektor institusi keuangan, telekomunikasi, dan layanan publik."
         },
         { selector: ".hero-cta .cta-primary", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
         { selector: ".hero-cta .cta-secondary", en: "View Products", id: "Lihat Produk" },
@@ -195,8 +195,8 @@
         { selector: "#about-brief .section-title", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
         {
           selector: "#about-brief .section-subtitle",
-          en: "We focus on enterprise IT solutions that are stable, secure, and aligned with your business needs.",
-          id: "Kami fokus pada solusi IT enterprise yang stabil, aman, dan relevan dengan kebutuhan bisnis Anda."
+          en: "We focus on enterprise IT solutions that are stable, secure, and aligned with your business priorities.",
+          id: "Kami fokus pada solusi TI enterprise yang stabil, aman, dan selaras dengan prioritas bisnis Anda."
         },
         {
           selector: "#about-brief .about-brief-copy .brief-body:nth-of-type(1)",
@@ -205,35 +205,35 @@
         },
         {
           selector: "#about-brief .about-brief-copy .brief-cta-link",
-          en: "See full reasons why many companies choose Sentra Netcomindo",
-          id: "Lihat alasan lengkap kenapa banyak perusahaan memilih Sentra Netcomindo"
+          en: "See why organizations choose Sentra Netcomindo",
+          id: "Lihat alasan organisasi memilih Sentra Netcomindo"
         },
 
         { selector: "#quick-pages .section-title", en: "Main Pages", id: "Halaman Utama" },
         {
           selector: "#quick-pages .section-subtitle",
-          en: "For complete details, continue to the dedicated pages below.",
-          id: "Untuk detail lengkap, lanjut ke halaman terpisah di bawah ini."
+          en: "Explore the dedicated pages below for full service and solution details.",
+          id: "Jelajahi halaman khusus di bawah untuk melihat detail solusi dan layanan secara lengkap."
         },
         { selector: ".mini-grid .mini-card:nth-child(1) h3", en: "Solutions", id: "Solusi" },
         {
           selector: ".mini-grid .mini-card:nth-child(1) p",
-          en: "Detailed technical solutions from bandwidth to network security.",
-          id: "Detail solusi teknis dari bandwidth hingga network security."
+          en: "Technical solution portfolio from bandwidth optimization to network security architecture.",
+          id: "Portofolio solusi teknis dari optimasi bandwidth hingga arsitektur keamanan jaringan."
         },
         { selector: ".mini-grid .mini-card:nth-child(1) a", en: "Open Solutions page", id: "Buka halaman Solutions" },
         { selector: ".mini-grid .mini-card:nth-child(2) h3", en: "Services", id: "Layanan" },
         {
           selector: ".mini-grid .mini-card:nth-child(2) p",
-          en: "Detailed implementation services, managed services, and training.",
-          id: "Detail layanan implementasi, managed services, dan training."
+          en: "Implementation services, managed operations, and technical capability development programs.",
+          id: "Layanan implementasi, operasi terkelola, dan program pengembangan kapabilitas teknis."
         },
         { selector: ".mini-grid .mini-card:nth-child(2) a", en: "Open Services page", id: "Buka halaman Services" },
         { selector: ".mini-grid .mini-card:nth-child(3) h3", en: "Products", id: "Produk" },
         {
           selector: ".mini-grid .mini-card:nth-child(3) p",
-          en: "List of products we support by category and brand.",
-          id: "Daftar produk yang kami support lengkap per kategori dan brand."
+          en: "Core product portfolio by category and principal technology partner.",
+          id: "Portofolio produk utama berdasarkan kategori dan principal teknologi."
         },
         { selector: ".mini-grid .mini-card:nth-child(3) a", en: "Open Products page", id: "Buka halaman Products" },
 
@@ -252,21 +252,21 @@
         id: "Tentang | Sentra Netcomindo"
       },
       description: {
-        en: "Company profile, vision, mission, and objectives of Sentra Netcomindo",
-        id: "Profil perusahaan, visi, misi, dan tujuan Sentra Netcomindo"
+        en: "Learn about Sentra Netcomindo's profile, vision, mission, and strategic objectives.",
+        id: "Pelajari profil, visi, misi, dan tujuan strategis Sentra Netcomindo."
       },
       entries: [
         { selector: ".hero-content h1", en: "SENTRA NETCOMINDO", id: "SENTRA NETCOMINDO" },
         {
           selector: ".hero-content p:not(.hero-description)",
-          en: "Company profile, vision, mission, and objectives.",
-          id: "Profil perusahaan, visi, misi, dan tujuan."
+          en: "Company profile, vision, mission, and strategic objectives.",
+          id: "Profil perusahaan, visi, misi, dan tujuan strategis."
         },
         { selector: "#about-company .section-title", en: "Company Overview", id: "Gambaran Perusahaan" },
         {
           selector: "#about-company .section-subtitle",
-          en: "Short profile of who we are and what we deliver.",
-          id: "Profil singkat tentang siapa kami dan apa yang kami hadirkan."
+          en: "A concise profile of who we are and what we deliver.",
+          id: "Profil ringkas tentang siapa kami dan nilai yang kami hadirkan."
         },
         {
           selector: "#about-company .about-intro .about-paragraph:nth-of-type(1)",
@@ -284,21 +284,21 @@
           id: "Perusahaan Tersertifikasi ISO/IEC 27001"
         },
         { selector: "#about-company .about-vision h3", en: "VISION", id: "VISI" },
-        { selector: "#about-company .about-vision li:nth-child(1)", en: "To be a respectable IT Solution Provider Company", id: "Menjadi perusahaan penyedia solusi TI yang terpercaya" },
+        { selector: "#about-company .about-vision li:nth-child(1)", en: "To become a trusted and respected IT solutions provider.", id: "Menjadi penyedia solusi TI yang tepercaya dan dihormati." },
         { selector: "#about-company .about-mission h3", en: "MISSION", id: "MISI" },
         {
           selector: "#about-company .about-mission li:nth-child(1)",
-          en: "Building a strong competency in IT Industry through continuous human resources development",
-          id: "Membangun kompetensi kuat di industri TI melalui pengembangan sumber daya manusia secara berkelanjutan"
+          en: "Build strong IT capabilities through continuous talent development.",
+          id: "Membangun kapabilitas TI yang kuat melalui pengembangan talenta secara berkelanjutan."
         },
-        { selector: "#about-company .about-mission li:nth-child(2)", en: "Delivering value based solution to customer", id: "Memberikan solusi berbasis nilai kepada pelanggan" },
-        { selector: "#about-company .about-mission li:nth-child(3)", en: "Building a solid foundation of Financial Structure", id: "Membangun fondasi struktur keuangan yang solid" },
+        { selector: "#about-company .about-mission li:nth-child(2)", en: "Deliver value-based solutions to customers.", id: "Memberikan solusi berbasis nilai kepada pelanggan." },
+        { selector: "#about-company .about-mission li:nth-child(3)", en: "Build a solid and sustainable financial foundation.", id: "Membangun fondasi keuangan yang solid dan berkelanjutan." },
         { selector: "#about-company .about-objectives h3", en: "OBJECTIVES", id: "TUJUAN" },
-        { selector: "#about-company .about-objectives li:nth-child(1)", en: "Giving the best deliverables to customer", id: "Memberikan hasil terbaik bagi pelanggan" },
+        { selector: "#about-company .about-objectives li:nth-child(1)", en: "Deliver the highest-quality outcomes to customers.", id: "Memberikan hasil berkualitas tertinggi kepada pelanggan." },
         {
           selector: "#about-company .about-objectives li:nth-child(2)",
-          en: "Leveraging relationship with customers to a point of becoming mutual partner in success",
-          id: "Membangun hubungan dengan pelanggan hingga menjadi mitra sukses bersama"
+          en: "Build long-term relationships that grow into shared success.",
+          id: "Membangun hubungan jangka panjang yang tumbuh menjadi keberhasilan bersama."
         }
       ]
     },
@@ -361,21 +361,21 @@
         id: "Solusi | Sentra Netcomindo"
       },
       description: {
-        en: "Solutions by Sentra Netcomindo",
-        id: "Solusi oleh Sentra Netcomindo"
+        en: "Enterprise IT solutions portfolio from Sentra Netcomindo.",
+        id: "Portofolio solusi TI enterprise dari Sentra Netcomindo."
       },
       entries: [
         { selector: ".hero-content h1", en: "SOLUTIONS", id: "SOLUSI" },
         {
           selector: ".hero-content p:not(.hero-description)",
-          en: "Core Sentra Netcomindo solutions for enterprise needs.",
-          id: "Solusi utama Sentra Netcomindo untuk kebutuhan enterprise."
+          en: "Core Sentra Netcomindo solutions designed for enterprise requirements.",
+          id: "Solusi utama Sentra Netcomindo yang dirancang untuk kebutuhan enterprise."
         },
         { selector: ".section-header .section-title", en: "Solution Portfolio", id: "Portofolio Solusi" },
         {
           selector: ".section-header .section-subtitle",
-          en: "Click Read More on each solution to view the detailed page.",
-          id: "Klik Read More di tiap solusi untuk lihat detail halaman masing-masing."
+          en: "Select Read More on each solution to explore the detailed solution page.",
+          id: "Pilih Read More pada setiap solusi untuk melihat detail solusi secara lengkap."
         },
         {
           selector: ".solutions-grid .solution-item:nth-child(1) p",
@@ -384,8 +384,8 @@
         },
         {
           selector: ".solutions-grid .solution-item:nth-child(2) p",
-          en: "Cryptographic key protection for sensitive data and compliance readiness.",
-          id: "Proteksi kunci kriptografi untuk data sensitif dan compliance readiness."
+          en: "Protect cryptographic keys for sensitive data and compliance readiness.",
+          id: "Lindungi kunci kriptografi untuk data sensitif dan kesiapan kepatuhan."
         },
         {
           selector: ".solutions-grid .solution-item:nth-child(3) p",
@@ -404,8 +404,8 @@
         },
         {
           selector: ".solutions-grid .solution-item:nth-child(6) p",
-          en: "Storage and compute platform designed for enterprise performance.",
-          id: "Platform penyimpanan dan komputasi untuk performa enterprise."
+          en: "Storage and compute platforms built for enterprise performance.",
+          id: "Platform penyimpanan dan komputasi yang dibangun untuk performa enterprise."
         },
         { selector: ".solutions-grid .solution-item:nth-child(1) a", en: "Read More", id: "Baca Detail" },
         { selector: ".solutions-grid .solution-item:nth-child(2) a", en: "Read More", id: "Baca Detail" },
@@ -422,8 +422,8 @@
         id: "Layanan | Sentra Netcomindo"
       },
       description: {
-        en: "Services by Sentra Netcomindo",
-        id: "Layanan oleh Sentra Netcomindo"
+        en: "Enterprise services from Sentra Netcomindo.",
+        id: "Layanan enterprise dari Sentra Netcomindo."
       },
       entries: [
         { selector: ".hero-content h1", en: "SERVICES", id: "LAYANAN" },
@@ -435,23 +435,23 @@
         { selector: ".section-header .section-title", en: "Service Portfolio", id: "Portofolio Layanan" },
         {
           selector: ".section-header .section-subtitle",
-          en: "Choose services that match your team and infrastructure needs.",
-          id: "Pilih layanan sesuai kebutuhan tim dan infrastruktur Anda."
+          en: "Choose services that align with your team structure and infrastructure priorities.",
+          id: "Pilih layanan yang selaras dengan struktur tim dan prioritas infrastruktur Anda."
         },
         {
           selector: ".services-grid .service-item:nth-child(1) p",
-          en: "Routine maintenance and preventive actions to reduce downtime.",
-          id: "Perawatan berkala dan preventive action untuk menekan downtime."
+          en: "Routine maintenance and preventive actions to reduce unplanned downtime.",
+          id: "Perawatan berkala dan tindakan preventif untuk menekan downtime tak terencana."
         },
         {
           selector: ".services-grid .service-item:nth-child(2) p",
-          en: "Daily operational support so your internal team can focus on business priorities.",
-          id: "Pendampingan operasional harian agar tim internal lebih fokus ke prioritas bisnis."
+          en: "Daily operational support so your internal team can focus on strategic priorities.",
+          id: "Dukungan operasional harian agar tim internal lebih fokus pada prioritas strategis."
         },
         {
           selector: ".services-grid .service-item:nth-child(3) p",
-          en: "Technical capability development programs for effective platform adoption.",
-          id: "Program peningkatan kompetensi teknis untuk penggunaan platform yang efektif."
+          en: "Technical capability programs that accelerate effective platform adoption.",
+          id: "Program kapabilitas teknis yang mempercepat adopsi platform secara efektif."
         },
         { selector: ".services-grid .service-item:nth-child(1) a", en: "Read More", id: "Baca Detail" },
         { selector: ".services-grid .service-item:nth-child(2) a", en: "Read More", id: "Baca Detail" },
@@ -465,15 +465,15 @@
         id: "Produk | Sentra Netcomindo"
       },
       description: {
-        en: "Product list by Sentra Netcomindo",
-        id: "Daftar produk oleh Sentra Netcomindo"
+        en: "Product portfolio by Sentra Netcomindo.",
+        id: "Portofolio produk oleh Sentra Netcomindo."
       },
       entries: [
         { selector: ".hero-content h1", en: "PRODUCTS", id: "PRODUK" },
         {
           selector: ".hero-content p:not(.hero-description)",
-          en: "List of products available for your security and infrastructure needs.",
-          id: "Daftar produk yang tersedia untuk kebutuhan keamanan dan infrastruktur Anda."
+          en: "Product portfolio available to support your security and infrastructure priorities.",
+          id: "Portofolio produk yang tersedia untuk mendukung prioritas keamanan dan infrastruktur Anda."
         },
         { selector: ".section-header .section-title", en: "Our Products", id: "Produk Kami" },
         {
@@ -499,11 +499,16 @@
         id: "Kontak Sentra Netcomindo - Informasi kantor dan workshop"
       },
       entries: [
+        {
+          selector: ".hero-content p:not(.hero-description)",
+          en: "Connect with our team for consultations, project discussions, and service inquiries.",
+          id: "Terhubung dengan tim kami untuk konsultasi, diskusi proyek, dan kebutuhan layanan."
+        },
         { selector: "#contact .section-title", en: "CONTACT US", id: "HUBUNGI KAMI" },
         {
           selector: "#contact .section-subtitle",
-          en: "Yes we want to help you. Please don't doubt to email or call us",
-          id: "Kami siap membantu Anda. Silakan hubungi kami melalui email atau telepon."
+          en: "We are ready to help. Contact us by email or phone and our team will respond promptly.",
+          id: "Kami siap membantu. Hubungi kami melalui email atau telepon dan tim kami akan merespons dengan cepat."
         },
         { selector: "#contact .contact-box:nth-child(1) h3", en: "OFFICE", id: "KANTOR" },
         { selector: "#contact .contact-box:nth-child(2) h3", en: "WORKSHOP", id: "WORKSHOP" }
@@ -1000,6 +1005,33 @@
     setText(".subfeature-cta", pageConfig?.cta?.[lang]);
   };
 
+  const applyInlineLanguageContent = (lang) => {
+    if (!isValidLanguage(lang)) {
+      return;
+    }
+
+    const textAttr = `data-lang-${lang}`;
+
+    document.querySelectorAll("[data-lang-en][data-lang-id]:not(title):not(meta)").forEach((element) => {
+      const value = element.getAttribute(textAttr);
+      if (typeof value === "string") {
+        element.textContent = value;
+      }
+    });
+
+    const inlineTitle = queryOne("title[data-lang-en][data-lang-id]");
+    const titleValue = inlineTitle?.getAttribute(textAttr);
+    if (titleValue) {
+      document.title = titleValue;
+    }
+
+    const inlineDescription = queryOne('meta[name="description"][data-lang-en][data-lang-id]');
+    const descriptionValue = inlineDescription?.getAttribute(textAttr);
+    if (descriptionValue) {
+      inlineDescription.setAttribute("content", descriptionValue);
+    }
+  };
+
   const getStoredLanguage = () => {
     try {
       return normalizeLanguage(window.localStorage.getItem(STORAGE_KEY));
@@ -1033,6 +1065,7 @@
   const applyLanguage = (lang) => {
     const activeLang = normalizeLanguage(lang);
     const page = getCurrentPage();
+    const hasInlineLanguageData = Boolean(queryOne("[data-lang-en][data-lang-id]"));
 
     document.documentElement.setAttribute("lang", activeLang);
     applyEntries(commonTranslations, activeLang);
@@ -1046,8 +1079,12 @@
     const subfeatureConfig = subfeatureTranslations[page];
     if (subfeatureConfig) {
       setDocumentMeta(subfeatureConfig, activeLang);
-      applySubfeatureContent(subfeatureConfig, activeLang);
+      if (!hasInlineLanguageData) {
+        applySubfeatureContent(subfeatureConfig, activeLang);
+      }
     }
+
+    applyInlineLanguageContent(activeLang);
 
     updateLanguageToggleLabel(activeLang);
     setStoredLanguage(activeLang);
