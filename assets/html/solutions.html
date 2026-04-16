@@ -20,7 +20,8 @@
 
     <style>
       .hero {
-        min-height: 55vh;
+        min-height: clamp(340px, 58vh, 500px);
+        padding-top: 96px;
       }
 
       .solution-item a {
@@ -29,6 +30,13 @@
         text-decoration: none;
         font-weight: 700;
         color: var(--accent-dark);
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          min-height: clamp(300px, 52vh, 420px);
+          padding-top: 88px;
+        }
       }
     </style>
   </head>
