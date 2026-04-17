@@ -28,6 +28,133 @@
     <link rel="stylesheet" href="../../css/contact-footer.css" />
     <link rel="stylesheet" href="../../css/subfeature.css" />
     <link rel="stylesheet" href="../../css/responsive.css" />
+
+    <style>
+      .ns-page {
+        max-width: 1240px;
+        text-align: left;
+      }
+
+      .ns-page .section-header {
+        text-align: left;
+        max-width: 1160px;
+        margin-inline: auto;
+      }
+
+      .ns-page .section-title,
+      .ns-page .section-divider {
+        display: none;
+      }
+
+      .ns-page .section-subtitle {
+        max-width: 100%;
+        color: #697586;
+        line-height: 1.5;
+      }
+
+      .ns-page .subfeature-meta {
+        margin-top: 4px;
+        display: block;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        color: #697586;
+        font-weight: 500;
+      }
+
+      .ns-content {
+        max-width: 1160px;
+        margin: 22px auto 0;
+      }
+
+      .ns-content .subfeature-block {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+      }
+
+      .ns-overview {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+
+      .ns-visual {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding-top: 10px;
+      }
+
+      .ns-logo {
+        width: 170px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .ns-device {
+        width: 220px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .ns-text h3 {
+        font-size: clamp(2rem, 3.8vw, 3.4rem);
+        line-height: 1.2;
+        margin-bottom: 14px;
+        color: #2f3339;
+      }
+
+      .ns-text p {
+        color: #697586;
+        line-height: 1.5;
+        margin-bottom: 14px;
+      }
+
+      .ns-capabilities,
+      .ns-benefits {
+        margin-left: 258px;
+      }
+
+      .ns-capabilities h3,
+      .ns-benefits h3 {
+        margin-bottom: 8px;
+        color: #697586;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .ns-capabilities ul,
+      .ns-benefits ul {
+        padding-left: 28px;
+        color: #697586;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 920px) {
+        .ns-overview {
+          grid-template-columns: 1fr;
+        }
+
+        .ns-page .section-header {
+          text-align: center;
+        }
+
+        .ns-visual {
+          align-items: center;
+        }
+
+        .ns-capabilities,
+        .ns-benefits {
+          margin-left: 0;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -84,43 +211,53 @@
     </section>
 
     <section id="subfeature-detail">
-      <div class="container subfeature-wrap fade-in">
+      <div class="container subfeature-wrap fade-in ns-page">
         <div class="section-header">
           <h2 class="section-title">Network Security</h2>
           <span class="section-divider" aria-hidden="true"></span>
-          <p class="section-subtitle">Secure internal and external network traffic with layered controls built for modern hybrid infrastructure.</p>
-          <p class="subfeature-meta">Focus: Defense in Depth, Monitoring, Incident Response</p>
+          <p class="section-subtitle">Need stronger protection for your internal and external traffic? Sentra Netcomindo provides integrated network security using Sangfor NGAF to secure branch, data center, and internet perimeter with one centralized policy approach.</p>
+          <p class="subfeature-meta">Here is our product solution to fulfill this need:</p>
         </div>
 
-        <div class="subfeature-content">
-          <article class="subfeature-block">
-            <h3>What We Deliver</h3>
-            <p>
-              We deliver integrated network protection architecture that combines prevention,
-              detection, and response to protect business-critical applications and data flows.
-            </p>
+        <div class="subfeature-content ns-content">
+          <article class="subfeature-block ns-overview">
+            <div class="ns-visual">
+              <img class="ns-logo" src="../../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" />
+              <img class="ns-device" src="../../images/Sangfor NGAF.jpg" alt="Sangfor NGAF appliance" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="ns-text">
+              <h3>Sangfor NGAF (Next Generation Firewall)</h3>
+              <p>
+                Sangfor NGAF gives your organization a full-stack network security platform with firewall, IPS,
+                application control, URL filtering, and threat intelligence in one appliance. This solution helps you
+                enforce consistent security policy across headquarters and branches while maintaining stable user access
+                to business applications.
+              </p>
+            </div>
           </article>
 
-          <article class="subfeature-block">
+          <article class="subfeature-block ns-capabilities">
             <h3>Key Capabilities</h3>
             <ul>
-              <li>Next generation firewall deployment and rule optimization</li>
-              <li>Segmentation strategy for data center, branch, and user zones</li>
-              <li>IDS/IPS, secure remote access, and VPN hardening</li>
-              <li>Continuous threat monitoring with actionable security insights</li>
+              <li>Application-layer traffic inspection and policy enforcement</li>
+              <li>Integrated IPS and real-time threat detection</li>
+              <li>URL filtering and content control to reduce risky access</li>
+              <li>Secure VPN connectivity for branch and remote users</li>
+              <li>Centralized visibility and log analysis for faster troubleshooting</li>
             </ul>
           </article>
 
-          <article class="subfeature-block">
+          <article class="subfeature-block ns-benefits">
             <h3>Business Benefits</h3>
             <ul>
-              <li>Reduced attack surface and lower risk of service disruption</li>
-              <li>Faster response to suspicious events and incidents</li>
-              <li>Consistent security policy enforcement across all locations</li>
+              <li>Reduce cyber risk exposure with layered, proactive defense</li>
+              <li>Improve compliance readiness with clear traffic and event records</li>
+              <li>Minimize service disruption through faster incident response</li>
             </ul>
           </article>
 
-          <a class="subfeature-cta" href="../contact.html">Request Security Architecture Review</a>
+          <a class="subfeature-cta" href="../contact.html">Read more</a>
         </div>
       </div>
     </section>

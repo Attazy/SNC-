@@ -674,44 +674,46 @@
       description: { en: "Network Security - Sentra Netcomindo", id: "Keamanan Jaringan - Sentra Netcomindo" },
       sectionTitle: { en: "Network Security", id: "Keamanan Jaringan" },
       sectionSubtitle: {
-        en: "Secure internal and external network traffic with layered controls built for modern hybrid infrastructure.",
-        id: "Amankan trafik jaringan internal dan eksternal dengan kontrol berlapis untuk infrastruktur hybrid modern."
+        en: "Need stronger protection for your internal and external traffic? Sentra Netcomindo provides integrated network security using Sangfor NGAF to secure branch, data center, and internet perimeter with one centralized policy approach.",
+        id: "Butuh perlindungan lebih kuat untuk trafik internal dan eksternal? Sentra Netcomindo menyediakan solusi keamanan jaringan terintegrasi berbasis Sangfor NGAF untuk melindungi cabang, data center, dan perimeter internet dengan pendekatan kebijakan terpusat."
       },
-      meta: { en: "Focus: Defense in Depth, Monitoring, Incident Response", id: "Fokus: Defense in Depth, Monitoring, Respons Insiden" },
-      block1Title: { en: "What We Deliver", id: "Apa yang Kami Berikan" },
+      meta: { en: "Here is our product solution to fulfill this need:", id: "Berikut solusi produk kami untuk memenuhi kebutuhan tersebut:" },
+      block1Title: { en: "Sangfor NGAF (Next Generation Firewall)", id: "Sangfor NGAF (Next Generation Firewall)" },
       block1Text: {
-        en: "We deliver integrated network protection architecture that combines prevention, detection, and response to protect business-critical applications and data flows.",
-        id: "Kami menghadirkan arsitektur perlindungan jaringan terintegrasi yang menggabungkan pencegahan, deteksi, dan respons untuk melindungi aplikasi serta aliran data bisnis kritikal."
+        en: "Sangfor NGAF gives your organization a full-stack network security platform with firewall, IPS, application control, URL filtering, and threat intelligence in one appliance. This solution helps you enforce consistent security policy across headquarters and branches while maintaining stable user access to business applications.",
+        id: "Sangfor NGAF memberikan platform keamanan jaringan full-stack dengan firewall, IPS, application control, URL filtering, dan threat intelligence dalam satu appliance. Solusi ini membantu Anda menerapkan kebijakan keamanan yang konsisten di kantor pusat maupun cabang sambil menjaga akses pengguna ke aplikasi bisnis tetap stabil."
       },
       block2Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
       block2Items: {
         en: [
-          "Next generation firewall deployment and rule optimization",
-          "Segmentation strategy for data center, branch, and user zones",
-          "IDS/IPS, secure remote access, and VPN hardening",
-          "Continuous threat monitoring with actionable security insights"
+          "Application-layer traffic inspection and policy enforcement",
+          "Integrated IPS and real-time threat detection",
+          "URL filtering and content control to reduce risky access",
+          "Secure VPN connectivity for branch and remote users",
+          "Centralized visibility and log analysis for faster troubleshooting"
         ],
         id: [
-          "Deployment next generation firewall dan optimasi rule",
-          "Strategi segmentasi untuk data center, cabang, dan zona pengguna",
-          "IDS/IPS, secure remote access, dan hardening VPN",
-          "Monitoring ancaman berkelanjutan dengan insight keamanan yang dapat ditindaklanjuti"
+          "Inspeksi trafik layer aplikasi dan enforcement kebijakan",
+          "IPS terintegrasi dan deteksi ancaman real-time",
+          "URL filtering dan content control untuk menekan akses berisiko",
+          "Konektivitas VPN aman untuk cabang dan pengguna remote",
+          "Visibilitas terpusat dan analisis log untuk troubleshooting lebih cepat"
         ]
       },
       block3Title: { en: "Business Benefits", id: "Manfaat Bisnis" },
       block3Items: {
         en: [
-          "Reduced attack surface and lower risk of service disruption",
-          "Faster response to suspicious events and incidents",
-          "Consistent security policy enforcement across all locations"
+          "Reduce cyber risk exposure with layered, proactive defense",
+          "Improve compliance readiness with clear traffic and event records",
+          "Minimize service disruption through faster incident response"
         ],
         id: [
-          "Permukaan serangan berkurang dan risiko gangguan layanan menurun",
-          "Respons lebih cepat terhadap kejadian dan insiden mencurigakan",
-          "Penerapan kebijakan keamanan konsisten di seluruh lokasi"
+          "Menurunkan paparan risiko siber dengan pertahanan berlapis yang proaktif",
+          "Meningkatkan kesiapan compliance melalui rekaman trafik dan event yang jelas",
+          "Meminimalkan gangguan layanan lewat respons insiden yang lebih cepat"
         ]
       },
-      cta: { en: "Request Security Architecture Review", id: "Minta Review Arsitektur Keamanan" }
+      cta: { en: "Read more", id: "Baca selengkapnya" }
     },
 
     "power-protection.html": {
