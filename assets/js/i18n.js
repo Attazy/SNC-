@@ -750,20 +750,20 @@
       meta: { en: "Here are our product solutions to fulfill this need:", id: "Berikut solusi produk kami untuk memenuhi kebutuhan tersebut:" },
       block1Title: { en: "Sangfor HCI", id: "Sangfor HCI" },
       block1Text: {
-        en: "Sangfor HCI combines compute, storage, networking, and security in one integrated platform to simplify infrastructure operations and accelerate application deployment. It is ideal for organizations that need easier management, high availability, and flexible scalability for growing business services.",
-        id: "Sangfor HCI menggabungkan komputasi, storage, jaringan, dan keamanan dalam satu platform terintegrasi untuk menyederhanakan operasional infrastruktur dan mempercepat deployment aplikasi. Solusi ini ideal untuk organisasi yang membutuhkan pengelolaan lebih mudah, ketersediaan tinggi, dan skalabilitas fleksibel bagi layanan bisnis yang terus berkembang."
+        en: "Sangfor HCI combines compute, storage, networking, and security in one integrated platform to simplify infrastructure operations and accelerate application deployment. It is ideal for organizations that need easier management, high availability, and flexible scalability for growing business services, while maintaining consistent performance for critical enterprise workloads.",
+        id: "Sangfor HCI menggabungkan komputasi, storage, jaringan, dan keamanan dalam satu platform terintegrasi untuk menyederhanakan operasional infrastruktur dan mempercepat deployment aplikasi. Solusi ini ideal untuk organisasi yang membutuhkan pengelolaan lebih mudah, ketersediaan tinggi, dan skalabilitas fleksibel bagi layanan bisnis yang terus berkembang, sekaligus menjaga performa tetap konsisten untuk beban kerja enterprise yang kritikal."
       },
       block2Title: { en: "Lenovo Server & Storage", id: "Lenovo Server & Storage" },
       block2Items: {
         en: [
-          "Enterprise-grade server performance for critical workloads",
-          "Scalable storage architecture for data growth and resilience",
-          "Reliable hardware platform with strong lifecycle support"
+          "Enterprise-grade server performance optimized for critical business applications",
+          "Scalable storage architecture designed for steady data growth and resilience",
+          "Reliable hardware platform backed by strong lifecycle support and maintenance readiness"
         ],
         id: [
-          "Performa server kelas enterprise untuk beban kerja kritikal",
-          "Arsitektur storage yang skalabel untuk pertumbuhan data dan ketahanan",
-          "Platform hardware yang andal dengan dukungan lifecycle yang kuat"
+          "Performa server kelas enterprise yang dioptimalkan untuk aplikasi bisnis kritikal",
+          "Arsitektur storage yang skalabel dan dirancang untuk pertumbuhan data yang stabil serta ketahanan",
+          "Platform hardware yang andal dengan dukungan lifecycle yang kuat dan kesiapan maintenance"
         ]
       },
       block3Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
