@@ -487,9 +487,9 @@
           id: "Di luar daftar ini, Sentra Netcomindo siap membantu memenuhi hampir semua permintaan produk IT dari user, selama masih dalam kategori IT dan sesuai kebutuhan proyek."
         },
         {
-          selector: ".product-sections .product-box:nth-child(4) h3",
-          en: "Infrastructure & Supporting Products",
-          id: "Produk Infrastruktur & Pendukung"
+          selector: ".product-sections .product-box:nth-child(3) h3",
+          en: "Infrastructure Product Categories",
+          id: "Kategori Produk Infrastruktur"
         }
       ]
     },
