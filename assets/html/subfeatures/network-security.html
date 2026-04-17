@@ -81,12 +81,15 @@
         grid-template-columns: 170px 1fr;
         gap: 18px;
         align-items: start;
+        position: relative;
       }
 
       .ns-visual {
         display: flex;
+        flex-direction: column;
         align-items: flex-start;
         padding-top: 4px;
+        position: relative;
       }
 
       .ns-logo {
@@ -96,12 +99,13 @@
       }
 
       .ns-device {
-        width: min(100%, 320px);
-        max-width: 100%;
-        height: auto;
+        width: 148px;
+        height: 72px;
         border-radius: 10px;
         display: block;
-        margin-top: 8px;
+        margin-top: 10px;
+        object-fit: cover;
+        object-position: center bottom;
       }
 
       .ns-text h3 {
@@ -123,7 +127,7 @@
       }
 
       .ns-capabilities {
-        margin-top: -2px;
+        margin-top: -6px;
       }
 
       .ns-capabilities h3,
@@ -153,6 +157,13 @@
 
         .ns-visual {
           align-items: center;
+        }
+
+        .ns-device {
+          width: min(100%, 260px);
+          height: auto;
+          object-fit: contain;
+          object-position: center;
         }
 
         .ns-capabilities,
@@ -229,6 +240,7 @@
           <article class="subfeature-block ns-overview">
             <div class="ns-visual">
               <img class="ns-logo" src="../../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" />
+              <img class="ns-device" src="../../images/Sangfor NGAF.jpg" alt="Sangfor NGAF appliance" loading="lazy" decoding="async" />
             </div>
 
             <div class="ns-text">
@@ -239,7 +251,6 @@
                 enforce consistent security policy across headquarters and branches while maintaining stable user access
                 to business applications.
               </p>
-              <img class="ns-device" src="../../images/Sangfor NGAF.jpg" alt="Sangfor NGAF appliance" loading="lazy" decoding="async" />
             </div>
           </article>
 
