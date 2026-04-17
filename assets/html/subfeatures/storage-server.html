@@ -28,6 +28,156 @@
     <link rel="stylesheet" href="../../css/contact-footer.css" />
     <link rel="stylesheet" href="../../css/subfeature.css" />
     <link rel="stylesheet" href="../../css/responsive.css" />
+
+    <style>
+      .storage-page {
+        max-width: 1240px;
+        text-align: left;
+      }
+
+      .storage-page .section-header {
+        text-align: left;
+        max-width: 1160px;
+        margin-inline: auto;
+      }
+
+      .storage-page .section-title,
+      .storage-page .section-divider {
+        display: none;
+      }
+
+      .storage-page .section-subtitle {
+        max-width: 100%;
+        color: #697586;
+        line-height: 1.5;
+      }
+
+      .storage-page .subfeature-meta {
+        margin-top: 4px;
+        display: block;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        color: #697586;
+        font-weight: 500;
+      }
+
+      .storage-content {
+        max-width: 1160px;
+        margin: 22px auto 0;
+      }
+
+      .storage-content .subfeature-block {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+      }
+
+      .storage-product {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+
+      .storage-visual {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding-top: 6px;
+      }
+
+      .storage-logo {
+        width: 160px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .storage-device {
+        width: 220px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .storage-text h3 {
+        font-size: clamp(2rem, 3.8vw, 3.4rem);
+        line-height: 1.2;
+        margin-bottom: 12px;
+        color: #2f3339;
+      }
+
+      .storage-text p,
+      .storage-specs ul,
+      .storage-capabilities ul {
+        color: #697586;
+        line-height: 1.5;
+      }
+
+      .storage-specs,
+      .storage-capabilities {
+        margin-left: 258px;
+      }
+
+      .storage-specs h3,
+      .storage-capabilities h3 {
+        margin-bottom: 8px;
+        color: #697586;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .storage-lenovo-visual {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin: 4px 0 12px;
+      }
+
+      .storage-lenovo-visual .storage-logo {
+        width: 132px;
+      }
+
+      .storage-lenovo-visual .storage-device {
+        width: 230px;
+      }
+
+      .storage-specs ul,
+      .storage-capabilities ul {
+        padding-left: 28px;
+      }
+
+      .subfeature-cta {
+        display: none;
+      }
+
+      @media (max-width: 920px) {
+        .storage-product {
+          grid-template-columns: 1fr;
+        }
+
+        .storage-page .section-header {
+          text-align: center;
+        }
+
+        .storage-visual {
+          align-items: center;
+        }
+
+        .storage-specs,
+        .storage-capabilities {
+          margin-left: 0;
+        }
+
+        .storage-lenovo-visual {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -84,43 +234,53 @@
     </section>
 
     <section id="subfeature-detail">
-      <div class="container subfeature-wrap fade-in">
+      <div class="container subfeature-wrap fade-in storage-page">
         <div class="section-header">
           <h2 class="section-title">Storage and Server</h2>
           <span class="section-divider" aria-hidden="true"></span>
-          <p class="section-subtitle">Build scalable compute and storage foundations to support application growth, data resilience, and service continuity.</p>
-          <p class="subfeature-meta">Focus: Scalability, Availability, Data Protection</p>
+          <p class="section-subtitle">Build secure and scalable compute foundation for virtualization, private cloud, and enterprise workloads with trusted platforms from Sangfor and Lenovo.</p>
+          <p class="subfeature-meta">Here are our product solutions to fulfill this need:</p>
         </div>
 
-        <div class="subfeature-content">
-          <article class="subfeature-block">
-            <h3>What We Deliver</h3>
-            <p>
-              We design and implement right-sized server and storage platforms for virtualized,
-              private cloud, and business application environments.
-            </p>
+        <div class="subfeature-content storage-content">
+          <article class="subfeature-block storage-product">
+            <div class="storage-visual">
+              <img class="storage-logo" src="../../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" />
+              <img class="storage-device" src="../../images/Sangfor HCI.jpg" alt="Sangfor HCI platform" loading="lazy" decoding="async" />
+            </div>
+
+            <div class="storage-text">
+              <h3>Sangfor HCI</h3>
+              <p>
+                Sangfor HCI combines compute, storage, networking, and security in one integrated platform to simplify infrastructure operations and accelerate application deployment. It is ideal for organizations that need easier management, high availability, and flexible scalability for growing business services.
+              </p>
+            </div>
           </article>
 
-          <article class="subfeature-block">
+          <article class="subfeature-block storage-specs">
+            <h3>Lenovo Server &amp; Storage</h3>
+            <div class="storage-lenovo-visual">
+              <img class="storage-logo" src="../../images/lenovo.png" alt="Lenovo" loading="lazy" decoding="async" />
+              <img class="storage-device" src="../../images/Lenovo Server & Storage.jpg" alt="Lenovo server and storage platform" loading="lazy" decoding="async" />
+            </div>
+            <ul>
+              <li>Enterprise-grade server performance for critical workloads</li>
+              <li>Scalable storage architecture for data growth and resilience</li>
+              <li>Reliable hardware platform with strong lifecycle support</li>
+            </ul>
+          </article>
+
+          <article class="subfeature-block storage-capabilities">
             <h3>Key Capabilities</h3>
             <ul>
-              <li>Server consolidation and virtualization optimization</li>
-              <li>Centralized storage architecture with tiered performance planning</li>
-              <li>Backup, replication, and disaster recovery readiness</li>
-              <li>Health monitoring and lifecycle capacity management</li>
+              <li>Virtualization-ready infrastructure for private cloud environments</li>
+              <li>Integrated compute and storage planning for better performance efficiency</li>
+              <li>High availability and data protection to maintain service continuity</li>
+              <li>Simplified operations with centralized monitoring and lifecycle management</li>
             </ul>
           </article>
 
-          <article class="subfeature-block">
-            <h3>Business Benefits</h3>
-            <ul>
-              <li>Reliable performance for core applications and databases</li>
-              <li>Improved data durability with stronger recovery options</li>
-              <li>Lower operational complexity through centralized management</li>
-            </ul>
-          </article>
-
-          <a class="subfeature-cta" href="../contact.html">Explore Server and Storage Upgrade</a>
+          <a class="subfeature-cta" href="../contact.html">Read more</a>
         </div>
       </div>
     </section>

@@ -744,44 +744,44 @@
       description: { en: "Storage and Server - Sentra Netcomindo", id: "Penyimpanan dan Server - Sentra Netcomindo" },
       sectionTitle: { en: "Storage and Server", id: "Penyimpanan dan Server" },
       sectionSubtitle: {
-        en: "Build scalable compute and storage foundations to support application growth, data resilience, and service continuity.",
-        id: "Bangun fondasi komputasi dan penyimpanan yang skalabel untuk mendukung pertumbuhan aplikasi, ketahanan data, dan kontinuitas layanan."
+        en: "Build secure and scalable compute foundation for virtualization, private cloud, and enterprise workloads with trusted platforms from Sangfor and Lenovo.",
+        id: "Bangun fondasi komputasi yang aman dan skalabel untuk virtualisasi, private cloud, dan beban kerja enterprise dengan platform terpercaya dari Sangfor dan Lenovo."
       },
-      meta: { en: "Focus: Scalability, Availability, Data Protection", id: "Fokus: Skalabilitas, Ketersediaan, Perlindungan Data" },
-      block1Title: { en: "What We Deliver", id: "Apa yang Kami Berikan" },
+      meta: { en: "Here are our product solutions to fulfill this need:", id: "Berikut solusi produk kami untuk memenuhi kebutuhan tersebut:" },
+      block1Title: { en: "Sangfor HCI", id: "Sangfor HCI" },
       block1Text: {
-        en: "We design and implement right-sized server and storage platforms for virtualized, private cloud, and business application environments.",
-        id: "Kami merancang dan mengimplementasikan platform server dan storage yang tepat guna untuk lingkungan virtualisasi, private cloud, dan aplikasi bisnis."
+        en: "Sangfor HCI combines compute, storage, networking, and security in one integrated platform to simplify infrastructure operations and accelerate application deployment. It is ideal for organizations that need easier management, high availability, and flexible scalability for growing business services.",
+        id: "Sangfor HCI menggabungkan komputasi, storage, jaringan, dan keamanan dalam satu platform terintegrasi untuk menyederhanakan operasional infrastruktur dan mempercepat deployment aplikasi. Solusi ini ideal untuk organisasi yang membutuhkan pengelolaan lebih mudah, ketersediaan tinggi, dan skalabilitas fleksibel bagi layanan bisnis yang terus berkembang."
       },
-      block2Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
+      block2Title: { en: "Lenovo Server & Storage", id: "Lenovo Server & Storage" },
       block2Items: {
         en: [
-          "Server consolidation and virtualization optimization",
-          "Centralized storage architecture with tiered performance planning",
-          "Backup, replication, and disaster recovery readiness",
-          "Health monitoring and lifecycle capacity management"
+          "Enterprise-grade server performance for critical workloads",
+          "Scalable storage architecture for data growth and resilience",
+          "Reliable hardware platform with strong lifecycle support"
         ],
         id: [
-          "Konsolidasi server dan optimasi virtualisasi",
-          "Arsitektur storage terpusat dengan perencanaan performa bertingkat",
-          "Kesiapan backup, replikasi, dan disaster recovery",
-          "Pemantauan kesehatan sistem dan manajemen kapasitas siklus hidup"
+          "Performa server kelas enterprise untuk beban kerja kritikal",
+          "Arsitektur storage yang skalabel untuk pertumbuhan data dan ketahanan",
+          "Platform hardware yang andal dengan dukungan lifecycle yang kuat"
         ]
       },
-      block3Title: { en: "Business Benefits", id: "Manfaat Bisnis" },
+      block3Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
       block3Items: {
         en: [
-          "Reliable performance for core applications and databases",
-          "Improved data durability with stronger recovery options",
-          "Lower operational complexity through centralized management"
+          "Virtualization-ready infrastructure for private cloud environments",
+          "Integrated compute and storage planning for better performance efficiency",
+          "High availability and data protection to maintain service continuity",
+          "Simplified operations with centralized monitoring and lifecycle management"
         ],
         id: [
-          "Performa andal untuk aplikasi inti dan database",
-          "Ketahanan data meningkat dengan opsi pemulihan yang lebih kuat",
-          "Kompleksitas operasional menurun melalui manajemen terpusat"
+          "Infrastruktur siap virtualisasi untuk lingkungan private cloud",
+          "Perencanaan komputasi dan storage terintegrasi untuk efisiensi performa yang lebih baik",
+          "Ketersediaan tinggi dan perlindungan data untuk menjaga kontinuitas layanan",
+          "Operasional lebih sederhana dengan monitoring terpusat dan manajemen lifecycle"
         ]
       },
-      cta: { en: "Explore Server and Storage Upgrade", id: "Eksplorasi Upgrade Server dan Storage" }
+      cta: { en: "Read more", id: "Baca selengkapnya" }
     },
 
     "maintenance.html": {
