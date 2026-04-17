@@ -750,21 +750,17 @@
       meta: { en: "Here are our product solutions to fulfill this need:", id: "Berikut solusi produk kami untuk memenuhi kebutuhan tersebut:" },
       block1Title: { en: "Sangfor HCI", id: "Sangfor HCI" },
       block1Text: {
-        en: "Sangfor HCI combines compute, storage, networking, and security in one integrated platform to simplify infrastructure operations and accelerate application deployment. It is ideal for organizations that need easier management, high availability, and flexible scalability for growing business services, while maintaining consistent performance for critical enterprise workloads.",
-        id: "Sangfor HCI menggabungkan komputasi, storage, jaringan, dan keamanan dalam satu platform terintegrasi untuk menyederhanakan operasional infrastruktur dan mempercepat deployment aplikasi. Solusi ini ideal untuk organisasi yang membutuhkan pengelolaan lebih mudah, ketersediaan tinggi, dan skalabilitas fleksibel bagi layanan bisnis yang terus berkembang, sekaligus menjaga performa tetap konsisten untuk beban kerja enterprise yang kritikal."
+        en: "Sangfor HCI combines compute, storage, networking, and security in one integrated platform to simplify infrastructure operations and accelerate application deployment. It is ideal for organizations that need easier management, high availability, and flexible scalability for growing business services, while maintaining consistent performance for critical enterprise workloads. With unified management and intelligent resource orchestration, your IT team can scale workloads faster, reduce infrastructure complexity, and improve operational efficiency across branch and data center environments.",
+        id: "Sangfor HCI menggabungkan komputasi, storage, jaringan, dan keamanan dalam satu platform terintegrasi untuk menyederhanakan operasional infrastruktur dan mempercepat deployment aplikasi. Solusi ini ideal untuk organisasi yang membutuhkan pengelolaan lebih mudah, ketersediaan tinggi, dan skalabilitas fleksibel bagi layanan bisnis yang terus berkembang, sekaligus menjaga performa tetap konsisten untuk beban kerja enterprise yang kritikal. Dengan manajemen terpadu dan orkestrasi resource yang cerdas, tim IT dapat melakukan scale workload lebih cepat, mengurangi kompleksitas infrastruktur, dan meningkatkan efisiensi operasional di lingkungan cabang maupun data center."
       },
       block2Title: { en: "Lenovo Server & Storage", id: "Lenovo Server & Storage" },
+      block2Text: {
+        en: "Lenovo Server & Storage provides enterprise-grade server performance optimized for critical business applications, combined with a scalable storage architecture designed for steady data growth and resilience. This reliable hardware platform is backed by strong lifecycle support and maintenance readiness, helping organizations keep core services stable while preparing for long-term expansion.",
+        id: "Lenovo Server & Storage menghadirkan performa server kelas enterprise yang dioptimalkan untuk aplikasi bisnis kritikal, dipadukan dengan arsitektur storage yang skalabel untuk pertumbuhan data yang stabil dan ketahanan sistem. Platform hardware yang andal ini didukung dukungan lifecycle yang kuat dan kesiapan maintenance, sehingga organisasi dapat menjaga layanan inti tetap stabil sambil mempersiapkan ekspansi jangka panjang."
+      },
       block2Items: {
-        en: [
-          "Enterprise-grade server performance optimized for critical business applications",
-          "Scalable storage architecture designed for steady data growth and resilience",
-          "Reliable hardware platform backed by strong lifecycle support and maintenance readiness"
-        ],
-        id: [
-          "Performa server kelas enterprise yang dioptimalkan untuk aplikasi bisnis kritikal",
-          "Arsitektur storage yang skalabel dan dirancang untuk pertumbuhan data yang stabil serta ketahanan",
-          "Platform hardware yang andal dengan dukungan lifecycle yang kuat dan kesiapan maintenance"
-        ]
+        en: [],
+        id: []
       },
       block3Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
       block3Items: {
@@ -1003,6 +999,7 @@
     setText(".subfeature-block:nth-child(1) p", pageConfig?.block1Text?.[lang]);
 
     setText(".subfeature-block:nth-child(2) h3", pageConfig?.block2Title?.[lang]);
+    setText(".subfeature-block:nth-child(2) p", pageConfig?.block2Text?.[lang]);
     applyListEntries(".subfeature-block:nth-child(2)", pageConfig?.block2Items?.[lang]);
 
     setText(".subfeature-block:nth-child(3) h3", pageConfig?.block3Title?.[lang]);
