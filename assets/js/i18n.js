@@ -486,11 +486,10 @@
           en: "Beyond this list, Sentra Netcomindo can help fulfill almost any IT product request from users, as long as it is within the IT category and aligned with project requirements.",
           id: "Di luar daftar ini, Sentra Netcomindo siap membantu memenuhi hampir semua permintaan produk IT dari user, selama masih dalam kategori IT dan sesuai kebutuhan proyek."
         },
-        {
-          selector: ".product-sections .product-box:nth-child(3) h3",
-          en: "Infrastructure Product Categories",
-          id: "Kategori Produk Infrastruktur"
-        }
+        { selector: ".product-sections .product-box:nth-child(3) h3", en: "Server Products", id: "Produk Server" },
+        { selector: ".product-sections .product-box:nth-child(4) h3", en: "Network Products", id: "Produk Jaringan" },
+        { selector: ".product-sections .product-box:nth-child(5) h3", en: "Firewall Products", id: "Produk Firewall" },
+        { selector: ".product-sections .product-box:nth-child(6) h3", en: "UPS Products", id: "Produk UPS" }
       ]
     },
 
