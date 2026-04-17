@@ -357,15 +357,15 @@
 
     "solutions.html": {
       title: {
-        en: "Solutions | Sentra Netcomindo",
+        en: "Solution | Sentra Netcomindo",
         id: "Solusi | Sentra Netcomindo"
       },
       description: {
-        en: "Solutions by Sentra Netcomindo",
+        en: "Solution by Sentra Netcomindo",
         id: "Solusi oleh Sentra Netcomindo"
       },
       entries: [
-        { selector: ".hero-content h1", en: "SOLUTIONS", id: "SOLUSI" },
+        { selector: ".hero-content h1", en: "SOLUTION", id: "SOLUSI" },
         {
           selector: ".hero-content p:not(.hero-description)",
           en: "Core Sentra Netcomindo solutions for enterprise needs.",
