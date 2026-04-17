@@ -680,7 +680,7 @@
       meta: { en: "Here is our product solution to fulfill this need:", id: "Berikut solusi produk kami untuk memenuhi kebutuhan tersebut:" },
       block1Title: { en: "Sangfor NGAF (Next Generation Firewall)", id: "Sangfor NGAF (Next Generation Firewall)" },
       block1Text: {
-        en: "Sangfor NGAF gives your organization a full-stack network security platform with firewall, IPS, application control, URL filtering, and threat intelligence in one appliance. This solution helps you enforce consistent security policy across headquarters and branches while maintaining stable user access to business applications.",
+        en: "Sangfor NGAF gives your organization a full-stack network security platform with firewall, IPS, application control, URL filtering, and threat intelligence in one appliance. This solution helps you enforce consistent security policy across headquarters and branches while maintaining stable user access to business applications. With centralized visibility and policy orchestration, your security team can monitor traffic behavior more effectively, respond to incidents faster, and maintain stronger control over evolving threats without disrupting day-to-day operations.",
         id: "Sangfor NGAF memberikan platform keamanan jaringan full-stack dengan firewall, IPS, application control, URL filtering, dan threat intelligence dalam satu appliance. Solusi ini membantu Anda menerapkan kebijakan keamanan yang konsisten di kantor pusat maupun cabang sambil menjaga akses pengguna ke aplikasi bisnis tetap stabil."
       },
       block2Title: { en: "Key Capabilities", id: "Kapabilitas Utama" },
