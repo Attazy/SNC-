@@ -82,6 +82,13 @@
         align-items: start;
       }
 
+      .storage-specs {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+
       .storage-visual {
         display: flex;
         flex-direction: column;
@@ -117,7 +124,6 @@
         line-height: 1.5;
       }
 
-      .storage-specs,
       .storage-capabilities {
         margin-left: 258px;
       }
@@ -128,21 +134,6 @@
         color: #697586;
         font-size: 2rem;
         font-weight: 500;
-      }
-
-      .storage-lenovo-visual {
-        display: flex;
-        align-items: center;
-        gap: 18px;
-        margin: 4px 0 12px;
-      }
-
-      .storage-lenovo-visual .storage-logo {
-        width: 132px;
-      }
-
-      .storage-lenovo-visual .storage-device {
-        width: 230px;
       }
 
       .storage-specs ul,
@@ -159,6 +150,10 @@
           grid-template-columns: 1fr;
         }
 
+        .storage-specs {
+          grid-template-columns: 1fr;
+        }
+
         .storage-page .section-header {
           text-align: center;
         }
@@ -167,14 +162,8 @@
           align-items: center;
         }
 
-        .storage-specs,
         .storage-capabilities {
           margin-left: 0;
-        }
-
-        .storage-lenovo-visual {
-          justify-content: center;
-          flex-wrap: wrap;
         }
       }
     </style>
@@ -258,16 +247,19 @@
           </article>
 
           <article class="subfeature-block storage-specs">
-            <h3>Lenovo Server &amp; Storage</h3>
-            <div class="storage-lenovo-visual">
+            <div class="storage-visual">
               <img class="storage-logo" src="../../images/lenovo.png" alt="Lenovo" loading="lazy" decoding="async" />
               <img class="storage-device" src="../../images/Lenovo Server & Storage.jpg" alt="Lenovo server and storage platform" loading="lazy" decoding="async" />
             </div>
-            <ul>
-              <li>Enterprise-grade server performance for critical workloads</li>
-              <li>Scalable storage architecture for data growth and resilience</li>
-              <li>Reliable hardware platform with strong lifecycle support</li>
-            </ul>
+
+            <div class="storage-text">
+              <h3>Lenovo Server &amp; Storage</h3>
+              <ul>
+                <li>Enterprise-grade server performance for critical workloads</li>
+                <li>Scalable storage architecture for data growth and resilience</li>
+                <li>Reliable hardware platform with strong lifecycle support</li>
+              </ul>
+            </div>
           </article>
 
           <article class="subfeature-block storage-capabilities">
