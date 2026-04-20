@@ -781,44 +781,26 @@
       description: { en: "Maintenance - Sentra Netcomindo", id: "Pemeliharaan - Sentra Netcomindo" },
       sectionTitle: { en: "Maintenance", id: "Pemeliharaan" },
       sectionSubtitle: {
-        en: "Keep your IT and banking systems running optimally through structured preventive and corrective maintenance services.",
-        id: "Jaga sistem TI dan perbankan Anda tetap berjalan optimal melalui layanan pemeliharaan preventif dan korektif yang terstruktur."
+        en: "Maintenance service keeps your critical systems stable with routine checks and fast corrective action when issues happen.",
+        id: "Layanan maintenance menjaga sistem kritikal Anda tetap stabil melalui pemeriksaan rutin dan tindakan korektif yang cepat saat masalah terjadi."
       },
-      meta: { en: "Focus: Reliability, Response Time, Asset Health", id: "Fokus: Keandalan, Waktu Respons, Kesehatan Aset" },
-      block1Title: { en: "Service Scope", id: "Cakupan Layanan" },
+      meta: { en: "Focus: Preventive Care, Quick Response, Operational Stability", id: "Fokus: Perawatan Preventif, Respons Cepat, Stabilitas Operasional" },
+      block1Title: { en: "What We Handle", id: "Yang Kami Tangani" },
       block1Text: {
-        en: "Our maintenance team supports hardware and solution environments with clear service procedures, measurable SLA commitments, and regular reporting.",
-        id: "Tim maintenance kami mendukung lingkungan hardware dan solusi dengan prosedur layanan yang jelas, komitmen SLA terukur, dan pelaporan berkala."
+        en: "We handle routine maintenance for devices and supporting systems used in daily operations, including health checks, basic tuning, and service documentation.",
+        id: "Kami menangani maintenance rutin untuk perangkat dan sistem pendukung operasional harian, termasuk pemeriksaan kesehatan, tuning dasar, dan dokumentasi layanan."
       },
-      block2Title: { en: "Service Activities", id: "Aktivitas Layanan" },
-      block2Items: {
-        en: [
-          "Preventive health checks and scheduled system inspection",
-          "Corrective troubleshooting and on-site intervention support",
-          "Spare part coordination and lifecycle replacement planning",
-          "Periodic maintenance reports with improvement recommendations"
-        ],
-        id: [
-          "Pemeriksaan kesehatan preventif dan inspeksi sistem terjadwal",
-          "Troubleshooting korektif dan dukungan intervensi on-site",
-          "Koordinasi spare part dan perencanaan penggantian siklus hidup",
-          "Laporan maintenance berkala disertai rekomendasi perbaikan"
-        ]
+      block2Title: { en: "How We Work", id: "Cara Kami Bekerja" },
+      block2Text: {
+        en: "Our team follows a clear schedule for preventive visits and responds quickly for corrective support when incidents occur, so issues can be contained before they impact business.",
+        id: "Tim kami menjalankan jadwal kunjungan preventif yang jelas dan merespons cepat untuk dukungan korektif saat insiden terjadi, agar masalah dapat dikendalikan sebelum berdampak ke bisnis."
       },
-      block3Title: { en: "Business Outcomes", id: "Hasil Bisnis" },
-      block3Items: {
-        en: [
-          "Lower unplanned downtime and faster issue resolution",
-          "More stable daily operations for critical equipment",
-          "Better control over support quality and maintenance cost"
-        ],
-        id: [
-          "Downtime tak terencana menurun dan penyelesaian masalah lebih cepat",
-          "Operasional harian untuk perangkat kritikal lebih stabil",
-          "Kontrol kualitas dukungan dan biaya maintenance lebih baik"
-        ]
+      block3Title: { en: "Benefits for Your Team", id: "Manfaat untuk Tim Anda" },
+      block3Text: {
+        en: "You get more stable system performance, lower unexpected downtime, and clearer visibility of maintenance status for planning and decision making.",
+        id: "Anda mendapatkan performa sistem yang lebih stabil, downtime tak terduga yang lebih rendah, serta visibilitas status maintenance yang lebih jelas untuk perencanaan dan pengambilan keputusan."
       },
-      cta: { en: "Request Maintenance SLA Proposal", id: "Minta Proposal SLA Maintenance" }
+      cta: { en: "Discuss Your Maintenance Plan", id: "Diskusikan Rencana Maintenance Anda" }
     },
 
     "managed-services.html": {
@@ -826,44 +808,26 @@
       description: { en: "Managed Services - Sentra Netcomindo", id: "Layanan Terkelola - Sentra Netcomindo" },
       sectionTitle: { en: "Managed Services", id: "Layanan Terkelola" },
       sectionSubtitle: {
-        en: "Entrust day-to-day IT operations to a dedicated team so your internal resources can focus on strategic priorities.",
-        id: "Percayakan operasional TI harian kepada tim khusus agar sumber daya internal dapat fokus pada prioritas strategis."
+        en: "Managed Services helps your organization run daily IT operations with a dedicated team, while your internal team focuses on business priorities.",
+        id: "Managed Services membantu organisasi Anda menjalankan operasional TI harian dengan tim khusus, sementara tim internal fokus pada prioritas bisnis."
       },
-      meta: { en: "Focus: Operational Excellence, SLA, Continuous Support", id: "Fokus: Keunggulan Operasional, SLA, Dukungan Berkelanjutan" },
-      block1Title: { en: "Service Scope", id: "Cakupan Layanan" },
+      meta: { en: "Focus: Daily Operations, SLA Control, Continuous Improvement", id: "Fokus: Operasional Harian, Kontrol SLA, Peningkatan Berkelanjutan" },
+      block1Title: { en: "What We Handle", id: "Yang Kami Tangani" },
       block1Text: {
-        en: "We provide managed operations for selected infrastructure domains with proactive monitoring, incident handling, and regular governance reporting.",
-        id: "Kami menyediakan operasi terkelola untuk domain infrastruktur terpilih dengan monitoring proaktif, penanganan insiden, dan pelaporan tata kelola berkala."
+        en: "We manage selected IT operations such as monitoring, incident follow-up, and service coordination based on agreed responsibilities and service targets.",
+        id: "Kami mengelola operasional TI terpilih seperti monitoring, tindak lanjut insiden, dan koordinasi layanan berdasarkan tanggung jawab serta target layanan yang disepakati."
       },
-      block2Title: { en: "Service Activities", id: "Aktivitas Layanan" },
-      block2Items: {
-        en: [
-          "24/7 monitoring and alert response for critical systems",
-          "Incident, problem, and change management based on agreed workflows",
-          "Capacity and performance reporting with monthly service review",
-          "Escalation coordination with principal vendors and internal teams"
-        ],
-        id: [
-          "Monitoring 24/7 dan respons alert untuk sistem kritikal",
-          "Manajemen insiden, problem, dan perubahan berdasarkan alur kerja yang disepakati",
-          "Pelaporan kapasitas dan performa dengan review layanan bulanan",
-          "Koordinasi eskalasi dengan principal vendor dan tim internal"
-        ]
+      block2Title: { en: "How We Work", id: "Cara Kami Bekerja" },
+      block2Text: {
+        en: "Activities are executed using standard workflows, regular reporting, and review meetings, so performance and issues can be tracked transparently.",
+        id: "Aktivitas dijalankan dengan alur kerja standar, pelaporan berkala, dan meeting review agar performa serta isu dapat dipantau secara transparan."
       },
-      block3Title: { en: "Business Outcomes", id: "Hasil Bisnis" },
-      block3Items: {
-        en: [
-          "Predictable service quality through measurable SLAs",
-          "Reduced operational burden for internal IT teams",
-          "Improved service continuity and governance visibility"
-        ],
-        id: [
-          "Kualitas layanan lebih terprediksi melalui SLA terukur",
-          "Beban operasional tim TI internal berkurang",
-          "Kontinuitas layanan dan visibilitas tata kelola meningkat"
-        ]
+      block3Title: { en: "Benefits for Your Team", id: "Manfaat untuk Tim Anda" },
+      block3Text: {
+        en: "You gain consistent service quality, reduced workload for internal staff, and better continuity for critical services.",
+        id: "Anda mendapatkan kualitas layanan yang konsisten, beban kerja tim internal yang lebih ringan, dan kontinuitas layanan kritikal yang lebih baik."
       },
-      cta: { en: "Build Your Managed Service Plan", id: "Bangun Rencana Managed Service Anda" }
+      cta: { en: "Plan Managed Services With Us", id: "Rencanakan Managed Services Bersama Kami" }
     },
 
     "education-training.html": {
@@ -871,44 +835,26 @@
       description: { en: "Education and Training - Sentra Netcomindo", id: "Edukasi dan Pelatihan - Sentra Netcomindo" },
       sectionTitle: { en: "Education and Training", id: "Edukasi dan Pelatihan" },
       sectionSubtitle: {
-        en: "Develop practical capabilities for your technical teams through hands-on, outcome-oriented IT training programs.",
-        id: "Kembangkan kapabilitas praktis tim teknis Anda melalui program pelatihan TI yang hands-on dan berorientasi hasil."
+        en: "Education and Training helps your technical team build practical skills so new systems can be used confidently and consistently.",
+        id: "Education and Training membantu tim teknis Anda membangun keterampilan praktis agar sistem baru dapat digunakan dengan percaya diri dan konsisten."
       },
-      meta: { en: "Focus: Skill Growth, Practical Labs, Team Readiness", id: "Fokus: Pengembangan Skill, Lab Praktis, Kesiapan Tim" },
-      block1Title: { en: "Service Scope", id: "Cakupan Layanan" },
+      meta: { en: "Focus: Practical Learning, Team Capability, Adoption Readiness", id: "Fokus: Pembelajaran Praktis, Kapabilitas Tim, Kesiapan Adopsi" },
+      block1Title: { en: "Program Scope", id: "Cakupan Program" },
       block1Text: {
-        en: "We deliver structured learning programs tailored to your infrastructure and operational needs, from fundamentals to advanced implementation workshops.",
-        id: "Kami menghadirkan program pembelajaran terstruktur yang disesuaikan dengan kebutuhan infrastruktur dan operasional Anda, dari fundamental hingga workshop implementasi lanjutan."
+        en: "We provide training sessions tailored to your environment, covering core concepts, operational practice, and implementation guidance.",
+        id: "Kami menyediakan sesi pelatihan yang disesuaikan dengan lingkungan Anda, mencakup konsep inti, praktik operasional, dan panduan implementasi."
       },
-      block2Title: { en: "Program Components", id: "Komponen Program" },
-      block2Items: {
-        en: [
-          "Instructor-led classes for network, security, and infrastructure domains",
-          "Hands-on labs, real case simulation, and troubleshooting sessions",
-          "Customized training paths for operations and engineering teams",
-          "Post-training recommendations to improve daily operational practice"
-        ],
-        id: [
-          "Kelas dipandu instruktur untuk domain jaringan, keamanan, dan infrastruktur",
-          "Hands-on lab, simulasi kasus nyata, dan sesi troubleshooting",
-          "Jalur pelatihan yang disesuaikan untuk tim operasi dan engineering",
-          "Rekomendasi pasca pelatihan untuk meningkatkan praktik operasional harian"
-        ]
+      block2Title: { en: "Learning Approach", id: "Pendekatan Pembelajaran" },
+      block2Text: {
+        en: "Sessions combine explanation and hands-on practice with real use cases, so participants can directly apply what they learn in daily work.",
+        id: "Sesi menggabungkan penjelasan dan praktik langsung dengan use case nyata, sehingga peserta dapat langsung menerapkan materi dalam pekerjaan harian."
       },
-      block3Title: { en: "Business Outcomes", id: "Hasil Bisnis" },
-      block3Items: {
-        en: [
-          "Faster onboarding and stronger technical confidence",
-          "Reduced dependency on ad hoc external troubleshooting",
-          "Better alignment between technology investment and team capability"
-        ],
-        id: [
-          "Onboarding lebih cepat dan kepercayaan teknis lebih kuat",
-          "Ketergantungan pada troubleshooting eksternal ad hoc berkurang",
-          "Kesesuaian antara investasi teknologi dan kapabilitas tim lebih baik"
-        ]
+      block3Title: { en: "Benefits for Your Team", id: "Manfaat untuk Tim Anda" },
+      block3Text: {
+        en: "Your team improves technical confidence, reduces trial-and-error during operations, and accelerates solution adoption.",
+        id: "Tim Anda meningkatkan kepercayaan diri teknis, mengurangi trial-and-error saat operasional, dan mempercepat adopsi solusi."
       },
-      cta: { en: "Arrange Team Training Session", id: "Atur Sesi Pelatihan Tim" }
+      cta: { en: "Arrange a Training Session", id: "Atur Sesi Pelatihan" }
     }
   };
 
@@ -999,6 +945,7 @@
     applyListEntries(".subfeature-block:nth-child(2)", pageConfig?.block2Items?.[lang]);
 
     setText(".subfeature-block:nth-child(3) h3", pageConfig?.block3Title?.[lang]);
+    setText(".subfeature-block:nth-child(3) p", pageConfig?.block3Text?.[lang]);
     applyListEntries(".subfeature-block:nth-child(3)", pageConfig?.block3Items?.[lang]);
 
     setText(".subfeature-cta", pageConfig?.cta?.[lang]);
