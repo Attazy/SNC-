@@ -16,6 +16,7 @@
     panels.forEach((panel) => {
       const isActive = panel.dataset.brand === brand;
       panel.classList.toggle("is-active", isActive);
+      panel.hidden = !isActive;
       panel.setAttribute("aria-hidden", isActive ? "false" : "true");
     });
   };
