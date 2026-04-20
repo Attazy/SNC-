@@ -478,18 +478,14 @@
         { selector: ".section-header .section-title", en: "Our Products", id: "Produk Kami" },
         {
           selector: ".section-header .section-subtitle",
-          en: "Below is the main product portfolio we support and implement.",
-          id: "Di bawah ini daftar produk utama yang kami support dan implementasikan."
+          en: "Click a brand logo below to view the products we provide.",
+          id: "Klik logo brand di bawah untuk melihat produk yang kami sediakan."
         },
         {
           selector: ".products-capability-note",
           en: "Beyond this list, Sentra Netcomindo can help fulfill almost any IT product request from users, as long as it is within the IT category and aligned with project requirements.",
           id: "Di luar daftar ini, Sentra Netcomindo siap membantu memenuhi hampir semua permintaan produk IT dari user, selama masih dalam kategori IT dan sesuai kebutuhan proyek."
-        },
-        { selector: ".product-sections .product-box:nth-child(3) h3", en: "Server Products", id: "Produk Server" },
-        { selector: ".product-sections .product-box:nth-child(4) h3", en: "Network Products", id: "Produk Jaringan" },
-        { selector: ".product-sections .product-box:nth-child(5) h3", en: "Firewall Products", id: "Produk Firewall" },
-        { selector: ".product-sections .product-box:nth-child(6) h3", en: "UPS Products", id: "Produk UPS" }
+        }
       ]
     },
 
