@@ -43,12 +43,10 @@
         border-radius: 14px;
         background: #ffffff;
         box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
-        min-height: 116px;
+        min-height: 94px;
         display: grid;
-        align-content: center;
-        justify-items: center;
-        gap: 10px;
-        padding: 16px 12px;
+        place-items: center;
+        padding: 14px 10px;
         transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
         cursor: pointer;
       }
@@ -72,16 +70,8 @@
       .product-brand-card img {
         width: auto;
         max-width: 100%;
-        max-height: 42px;
+        max-height: 48px;
         object-fit: contain;
-      }
-
-      .product-brand-label {
-        font-size: 0.82rem;
-        font-weight: 700;
-        color: #2f3e53;
-        text-align: center;
-        line-height: 1.3;
       }
 
       .product-sections {
@@ -89,19 +79,48 @@
       }
 
       .product-panel {
-        display: none;
-        animation: panelFadeIn 0.3s ease;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-8px) scale(0.99);
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-width: 0;
+        box-shadow: none;
+        transition:
+          max-height 0.42s cubic-bezier(0.22, 0.61, 0.36, 1),
+          opacity 0.26s ease,
+          transform 0.3s ease,
+          padding 0.34s ease,
+          border-width 0.34s ease,
+          visibility 0s linear 0.34s;
       }
 
       .product-panel.is-active {
-        display: block;
+        max-height: 620px;
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: auto;
+        visibility: visible;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        border-width: 1px;
+        box-shadow: var(--shadow-soft);
+        transition:
+          max-height 0.42s cubic-bezier(0.22, 0.61, 0.36, 1),
+          opacity 0.26s ease,
+          transform 0.3s ease,
+          padding 0.34s ease,
+          border-width 0.34s ease,
+          visibility 0s linear 0s;
       }
 
       .product-box {
         background: #ffffff;
         border: 1px solid var(--border-soft);
         border-radius: 12px;
-        box-shadow: var(--shadow-soft);
         padding: 22px;
       }
 
@@ -122,17 +141,6 @@
         margin-bottom: 6px;
       }
 
-      @keyframes panelFadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(4px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
       @media (max-width: 980px) {
         .product-brand-selector {
           grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -151,6 +159,15 @@
 
         .product-box ul {
           grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .product-brand-card,
+        .product-panel,
+        .product-panel.is-active {
+          transition: none;
+          transform: none;
         }
       }
     </style>
@@ -212,54 +229,44 @@
         </div>
 
         <div class="product-brand-selector fade-in" role="tablist" aria-label="Brand product selector">
-          <button class="product-brand-card is-active" type="button" data-brand="thales" aria-controls="product-panel-thales" aria-expanded="true">
+          <button class="product-brand-card is-active" type="button" data-brand="thales" aria-controls="product-panel-thales" aria-expanded="true" aria-label="Show Thales Imperva products">
             <img src="../images/thales.png" alt="Thales Imperva" loading="lazy" decoding="async" />
-            <span class="product-brand-label">Thales Imperva</span>
           </button>
 
-          <button class="product-brand-card" type="button" data-brand="sangfor" aria-controls="product-panel-sangfor" aria-expanded="false">
+          <button class="product-brand-card" type="button" data-brand="sangfor" aria-controls="product-panel-sangfor" aria-expanded="false" aria-label="Show Sangfor products">
             <img src="../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" />
-            <span class="product-brand-label">Sangfor</span>
           </button>
 
-          <button class="product-brand-card" type="button" data-brand="lenovo" aria-controls="product-panel-lenovo" aria-expanded="false">
+          <button class="product-brand-card" type="button" data-brand="lenovo" aria-controls="product-panel-lenovo" aria-expanded="false" aria-label="Show Lenovo products">
             <img src="../images/lenovo.png" alt="Lenovo" loading="lazy" decoding="async" />
-            <span class="product-brand-label">Lenovo</span>
           </button>
 
-          <button class="product-brand-card" type="button" data-brand="aruba" aria-controls="product-panel-aruba" aria-expanded="false">
+          <button class="product-brand-card" type="button" data-brand="aruba" aria-controls="product-panel-aruba" aria-expanded="false" aria-label="Show Aruba products">
             <img src="../images/Aruba.png" alt="Aruba" loading="lazy" decoding="async" />
-            <span class="product-brand-label">Aruba</span>
           </button>
 
-          <button class="product-brand-card" type="button" data-brand="infoblox" aria-controls="product-panel-infoblox" aria-expanded="false">
+          <button class="product-brand-card" type="button" data-brand="infoblox" aria-controls="product-panel-infoblox" aria-expanded="false" aria-label="Show Infoblox products">
             <img src="../images/infoblox.png" alt="Infoblox" loading="lazy" decoding="async" />
-            <span class="product-brand-label">Infoblox</span>
           </button>
 
-          <button class="product-brand-card" type="button" data-brand="brocade" aria-controls="product-panel-brocade" aria-expanded="false">
+          <button class="product-brand-card" type="button" data-brand="brocade" aria-controls="product-panel-brocade" aria-expanded="false" aria-label="Show Brocade products">
             <img src="../images/Brocade.png" alt="Brocade" loading="lazy" decoding="async" />
-            <span class="product-brand-label">Brocade</span>
           </button>
 
-          <button class="product-brand-card" type="button" data-brand="fortinet" aria-controls="product-panel-fortinet" aria-expanded="false">
+          <button class="product-brand-card" type="button" data-brand="fortinet" aria-controls="product-panel-fortinet" aria-expanded="false" aria-label="Show Fortinet products">
             <img src="../images/fortinet.png" alt="Fortinet" loading="lazy" decoding="async" />
-            <span class="product-brand-label">Fortinet</span>
           </button>
 
-          <button class="product-brand-card" type="button" data-brand="f5" aria-controls="product-panel-f5" aria-expanded="false">
+          <button class="product-brand-card" type="button" data-brand="f5" aria-controls="product-panel-f5" aria-expanded="false" aria-label="Show F5 products">
             <img src="../images/F5.png" alt="F5" loading="lazy" decoding="async" />
-            <span class="product-brand-label">F5</span>
           </button>
 
-          <button class="product-brand-card" type="button" data-brand="eaton" aria-controls="product-panel-eaton" aria-expanded="false">
+          <button class="product-brand-card" type="button" data-brand="eaton" aria-controls="product-panel-eaton" aria-expanded="false" aria-label="Show Eaton products">
             <img src="../images/Eaton.png" alt="Eaton" loading="lazy" decoding="async" />
-            <span class="product-brand-label">Eaton</span>
           </button>
 
-          <button class="product-brand-card" type="button" data-brand="laplace" aria-controls="product-panel-laplace" aria-expanded="false">
+          <button class="product-brand-card" type="button" data-brand="laplace" aria-controls="product-panel-laplace" aria-expanded="false" aria-label="Show Laplace products">
             <img src="../images/laplace.png" alt="Laplace" loading="lazy" decoding="async" />
-            <span class="product-brand-label">Laplace</span>
           </button>
         </div>
 
