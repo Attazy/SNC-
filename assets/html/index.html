@@ -114,29 +114,33 @@
         position: relative;
         z-index: 2;
         max-width: 1140px;
+        width: min(1140px, 100%);
         margin-inline: auto;
-        padding: 26px clamp(16px, 3vw, 30px);
+        padding: 26px clamp(16px, 3vw, 30px) clamp(32px, 5vh, 66px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .hero-kicker {
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        padding: 10px 20px;
+        padding: 11px 24px;
         border-radius: 999px;
         border: 1px solid rgba(16, 185, 129, 0.45);
         background: rgba(16, 185, 129, 0.14);
         color: #a7f3d0;
-        font-size: 0.96rem;
+        font-size: clamp(1.02rem, 1.35vw, 1.16rem);
         font-weight: 700;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.07em;
         text-transform: uppercase;
       }
 
       .hero h1 {
         margin-top: 18px;
         margin-bottom: 12px;
-        font-size: clamp(1.78rem, 4.9vw, 3.5rem);
+        font-size: clamp(1.62rem, 4.15vw, 3.2rem);
         letter-spacing: 0.06em;
         text-shadow: 0 10px 30px rgba(2, 6, 23, 0.5);
       }
@@ -273,17 +277,18 @@
       }
 
       .hero-metrics {
-        margin-top: 24px;
+        margin-top: clamp(36px, 8vh, 86px);
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 12px;
+        gap: clamp(10px, 1.3vw, 16px);
       }
 
       .hero-metrics div {
         border-radius: 14px;
         border: 1px solid rgba(148, 163, 184, 0.26);
         background: rgba(15, 23, 42, 0.45);
-        padding: 12px;
+        padding: clamp(11px, 1.2vw, 15px);
       }
 
       .hero-metrics strong {
@@ -515,7 +520,25 @@
       }
 
       @media (max-width: 900px) {
+        .hero-kicker {
+          font-size: clamp(0.9rem, 3.4vw, 1rem);
+          padding: 9px 16px;
+          letter-spacing: 0.05em;
+        }
+
+        .hero h1 {
+          font-size: clamp(1.42rem, 7.4vw, 2.42rem);
+        }
+
+        .hero-description {
+          line-height: 1.32;
+          font-size: clamp(0.95rem, 3.8vw, 1.08rem);
+        }
+
         .hero-metrics {
+          margin-top: clamp(26px, 8vw, 40px);
+          max-width: min(560px, 100%);
+          margin-inline: auto;
           grid-template-columns: 1fr;
         }
 
