@@ -42,12 +42,12 @@
   }
 
   .navbar.solid .nav-links {
-    background: #ffffff;
-    border: 1px solid #e3ece7;
+    background: linear-gradient(160deg, rgba(17, 37, 60, 0.97), rgba(10, 25, 45, 0.97));
+    border: 1px solid rgba(181, 209, 223, 0.2);
   }
 
   .navbar.solid .nav-links a {
-    color: #2cb557;
+    color: #f3f8fd;
   }
 
   .navbar.solid .submenu a {
