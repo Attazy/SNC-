@@ -183,9 +183,9 @@
         { selector: ".hero-cta .cta-primary", en: "Why Sentra Netcomindo?", id: "Kenapa Sentra Netcomindo?" },
         { selector: ".hero-cta .cta-secondary", en: "View Products", id: "Lihat Produk" },
         {
-          selector: ".hero-cert span",
-          en: "ISO/IEC 27001 Certified Company",
-          id: "Perusahaan Tersertifikasi ISO/IEC 27001"
+          selector: ".hero-cert a",
+          en: "Thales Platinum Partners",
+          id: "Thales Platinum Partners"
         },
         { selector: ".hero-kicker", en: "Enterprise IT Security & Infrastructure", id: "Keamanan dan Infrastruktur TI Enterprise" },
         { selector: ".hero-metrics div:nth-child(1) span", en: "Enterprise Projects", id: "Proyek Enterprise" },
@@ -279,9 +279,9 @@
           id: "Saat ini, Sentra Netcomindo memperluas layanan untuk menghadirkan ragam solusi TI yang lebih luas sebagai respons atas kebutuhan pelanggan yang terus berkembang, terutama di sektor institusi keuangan, telekomunikasi, dan layanan publik."
         },
         {
-          selector: "#about-company .iso-highlight span",
-          en: "ISO/IEC 27001 Certified Company",
-          id: "Perusahaan Tersertifikasi ISO/IEC 27001"
+          selector: "#about-company .iso-highlight a",
+          en: "Thales Platinum Partners",
+          id: "Thales Platinum Partners"
         },
         { selector: "#about-company .about-vision h3", en: "VISION", id: "VISI" },
         { selector: "#about-company .about-vision li:nth-child(1)", en: "To become a trusted and respected IT solutions provider.", id: "Menjadi penyedia solusi TI yang tepercaya dan dihormati." },
