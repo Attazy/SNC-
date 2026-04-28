@@ -1,8 +1,8 @@
 :root {
   --accent: #b88a2f;
   --accent-dark: #8a6420;
-  --text-main: #2f3339;
-  --text-muted: #666f79;
+  --text-main: #000000;
+  --text-muted: #000000;
   --surface: #ffffff;
   --surface-soft: #f6f4ef;
   --border-soft: #e8dfcf;
@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Manrope", Helvetica, Arial, sans-serif;
   line-height: 1.2;
 }
 
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Manrope", Helvetica, Arial, sans-serif;
   color: var(--text-main);
   background-color: var(--surface);
   line-height: 1.2;
@@ -53,7 +53,7 @@ section {
   font-size: clamp(1.9rem, 3vw, 2.75rem);
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: #30353c;
+  color: var(--text-main);
 }
 
 .section-subtitle {

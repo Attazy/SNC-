@@ -18,14 +18,14 @@
 
 .contact-box p,
 .contact-box a {
-  color: #666f79;
+  color: var(--text-main);
   text-decoration: none;
   font-size: clamp(1rem, 1.1vw, 1.2rem);
   line-height: 1.6;
 }
 
 .contact-box a {
-  color: #666f79;
+  color: var(--text-main);
 }
 
 .site-footer {

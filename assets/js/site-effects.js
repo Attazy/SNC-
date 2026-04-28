@@ -661,7 +661,6 @@
   injectGlobalEffectsStyle();
   initScrollProgress();
   initHeroSpotlight();
-  initCardTilt();
   initMagneticButtons();
   initMetricCounters();
   initCtaTracking();

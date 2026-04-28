@@ -38,7 +38,7 @@
   font-size: clamp(1.2rem, 1.5vw, 1.8rem);
   margin-bottom: 18px;
   letter-spacing: 0.04em;
-  color: #30353c;
+  color: var(--text-main);
 }
 
 .service-item p {

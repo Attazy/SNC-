@@ -20,7 +20,7 @@
 .about-content p {
   font-size: clamp(0.98rem, 1.15vw, 1.2rem);
   line-height: 1.55;
-  color: #5f6873;
+  color: var(--text-main);
   margin-bottom: 12px;
 }
 
@@ -58,7 +58,7 @@
 
 .about-box li {
   font-size: clamp(0.98rem, 1.1vw, 1.18rem);
-  color: #5f6873;
+  color: var(--text-main);
   line-height: 1.5;
   margin-bottom: 4px;
 }
