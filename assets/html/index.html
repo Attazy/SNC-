@@ -474,7 +474,7 @@
         display: flex;
         align-items: center;
         width: max-content;
-        animation: partnerScroll 34s linear infinite;
+        animation: partnerScroll 52s linear infinite;
       }
 
       .partner-carousel:hover .partner-track {
@@ -482,13 +482,13 @@
       }
 
       .partner-logo-card {
-        flex: 0 0 176px;
+        flex: 0 0 196px;
         margin: 0 9px;
         border: 1px solid #dfe7f0;
         border-radius: 14px;
         background: #ffffff;
         box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
-        min-height: 96px;
+        min-height: 108px;
         display: grid;
         place-items: center;
         padding: 14px;
@@ -498,9 +498,18 @@
       }
 
       .partner-logo-card img {
-        max-height: 44px;
+        max-height: 52px;
         width: auto;
         object-fit: contain;
+      }
+
+      .partner-logo-card img.logo-zoom {
+        transform: scale(1.28);
+        transform-origin: center;
+      }
+
+      .partner-logo-card img.logo-zoom-strong {
+        transform: scale(1.55);
       }
 
       .partner-logo-card:hover {
@@ -560,8 +569,8 @@
         }
 
         .partner-logo-card {
-          flex: 0 0 150px;
-          min-height: 86px;
+          flex: 0 0 170px;
+          min-height: 96px;
         }
       }
 
@@ -732,30 +741,84 @@
     <section id="home-partners">
       <div class="container fade-in">
         <div class="section-header">
-          <h2 class="section-title">Our Partners</h2>
+          <h2 class="section-title">Trusted By</h2>
           <span class="section-divider" aria-hidden="true"></span>
-          <p class="section-subtitle">Supported by trusted technology partners to deliver the right solutions.</p>
+          <p class="section-subtitle">Trusted by leading organizations across industries.</p>
         </div>
 
-        <div class="partner-carousel" aria-label="Our technology partners">
+        <div class="partner-carousel" aria-label="Trusted by organizations">
           <div class="partner-track">
-            <a class="partner-logo-card" href="https://www.f5.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit F5 website"><img src="../images/F5.png" alt="F5" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Fortinet website"><img src="../images/fortinet.png" alt="Fortinet" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.infoblox.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Infoblox website"><img src="../images/infoblox.png" alt="Infoblox" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://laplace.id/" target="_blank" rel="noopener noreferrer" aria-label="Visit Laplace website"><img src="../images/laplace.png" alt="Laplace" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.lenovo.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Lenovo website"><img src="../images/lenovo.png" alt="Lenovo" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.sangfor.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sangfor website"><img src="../images/sangfor.png" alt="Sangfor" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.thalesgroup.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Thales website"><img src="../images/thales.png" alt="Thales" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.eaton.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Eaton website"><img src="../images/Eaton.png" alt="Eaton" loading="lazy" decoding="async" /></a>
+            <div class="partner-logo-card"><img src="../images/trusted by/Airpay.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/ANZ.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Artajasa.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/ASPI.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/Bank  Jateng.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/BANK ACEH.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Bank Banten.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Bank Index.webp" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Bank Jatim.jpg" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Bank MAs.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Bank NTB Syariah.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Bank Sinarmas.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/BCA.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/BJB Syariah.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/BNI Life.jpg" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/BNI.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/BSI.webp" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Collega.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/DANA.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Datacom.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom" src="../images/trusted by/HI Bank.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/OCBC.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/CCBI.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/FDS.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/Hana Bank.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Hitachi Astemo.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom" src="../images/trusted by/ICBC.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom" src="../images/trusted by/IDI.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom" src="../images/trusted by/kemenkeu.jpg" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Kemenlu.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/Linknet.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom" src="../images/trusted by/Maybank.webp" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom" src="../images/trusted by/RIntis.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/Seabank.jpg" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card"><img src="../images/trusted by/SIGN.jpg" alt="" loading="lazy" decoding="async" /></div>
 
-            <a class="partner-logo-card" href="https://www.f5.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/F5.png" alt="" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/fortinet.png" alt="" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.infoblox.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/infoblox.png" alt="" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://laplace.id/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/laplace.png" alt="" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.lenovo.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/lenovo.png" alt="" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.sangfor.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/sangfor.png" alt="" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.thalesgroup.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/thales.png" alt="" loading="lazy" decoding="async" /></a>
-            <a class="partner-logo-card" href="https://www.eaton.com/" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1"><img src="../images/Eaton.png" alt="" loading="lazy" decoding="async" /></a>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Airpay.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/ANZ.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Artajasa.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/ASPI.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/Bank  Jateng.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/BANK ACEH.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Bank Banten.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Bank Index.webp" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Bank Jatim.jpg" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Bank MAs.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Bank NTB Syariah.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Bank Sinarmas.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/BCA.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/BJB Syariah.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/BNI Life.jpg" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/BNI.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/BSI.webp" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Collega.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/DANA.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Datacom.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom" src="../images/trusted by/HI Bank.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/OCBC.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/CCBI.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/FDS.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/Hana Bank.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Hitachi Astemo.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom" src="../images/trusted by/ICBC.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom" src="../images/trusted by/IDI.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom" src="../images/trusted by/kemenkeu.jpg" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Kemenlu.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/Linknet.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom" src="../images/trusted by/Maybank.webp" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom" src="../images/trusted by/RIntis.png" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img class="logo-zoom logo-zoom-strong" src="../images/trusted by/Seabank.jpg" alt="" loading="lazy" decoding="async" /></div>
+            <div class="partner-logo-card" aria-hidden="true"><img src="../images/trusted by/SIGN.jpg" alt="" loading="lazy" decoding="async" /></div>
           </div>
         </div>
       </div>

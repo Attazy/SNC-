@@ -237,11 +237,11 @@
         },
         { selector: ".mini-grid .mini-card:nth-child(3) a", en: "Open Products page", id: "Buka halaman Products" },
 
-        { selector: "#home-partners .section-title", en: "Our Partners", id: "Mitra Kami" },
+        { selector: "#home-partners .section-title", en: "Trusted By", id: "Dipercaya Oleh" },
         {
           selector: "#home-partners .section-subtitle",
-          en: "Supported by trusted technology partners to deliver the right solutions.",
-          id: "Didukung oleh partner teknologi terpercaya untuk menghadirkan solusi yang tepat."
+          en: "Trusted by leading organizations across industries.",
+          id: "Dipercaya oleh organisasi terkemuka di berbagai industri."
         }
       ]
     },
